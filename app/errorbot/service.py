@@ -441,8 +441,8 @@ class ValidationExplainService:
                     f"通常是因為必填欄位缺漏、代碼錯誤，或資料結構不符合規範定義。"
                 )
                 suggestion = (
-                    f"這是連帶錯誤。請先修正這筆資料本身的欄位問題（必填項目缺漏或代碼錯誤），"
-                    f"修正後此錯誤通常會自動消失。如需確認欄位定義，可參考健保署 PAS IG 規範（https://nhicore.nhi.gov.tw/pas/）。"
+                    "這是連帶錯誤。請先修正這筆資料本身的欄位問題（必填項目缺漏或代碼錯誤），"
+                    "修正後此錯誤通常會自動消失。如需確認欄位定義，可參考健保署 PAS IG 規範（https://nhicore.nhi.gov.tw/pas/）。"
                 )
                 return "cascading", explanation, suggestion
 
@@ -549,7 +549,7 @@ class ValidationExplainService:
             ext_match = re.search(r"Unknown extension (\S+)", diagnostics)
             ext_url = ext_match.group(1) if ext_match else ""
             explanation = f"{readable_location}使用了系統無法辨識的擴充欄位：{ext_url}"
-            suggestion = f"請確認擴充欄位的 URL 是否正確，並對照健保署 PAS IG 規範確認是否支援此擴充欄位。"
+            suggestion = "請確認擴充欄位的 URL 是否正確，並對照健保署 PAS IG 規範確認是否支援此擴充欄位。"
             return "root_cause", explanation, suggestion
 
         # 9) ValueSet 找不到

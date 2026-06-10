@@ -21,14 +21,14 @@ DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
 class CustomFormatter(logging.Formatter):
     """帶顏色的終端輸出格式"""
-    
+
     grey = "\x1b[38;21m"
     blue = "\x1b[38;5;39m"
     yellow = "\x1b[38;5;226m"
     red = "\x1b[38;5;196m"
     bold_red = "\x1b[31;1m"
     reset = "\x1b[0m"
-    
+
     FORMATS = {
         logging.DEBUG: grey + LOG_FORMAT + reset,
         logging.INFO: blue + LOG_FORMAT + reset,
@@ -36,7 +36,7 @@ class CustomFormatter(logging.Formatter):
         logging.ERROR: red + LOG_FORMAT + reset,
         logging.CRITICAL: bold_red + LOG_FORMAT + reset
     }
-    
+
     def format(self, record):
         log_fmt = self.FORMATS.get(record.levelno)
         formatter = logging.Formatter(log_fmt, DATE_FORMAT)
@@ -47,33 +47,33 @@ _logger_initialized = False
 def setup_logger(name: str = "rag", level: int = logging.INFO, console: bool = True, file: bool = True) -> logging.Logger:
     """
     設置 logger
-    
+
     Args:
         name: logger 名稱
         level: 日誌級別
         console: 是否輸出到終端
         file: 是否輸出到檔案
-    
+
     Returns:
         logging.Logger
     """
     global _logger_initialized
-    
+
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    
+
     if _logger_initialized:
         return logger
-    
+
     _logger_initialized = True
-    
+
     # 1. 終端輸出 (有顏色)
     if console:
         console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setLevel(level)
         console_handler.setFormatter(CustomFormatter())
         logger.addHandler(console_handler)
-    
+
     # 2. 檔案輸出 - INFO 級別以上
     if file:
         info_handler = TimedRotatingFileHandler(
@@ -89,7 +89,7 @@ def setup_logger(name: str = "rag", level: int = logging.INFO, console: bool = T
         )
         info_handler.suffix = "%Y-%m-%d"
         logger.addHandler(info_handler)
-        
+
         # 3. 錯誤日誌 - ERROR 級別以上
         error_handler = TimedRotatingFileHandler(
             filename=LOG_DIR / "error.log",
@@ -104,14 +104,14 @@ def setup_logger(name: str = "rag", level: int = logging.INFO, console: bool = T
         )
         error_handler.suffix = "%Y-%m-%d"
         logger.addHandler(error_handler)
-    
+
     return logger
 
 
 def get_logger(name: str = None) -> logging.Logger:
     """
     取得 logger (自動繼承父 logger 設定)
-    
+
     使用範例:
     >>> from app.logger import get_logger
     >>> logger = get_logger(__name__)
@@ -119,10 +119,10 @@ def get_logger(name: str = None) -> logging.Logger:
     """
     if not _logger_initialized:
         setup_logger("rag")
-    
+
     if name is None:
         name = "rag"
-    
+
     return logging.getLogger(name)
 
 

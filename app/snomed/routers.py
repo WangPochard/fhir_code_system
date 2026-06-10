@@ -6,7 +6,6 @@ from app.rag import RAGService
 from app.logger import get_logger
 from app.response import ok
 from .schemas import (
-    SearchRequest, SearchResponse, CandidateResponse,
     IdentifyRequest, IdentifyResponse, IdentifiedConcept, IdentifyCandidate,
     StatsResponse,
 )

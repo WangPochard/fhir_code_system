@@ -4,10 +4,8 @@ from contextlib import contextmanager
 
 try:
     from .config import get_settings
-    from .logger import logger
 except ImportError:
     from config import get_settings
-    from logger import logger
 
 settings = get_settings()
 
