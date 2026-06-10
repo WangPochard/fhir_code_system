@@ -30,10 +30,7 @@ def _build_llm():
             api_key="none",
         )
     else:
-        try:
-            from langchain_ollama import ChatOllama
-        except ImportError:
-            from langchain_community.chat_models import ChatOllama
+        from langchain_ollama import ChatOllama
         llm = ChatOllama(
             base_url=s.llm_base_url,
             model=s.llm_model,
