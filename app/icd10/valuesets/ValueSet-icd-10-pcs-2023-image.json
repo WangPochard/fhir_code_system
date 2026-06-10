@@ -1,0 +1,5309 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "icd-10-pcs-2023-image",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet icd-10-pcs-2023-image</b></p><a name=\"icd-10-pcs-2023-image\"> </a><a name=\"hcicd-10-pcs-2023-image\"> </a><ul><li>Include these codes as defined in <code>https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>B00BZZZ</td><td>脊髓一般放射線攝影</td></tr><tr><td>B01BZZZ</td><td>脊髓透視攝影</td></tr><tr><td>B020ZZZ</td><td>腦部電腦斷層掃描</td></tr><tr><td>B027ZZZ</td><td>腦池電腦斷層掃描</td></tr><tr><td>B028ZZZ</td><td>腦室電腦斷層掃描</td></tr><tr><td>B029ZZZ</td><td>蝶鞍/腦下垂體腺電腦斷層掃描</td></tr><tr><td>B02BZZZ</td><td>脊髓電腦斷層掃描</td></tr><tr><td>B030ZZZ</td><td>腦部磁振造影</td></tr><tr><td>B039ZZZ</td><td>蝶鞍/腦下垂體腺磁振造影</td></tr><tr><td>B03BZZZ</td><td>脊髓磁振造影</td></tr><tr><td>B03CZZZ</td><td>聽神經磁振造影</td></tr><tr><td>B040ZZZ</td><td>腦部超音波</td></tr><tr><td>B04BZZZ</td><td>脊髓超音波</td></tr><tr><td>B221ZZZ</td><td>多條冠狀動脈電腦斷層掃描</td></tr><tr><td>B223ZZZ</td><td>多條繞道移植冠狀動脈電腦斷層掃描</td></tr><tr><td>B226ZZZ</td><td>左心及右心電腦斷層掃描</td></tr><tr><td>B231ZZZ</td><td>多條冠狀動脈磁振造影</td></tr><tr><td>B233ZZZ</td><td>多條繞道移植冠狀動脈磁振造影</td></tr><tr><td>B236ZZZ</td><td>左心及右心磁振造影</td></tr><tr><td>B240ZZ3</td><td>單條冠狀動脈血管內超音波</td></tr><tr><td>B240ZZ4</td><td>單條冠狀動脈經食道超音波</td></tr><tr><td>B240ZZZ</td><td>單條冠狀動脈超音波</td></tr><tr><td>B241ZZ3</td><td>多條冠狀動脈血管內超音波</td></tr><tr><td>B241ZZ4</td><td>多條冠狀動脈經食道超音波</td></tr><tr><td>B241ZZZ</td><td>多條冠狀動脈超音波</td></tr><tr><td>B244ZZ3</td><td>右心血管內超音波</td></tr><tr><td>B244ZZ4</td><td>右心經食道超音波</td></tr><tr><td>B244ZZZ</td><td>右心超音波</td></tr><tr><td>B245ZZ3</td><td>左心血管內超音波</td></tr><tr><td>B245ZZ4</td><td>左心經食道超音波</td></tr><tr><td>B245ZZZ</td><td>左心超音波</td></tr><tr><td>B246ZZ3</td><td>左心及右心血管內超音波</td></tr><tr><td>B246ZZ4</td><td>左心及右心經食道超音波</td></tr><tr><td>B246ZZZ</td><td>左心及右心超音波</td></tr><tr><td>B24BZZ3</td><td>心臟併主動脈血管內超音波</td></tr><tr><td>B24BZZ4</td><td>心臟併主動脈經食道超音波</td></tr><tr><td>B24BZZZ</td><td>心臟併主動脈超音波</td></tr><tr><td>B24CZZ3</td><td>心包膜血管內超音波</td></tr><tr><td>B24CZZ4</td><td>心包膜經食道超音波</td></tr><tr><td>B24CZZZ</td><td>心包膜超音波</td></tr><tr><td>B24DZZ3</td><td>小兒心臟血管內超音波</td></tr><tr><td>B24DZZ4</td><td>小兒心臟經食道超音波</td></tr><tr><td>B24DZZZ</td><td>小兒心臟超音波</td></tr><tr><td>B300ZZZ</td><td>胸主動脈一般放射線攝影</td></tr><tr><td>B301ZZZ</td><td>右側頭臂鎖骨下動脈一般放射線攝影</td></tr><tr><td>B302ZZZ</td><td>左鎖骨下動脈一般放射線攝影</td></tr><tr><td>B303ZZZ</td><td>右總頸動脈一般放射線攝影</td></tr><tr><td>B304ZZZ</td><td>左總頸動脈一般放射線攝影</td></tr><tr><td>B305ZZZ</td><td>雙側總頸動脈一般放射線攝影</td></tr><tr><td>B306ZZZ</td><td>右內頸動脈一般放射線攝影</td></tr><tr><td>B307ZZZ</td><td>左內頸動脈一般放射線攝影</td></tr><tr><td>B308ZZZ</td><td>雙側內頸動脈一般放射線攝影</td></tr><tr><td>B309ZZZ</td><td>右外頸動脈一般放射線攝影</td></tr><tr><td>B30BZZZ</td><td>左外頸動脈一般放射線攝影</td></tr><tr><td>B30CZZZ</td><td>雙側外頸動脈一般放射線攝影</td></tr><tr><td>B30DZZZ</td><td>右椎動脈一般放射線攝影</td></tr><tr><td>B30FZZZ</td><td>左椎動脈一般放射線攝影</td></tr><tr><td>B30GZZZ</td><td>雙側椎動脈一般放射線攝影</td></tr><tr><td>B30HZZZ</td><td>右上肢動脈一般放射線攝影</td></tr><tr><td>B30JZZZ</td><td>左上肢動脈一般放射線攝影</td></tr><tr><td>B30KZZZ</td><td>雙側上肢動脈一般放射線攝影</td></tr><tr><td>B30LZZZ</td><td>肋間及支氣管動脈一般放射線攝影</td></tr><tr><td>B30MZZZ</td><td>脊髓動脈一般放射線攝影</td></tr><tr><td>B30NZZZ</td><td>其他上部動脈一般放射線攝影</td></tr><tr><td>B30PZZZ</td><td>胸腹主動脈一般放射線攝影</td></tr><tr><td>B30QZZZ</td><td>頸腦弓一般放射線攝影</td></tr><tr><td>B30RZZZ</td><td>顱內動脈一般放射線攝影</td></tr><tr><td>B30SZZZ</td><td>右肺動脈一般放射線攝影</td></tr><tr><td>B30TZZZ</td><td>左肺動脈一般放射線攝影</td></tr><tr><td>B310ZZZ</td><td>胸主動脈透視攝影</td></tr><tr><td>B311ZZZ</td><td>右側頭臂鎖骨下動脈透視攝影</td></tr><tr><td>B312ZZZ</td><td>左鎖骨下動脈透視攝影</td></tr><tr><td>B313ZZZ</td><td>右總頸動脈透視攝影</td></tr><tr><td>B314ZZZ</td><td>左總頸動脈透視攝影</td></tr><tr><td>B315ZZZ</td><td>雙側總頸動脈透視攝影</td></tr><tr><td>B316ZZZ</td><td>右內頸動脈透視攝影</td></tr><tr><td>B317ZZZ</td><td>左內頸動脈透視攝影</td></tr><tr><td>B318ZZZ</td><td>雙側內頸動脈透視攝影</td></tr><tr><td>B319ZZZ</td><td>右外頸動脈透視攝影</td></tr><tr><td>B31BZZZ</td><td>左外頸動脈透視攝影</td></tr><tr><td>B31CZZZ</td><td>雙側外頸動脈透視攝影</td></tr><tr><td>B31DZZZ</td><td>右椎動脈透視攝影</td></tr><tr><td>B31FZZZ</td><td>左椎動脈透視攝影</td></tr><tr><td>B31GZZZ</td><td>雙側椎動脈透視攝影</td></tr><tr><td>B31HZZZ</td><td>右上肢動脈透視攝影</td></tr><tr><td>B31JZZZ</td><td>左上肢動脈透視攝影</td></tr><tr><td>B31KZZZ</td><td>雙側上肢動脈透視攝影</td></tr><tr><td>B31LZZZ</td><td>肋間及支氣管動脈透視攝影</td></tr><tr><td>B31MZZZ</td><td>脊髓動脈透視攝影</td></tr><tr><td>B31NZZZ</td><td>其他上部動脈透視攝影</td></tr><tr><td>B31PZZZ</td><td>胸腹主動脈透視攝影</td></tr><tr><td>B31QZZZ</td><td>頸腦弓透視攝影</td></tr><tr><td>B31RZZZ</td><td>顱內動脈透視攝影</td></tr><tr><td>B31SZZZ</td><td>右肺動脈透視攝影</td></tr><tr><td>B31TZZZ</td><td>左肺動脈透視攝影</td></tr><tr><td>B31UZZZ</td><td>肺動脈幹透視攝影</td></tr><tr><td>B320ZZZ</td><td>胸主動脈電腦斷層掃描</td></tr><tr><td>B325ZZZ</td><td>雙側總頸動脈電腦斷層掃描</td></tr><tr><td>B328ZZZ</td><td>雙側內頸動脈電腦斷層掃描</td></tr><tr><td>B32GZZZ</td><td>雙側椎動脈電腦斷層掃描</td></tr><tr><td>B32RZZZ</td><td>顱內動脈電腦斷層掃描</td></tr><tr><td>B32SZZZ</td><td>右肺動脈電腦斷層掃描</td></tr><tr><td>B32TZZZ</td><td>左肺動脈電腦斷層掃描</td></tr><tr><td>B330ZZZ</td><td>胸主動脈磁振造影</td></tr><tr><td>B335ZZZ</td><td>雙側總頸動脈磁振造影</td></tr><tr><td>B338ZZZ</td><td>雙側內頸動脈磁振造影</td></tr><tr><td>B33GZZZ</td><td>雙側椎動脈磁振造影</td></tr><tr><td>B33HZZZ</td><td>右上肢動脈磁振造影</td></tr><tr><td>B33JZZZ</td><td>左上肢動脈磁振造影</td></tr><tr><td>B33KZZZ</td><td>雙側上肢動脈磁振造影</td></tr><tr><td>B33MZZZ</td><td>脊髓動脈磁振造影</td></tr><tr><td>B33QZZZ</td><td>頸腦弓磁振造影</td></tr><tr><td>B33RZZZ</td><td>顱內動脈磁振造影</td></tr><tr><td>B340ZZ3</td><td>胸主動脈血管內超音波</td></tr><tr><td>B340ZZZ</td><td>胸主動脈超音波</td></tr><tr><td>B341ZZ3</td><td>右側頭臂鎖骨下動脈血管內超音波</td></tr><tr><td>B341ZZZ</td><td>右側頭臂鎖骨下動脈超音波</td></tr><tr><td>B342ZZ3</td><td>左鎖骨下動脈血管內超音波</td></tr><tr><td>B342ZZZ</td><td>左鎖骨下動脈超音波</td></tr><tr><td>B343ZZ3</td><td>右總頸動脈血管內超音波</td></tr><tr><td>B343ZZZ</td><td>右總頸動脈超音波</td></tr><tr><td>B344ZZ3</td><td>左總頸動脈血管內超音波</td></tr><tr><td>B344ZZZ</td><td>左總頸動脈超音波</td></tr><tr><td>B345ZZ3</td><td>雙側總頸動脈血管內超音波</td></tr><tr><td>B345ZZZ</td><td>雙側總頸動脈超音波</td></tr><tr><td>B346ZZ3</td><td>右內頸動脈血管內超音波</td></tr><tr><td>B346ZZZ</td><td>右內頸動脈超音波</td></tr><tr><td>B347ZZ3</td><td>左內頸動脈血管內超音波</td></tr><tr><td>B347ZZZ</td><td>左內頸動脈超音波</td></tr><tr><td>B348ZZ3</td><td>雙側內頸動脈血管內超音波</td></tr><tr><td>B348ZZZ</td><td>雙側內頸動脈超音波</td></tr><tr><td>B34HZZ3</td><td>右上肢動脈血管內超音波</td></tr><tr><td>B34HZZZ</td><td>右上肢動脈超音波</td></tr><tr><td>B34JZZ3</td><td>左上肢動脈血管內超音波</td></tr><tr><td>B34JZZZ</td><td>左上肢動脈超音波</td></tr><tr><td>B34KZZ3</td><td>雙側上肢動脈血管內超音波</td></tr><tr><td>B34KZZZ</td><td>雙側上肢動脈超音波</td></tr><tr><td>B34RZZ3</td><td>顱內動脈血管內超音波</td></tr><tr><td>B34RZZZ</td><td>顱內動脈超音波</td></tr><tr><td>B34SZZ3</td><td>右肺動脈血管內超音波</td></tr><tr><td>B34SZZZ</td><td>右肺動脈超音波</td></tr><tr><td>B34TZZ3</td><td>左肺動脈血管內超音波</td></tr><tr><td>B34TZZZ</td><td>左肺動脈超音波</td></tr><tr><td>B34VZZ3</td><td>眼動脈血管內超音波</td></tr><tr><td>B34VZZZ</td><td>眼動脈超音波</td></tr><tr><td>B410ZZZ</td><td>腹主動脈透視攝影</td></tr><tr><td>B412ZZZ</td><td>肝動脈透視攝影</td></tr><tr><td>B413ZZZ</td><td>脾動脈透視攝影</td></tr><tr><td>B414ZZZ</td><td>腸系膜上動脈透視攝影</td></tr><tr><td>B415ZZZ</td><td>腸系膜下動脈透視攝影</td></tr><tr><td>B416ZZZ</td><td>右腎動脈透視攝影</td></tr><tr><td>B417ZZZ</td><td>左腎動脈透視攝影</td></tr><tr><td>B418ZZZ</td><td>雙側腎動脈透視攝影</td></tr><tr><td>B419ZZZ</td><td>腰動脈透視攝影</td></tr><tr><td>B41BZZZ</td><td>其他腹腔內動脈透視攝影</td></tr><tr><td>B41CZZZ</td><td>盆腔動脈透視攝影</td></tr><tr><td>B41DZZZ</td><td>主動脈及雙側下肢動脈透視攝影</td></tr><tr><td>B41FZZZ</td><td>右下肢動脈透視攝影</td></tr><tr><td>B41GZZZ</td><td>左下肢動脈透視攝影</td></tr><tr><td>B41JZZZ</td><td>其他下部動脈透視攝影</td></tr><tr><td>B420ZZZ</td><td>腹主動脈電腦斷層掃描</td></tr><tr><td>B421ZZZ</td><td>腹腔動脈電腦斷層掃描</td></tr><tr><td>B424ZZZ</td><td>腸系膜上動脈電腦斷層掃描</td></tr><tr><td>B428ZZZ</td><td>雙側腎動脈電腦斷層掃描</td></tr><tr><td>B42CZZZ</td><td>盆腔動脈電腦斷層掃描</td></tr><tr><td>B42FZZZ</td><td>右下肢動脈電腦斷層掃描</td></tr><tr><td>B42GZZZ</td><td>左下肢動脈電腦斷層掃描</td></tr><tr><td>B42HZZZ</td><td>雙側下肢動脈電腦斷層掃描</td></tr><tr><td>B42MZZZ</td><td>腎動脈移植電腦斷層掃描</td></tr><tr><td>B430ZZZ</td><td>腹主動脈磁振造影</td></tr><tr><td>B431ZZZ</td><td>腹腔動脈磁振造影</td></tr><tr><td>B434ZZZ</td><td>腸系膜上動脈磁振造影</td></tr><tr><td>B438ZZZ</td><td>雙側腎動脈磁振造影</td></tr><tr><td>B43CZZZ</td><td>盆腔動脈磁振造影</td></tr><tr><td>B43FZZZ</td><td>右下肢動脈磁振造影</td></tr><tr><td>B43GZZZ</td><td>左下肢動脈磁振造影</td></tr><tr><td>B43HZZZ</td><td>雙側下肢動脈磁振造影</td></tr><tr><td>B440ZZ3</td><td>腹主動脈血管內超音波</td></tr><tr><td>B440ZZZ</td><td>腹主動脈超音波</td></tr><tr><td>B444ZZ3</td><td>腸系膜上動脈血管內超音波</td></tr><tr><td>B444ZZZ</td><td>腸系膜上動脈超音波</td></tr><tr><td>B445ZZ3</td><td>腸系膜下動脈血管內超音波</td></tr><tr><td>B445ZZZ</td><td>腸系膜下動脈超音波</td></tr><tr><td>B446ZZ3</td><td>右腎動脈血管內超音波</td></tr><tr><td>B446ZZZ</td><td>右腎動脈超音波</td></tr><tr><td>B447ZZ3</td><td>左腎動脈血管內超音波</td></tr><tr><td>B447ZZZ</td><td>左腎動脈超音波</td></tr><tr><td>B448ZZ3</td><td>雙側腎動脈血管內超音波</td></tr><tr><td>B448ZZZ</td><td>雙側腎動脈超音波</td></tr><tr><td>B44BZZ3</td><td>其他腹腔內動脈血管內超音波</td></tr><tr><td>B44BZZZ</td><td>其他腹腔內動脈超音波</td></tr><tr><td>B44FZZ3</td><td>右下肢動脈血管內超音波</td></tr><tr><td>B44FZZZ</td><td>右下肢動脈超音波</td></tr><tr><td>B44GZZ3</td><td>左下肢動脈血管內超音波</td></tr><tr><td>B44GZZZ</td><td>左下肢動脈超音波</td></tr><tr><td>B44HZZ3</td><td>雙側下肢動脈血管內超音波</td></tr><tr><td>B44HZZZ</td><td>雙側下肢動脈超音波</td></tr><tr><td>B44KZZ3</td><td>腹腔動脈及腸系膜動脈血管內超音波</td></tr><tr><td>B44KZZZ</td><td>腹腔動脈及腸系膜動脈超音波</td></tr><tr><td>B44LZZ3</td><td>股動脈血管內超音波</td></tr><tr><td>B44LZZZ</td><td>股動脈超音波</td></tr><tr><td>B44NZZ3</td><td>陰莖動脈血管內超音波</td></tr><tr><td>B44NZZZ</td><td>陰莖動脈超音波</td></tr><tr><td>B510ZZA</td><td>硬膜外靜脈導引透視攝影</td></tr><tr><td>B510ZZZ</td><td>硬膜外靜脈透視攝影</td></tr><tr><td>B511ZZA</td><td>腦及小腦靜脈導引透視攝影</td></tr><tr><td>B511ZZZ</td><td>腦及小腦靜脈透視攝影</td></tr><tr><td>B512ZZA</td><td>顱內竇導引透視攝影</td></tr><tr><td>B512ZZZ</td><td>顱內竇透視攝影</td></tr><tr><td>B513ZZA</td><td>右頸靜脈導引透視攝影</td></tr><tr><td>B513ZZZ</td><td>右頸靜脈透視攝影</td></tr><tr><td>B514ZZA</td><td>左頸靜脈導引透視攝影</td></tr><tr><td>B514ZZZ</td><td>左頸靜脈透視攝影</td></tr><tr><td>B515ZZA</td><td>雙側頸靜脈導引透視攝影</td></tr><tr><td>B515ZZZ</td><td>雙側頸靜脈透視攝影</td></tr><tr><td>B516ZZA</td><td>右鎖骨下靜脈導引透視攝影</td></tr><tr><td>B516ZZZ</td><td>右鎖骨下靜脈透視攝影</td></tr><tr><td>B517ZZA</td><td>左鎖骨下靜脈導引透視攝影</td></tr><tr><td>B517ZZZ</td><td>左鎖骨下靜脈透視攝影</td></tr><tr><td>B518ZZA</td><td>上腔靜脈導引透視攝影</td></tr><tr><td>B518ZZZ</td><td>上腔靜脈透視攝影</td></tr><tr><td>B519ZZA</td><td>下腔靜脈導引透視攝影</td></tr><tr><td>B519ZZZ</td><td>下腔靜脈透視攝影</td></tr><tr><td>B51BZZA</td><td>右下肢靜脈導引透視攝影</td></tr><tr><td>B51BZZZ</td><td>右下肢靜脈透視攝影</td></tr><tr><td>B51CZZA</td><td>左下肢靜脈導引透視攝影</td></tr><tr><td>B51CZZZ</td><td>左下肢靜脈透視攝影</td></tr><tr><td>B51DZZA</td><td>雙側下肢靜脈導引透視攝影</td></tr><tr><td>B51DZZZ</td><td>雙側下肢靜脈透視攝影</td></tr><tr><td>B51FZZA</td><td>右骨盆（髂）靜脈導引透視攝影</td></tr><tr><td>B51FZZZ</td><td>右骨盆（髂）靜脈透視攝影</td></tr><tr><td>B51GZZA</td><td>左骨盆（髂）靜脈導引透視攝影</td></tr><tr><td>B51GZZZ</td><td>左骨盆（髂）靜脈透視攝影</td></tr><tr><td>B51HZZA</td><td>雙側骨盆（髂）靜脈導引透視攝影</td></tr><tr><td>B51HZZZ</td><td>雙側骨盆（髂）靜脈透視攝影</td></tr><tr><td>B51JZZA</td><td>右腎靜脈導引透視攝影</td></tr><tr><td>B51JZZZ</td><td>右腎靜脈透視攝影</td></tr><tr><td>B51KZZA</td><td>左腎靜脈導引透視攝影</td></tr><tr><td>B51KZZZ</td><td>左腎靜脈透視攝影</td></tr><tr><td>B51LZZA</td><td>雙側腎靜脈導引透視攝影</td></tr><tr><td>B51LZZZ</td><td>雙側腎靜脈透視攝影</td></tr><tr><td>B51MZZA</td><td>右上肢靜脈導引透視攝影</td></tr><tr><td>B51MZZZ</td><td>右上肢靜脈透視攝影</td></tr><tr><td>B51NZZA</td><td>左上肢靜脈導引透視攝影</td></tr><tr><td>B51NZZZ</td><td>左上肢靜脈透視攝影</td></tr><tr><td>B51PZZA</td><td>雙側上肢靜脈導引透視攝影</td></tr><tr><td>B51PZZZ</td><td>雙側上肢靜脈透視攝影</td></tr><tr><td>B51QZZA</td><td>右肺靜脈導引透視攝影</td></tr><tr><td>B51QZZZ</td><td>右肺靜脈透視攝影</td></tr><tr><td>B51RZZA</td><td>左肺靜脈導引透視攝影</td></tr><tr><td>B51RZZZ</td><td>左肺靜脈透視攝影</td></tr><tr><td>B51SZZA</td><td>雙側肺靜脈導引透視攝影</td></tr><tr><td>B51SZZZ</td><td>雙側肺靜脈透視攝影</td></tr><tr><td>B51TZZA</td><td>門靜脈及內臟靜脈導引透視攝影</td></tr><tr><td>B51TZZZ</td><td>門靜脈及內臟靜脈透視攝影</td></tr><tr><td>B51VZZA</td><td>其他靜脈導引透視攝影</td></tr><tr><td>B51VZZZ</td><td>其他靜脈透視攝影</td></tr><tr><td>B51WZZA</td><td>透析分流/廔管導引透視攝影</td></tr><tr><td>B51WZZZ</td><td>透析分流/廔管透視攝影</td></tr><tr><td>B522ZZZ</td><td>顱內竇電腦斷層掃描</td></tr><tr><td>B528ZZZ</td><td>上腔靜脈電腦斷層掃描</td></tr><tr><td>B529ZZZ</td><td>下腔靜脈電腦斷層掃描</td></tr><tr><td>B52FZZZ</td><td>右骨盆（髂）靜脈電腦斷層掃描</td></tr><tr><td>B52GZZZ</td><td>左骨盆（髂）靜脈電腦斷層掃描</td></tr><tr><td>B52HZZZ</td><td>雙側骨盆（髂）靜脈電腦斷層掃描</td></tr><tr><td>B52JZZZ</td><td>右腎靜脈電腦斷層掃描</td></tr><tr><td>B52KZZZ</td><td>左腎靜脈電腦斷層掃描</td></tr><tr><td>B52LZZZ</td><td>雙側腎靜脈電腦斷層掃描</td></tr><tr><td>B52QZZZ</td><td>右肺靜脈電腦斷層掃描</td></tr><tr><td>B52RZZZ</td><td>左肺靜脈電腦斷層掃描</td></tr><tr><td>B52SZZZ</td><td>雙側肺靜脈電腦斷層掃描</td></tr><tr><td>B52TZZZ</td><td>門靜脈及內臟靜脈電腦斷層掃描</td></tr><tr><td>B531ZZZ</td><td>腦及小腦靜脈磁振造影</td></tr><tr><td>B532ZZZ</td><td>顱內竇磁振造影</td></tr><tr><td>B535ZZZ</td><td>雙側頸靜脈磁振造影</td></tr><tr><td>B538ZZZ</td><td>上腔靜脈磁振造影</td></tr><tr><td>B539ZZZ</td><td>下腔靜脈磁振造影</td></tr><tr><td>B53BZZZ</td><td>右下肢靜脈磁振造影</td></tr><tr><td>B53CZZZ</td><td>左下肢靜脈磁振造影</td></tr><tr><td>B53DZZZ</td><td>雙側下肢靜脈磁振造影</td></tr><tr><td>B53HZZZ</td><td>雙側骨盆（髂）靜脈磁振造影</td></tr><tr><td>B53LZZZ</td><td>雙側腎靜脈磁振造影</td></tr><tr><td>B53MZZZ</td><td>右上肢靜脈磁振造影</td></tr><tr><td>B53NZZZ</td><td>左上肢靜脈磁振造影</td></tr><tr><td>B53PZZZ</td><td>雙側上肢靜脈磁振造影</td></tr><tr><td>B53SZZZ</td><td>雙側肺靜脈磁振造影</td></tr><tr><td>B53TZZZ</td><td>門靜脈及內臟靜脈磁振造影</td></tr><tr><td>B53VZZZ</td><td>其他靜脈磁振造影</td></tr><tr><td>B543ZZ3</td><td>右頸靜脈血管內超音波</td></tr><tr><td>B543ZZA</td><td>右頸靜脈導引超音波</td></tr><tr><td>B543ZZZ</td><td>右頸靜脈超音波</td></tr><tr><td>B544ZZ3</td><td>左頸靜脈血管內超音波</td></tr><tr><td>B544ZZA</td><td>左頸靜脈導引超音波</td></tr><tr><td>B544ZZZ</td><td>左頸靜脈超音波</td></tr><tr><td>B546ZZ3</td><td>右鎖骨下靜脈血管內超音波</td></tr><tr><td>B546ZZA</td><td>右鎖骨下靜脈導引超音波</td></tr><tr><td>B546ZZZ</td><td>右鎖骨下靜脈超音波</td></tr><tr><td>B547ZZ3</td><td>左鎖骨下靜脈血管內超音波</td></tr><tr><td>B547ZZA</td><td>左鎖骨下靜脈導引超音波</td></tr><tr><td>B547ZZZ</td><td>左鎖骨下靜脈超音波</td></tr><tr><td>B548ZZ3</td><td>上腔靜脈血管內超音波</td></tr><tr><td>B548ZZA</td><td>上腔靜脈導引超音波</td></tr><tr><td>B548ZZZ</td><td>上腔靜脈超音波</td></tr><tr><td>B549ZZ3</td><td>下腔靜脈血管內超音波</td></tr><tr><td>B549ZZA</td><td>下腔靜脈導引超音波</td></tr><tr><td>B549ZZZ</td><td>下腔靜脈超音波</td></tr><tr><td>B54BZZ3</td><td>右下肢靜脈血管內超音波</td></tr><tr><td>B54BZZA</td><td>右下肢靜脈導引超音波</td></tr><tr><td>B54BZZZ</td><td>右下肢靜脈超音波</td></tr><tr><td>B54CZZ3</td><td>左下肢靜脈血管內超音波</td></tr><tr><td>B54CZZA</td><td>左下肢靜脈導引超音波</td></tr><tr><td>B54CZZZ</td><td>左下肢靜脈超音波</td></tr><tr><td>B54DZZ3</td><td>雙側下肢靜脈血管內超音波</td></tr><tr><td>B54DZZA</td><td>雙側下肢靜脈導引超音波</td></tr><tr><td>B54DZZZ</td><td>雙側下肢靜脈超音波</td></tr><tr><td>B54JZZ3</td><td>右腎靜脈血管內超音波</td></tr><tr><td>B54JZZA</td><td>右腎靜脈導引超音波</td></tr><tr><td>B54JZZZ</td><td>右腎靜脈超音波</td></tr><tr><td>B54KZZ3</td><td>左腎靜脈血管內超音波</td></tr><tr><td>B54KZZA</td><td>左腎靜脈導引超音波</td></tr><tr><td>B54KZZZ</td><td>左腎靜脈超音波</td></tr><tr><td>B54LZZ3</td><td>雙側腎靜脈血管內超音波</td></tr><tr><td>B54LZZA</td><td>雙側腎靜脈導引超音波</td></tr><tr><td>B54LZZZ</td><td>雙側腎靜脈超音波</td></tr><tr><td>B54MZZ3</td><td>右上肢靜脈血管內超音波</td></tr><tr><td>B54MZZA</td><td>右上肢靜脈導引超音波</td></tr><tr><td>B54MZZZ</td><td>右上肢靜脈超音波</td></tr><tr><td>B54NZZ3</td><td>左上肢靜脈血管內超音波</td></tr><tr><td>B54NZZA</td><td>左上肢靜脈導引超音波</td></tr><tr><td>B54NZZZ</td><td>左上肢靜脈超音波</td></tr><tr><td>B54PZZ3</td><td>雙側上肢靜脈血管內超音波</td></tr><tr><td>B54PZZA</td><td>雙側上肢靜脈導引超音波</td></tr><tr><td>B54PZZZ</td><td>雙側上肢靜脈超音波</td></tr><tr><td>B54TZZ3</td><td>門靜脈及內臟靜脈血管內超音波</td></tr><tr><td>B54TZZA</td><td>門靜脈及內臟靜脈導引超音波</td></tr><tr><td>B54TZZZ</td><td>門靜脈及內臟靜脈超音波</td></tr><tr><td>B803ZZZ</td><td>右側視神經孔一般放射線攝影</td></tr><tr><td>B804ZZZ</td><td>左側視神經孔一般放射線攝影</td></tr><tr><td>B805ZZZ</td><td>右眼一般放射線攝影</td></tr><tr><td>B806ZZZ</td><td>左眼一般放射線攝影</td></tr><tr><td>B807ZZZ</td><td>雙眼一般放射線攝影</td></tr><tr><td>B825ZZZ</td><td>右眼電腦斷層掃描</td></tr><tr><td>B826ZZZ</td><td>左眼電腦斷層掃描</td></tr><tr><td>B827ZZZ</td><td>雙眼電腦斷層掃描</td></tr><tr><td>B835ZZZ</td><td>右眼磁振造影</td></tr><tr><td>B836ZZZ</td><td>左眼磁振造影</td></tr><tr><td>B837ZZZ</td><td>雙眼磁振造影</td></tr><tr><td>B845ZZZ</td><td>右眼超音波</td></tr><tr><td>B846ZZZ</td><td>左眼超音波</td></tr><tr><td>B847ZZZ</td><td>雙眼超音波</td></tr><tr><td>B902ZZZ</td><td>副鼻竇一般放射線攝影</td></tr><tr><td>B90FZZZ</td><td>鼻咽/口咽一般放射線攝影</td></tr><tr><td>B90HZZZ</td><td>乳突一般放射線攝影</td></tr><tr><td>B91GZZZ</td><td>咽及會厭透視攝影</td></tr><tr><td>B91JZZZ</td><td>喉透視攝影</td></tr><tr><td>B920ZZZ</td><td>耳朵電腦斷層掃描</td></tr><tr><td>B922ZZZ</td><td>副鼻竇電腦斷層掃描</td></tr><tr><td>B926ZZZ</td><td>雙側腮腺電腦斷層掃描</td></tr><tr><td>B929ZZZ</td><td>雙側頜下腺電腦斷層掃描</td></tr><tr><td>B92DZZZ</td><td>雙側唾液腺電腦斷層掃描</td></tr><tr><td>B92FZZZ</td><td>鼻咽/口咽電腦斷層掃描</td></tr><tr><td>B92JZZZ</td><td>喉電腦斷層掃描</td></tr><tr><td>B930ZZZ</td><td>耳朵磁振造影</td></tr><tr><td>B932ZZZ</td><td>副鼻竇磁振造影</td></tr><tr><td>B936ZZZ</td><td>雙側腮腺磁振造影</td></tr><tr><td>B939ZZZ</td><td>雙側頜下腺磁振造影</td></tr><tr><td>B93DZZZ</td><td>雙側唾液腺磁振造影</td></tr><tr><td>B93FZZZ</td><td>鼻咽/口咽磁振造影</td></tr><tr><td>B93JZZZ</td><td>喉磁振造影</td></tr><tr><td>BB0DZZZ</td><td>上呼吸道一般放射線攝影</td></tr><tr><td>BB12ZZZ</td><td>右肺透視攝影</td></tr><tr><td>BB13ZZZ</td><td>左肺透視攝影</td></tr><tr><td>BB14ZZZ</td><td>雙側肺臟透視攝影</td></tr><tr><td>BB16ZZZ</td><td>橫膈膜透視攝影</td></tr><tr><td>BB1CZZZ</td><td>縱隔透視攝影</td></tr><tr><td>BB1DZZZ</td><td>上呼吸道透視攝影</td></tr><tr><td>BB24ZZZ</td><td>雙側肺臟電腦斷層掃描</td></tr><tr><td>BB27ZZZ</td><td>右側氣管支氣管樹電腦斷層掃描</td></tr><tr><td>BB28ZZZ</td><td>左側氣管支氣管樹電腦斷層掃描</td></tr><tr><td>BB29ZZZ</td><td>雙側氣管支氣管樹電腦斷層掃描</td></tr><tr><td>BB2FZZZ</td><td>氣管/氣道電腦斷層掃描</td></tr><tr><td>BB3GZZZ</td><td>肺尖磁振造影</td></tr><tr><td>BB4BZZZ</td><td>肋膜超音波</td></tr><tr><td>BB4CZZZ</td><td>縱隔超音波</td></tr><tr><td>BD11ZZZ</td><td>食道透視攝影</td></tr><tr><td>BD12ZZZ</td><td>胃透視攝影</td></tr><tr><td>BD13ZZZ</td><td>小腸透視攝影</td></tr><tr><td>BD14ZZZ</td><td>結腸透視攝影</td></tr><tr><td>BD15ZZZ</td><td>上消化道透視攝影</td></tr><tr><td>BD16ZZZ</td><td>上消化道及小腸透視攝影</td></tr><tr><td>BD19ZZZ</td><td>十二指腸透視攝影</td></tr><tr><td>BD1BZZZ</td><td>口/口咽部透視攝影</td></tr><tr><td>BD24ZZZ</td><td>結腸電腦斷層掃描</td></tr><tr><td>BD41ZZZ</td><td>食道超音波</td></tr><tr><td>BD42ZZZ</td><td>胃超音波</td></tr><tr><td>BD47ZZZ</td><td>胃腸道超音波</td></tr><tr><td>BD48ZZZ</td><td>闌尾超音波</td></tr><tr><td>BD49ZZZ</td><td>十二指腸超音波</td></tr><tr><td>BD4CZZZ</td><td>直腸超音波</td></tr><tr><td>BF15ZZA</td><td>肝臟導引透視攝影</td></tr><tr><td>BF25ZZZ</td><td>肝臟電腦斷層掃描</td></tr><tr><td>BF26ZZZ</td><td>肝臟及脾臟電腦斷層掃描</td></tr><tr><td>BF27ZZZ</td><td>胰臟電腦斷層掃描</td></tr><tr><td>BF2CZZZ</td><td>所有肝膽系統電腦斷層掃描</td></tr><tr><td>BF35ZZZ</td><td>肝臟磁振造影</td></tr><tr><td>BF36ZZZ</td><td>肝臟及脾臟磁振造影</td></tr><tr><td>BF37ZZZ</td><td>胰臟磁振造影</td></tr><tr><td>BF40ZZZ</td><td>膽管超音波</td></tr><tr><td>BF42ZZZ</td><td>膽囊超音波</td></tr><tr><td>BF43ZZZ</td><td>膽囊及膽管超音波</td></tr><tr><td>BF45ZZZ</td><td>肝臟超音波</td></tr><tr><td>BF46ZZZ</td><td>肝臟及脾臟超音波</td></tr><tr><td>BF47ZZZ</td><td>胰臟超音波</td></tr><tr><td>BF4CZZZ</td><td>所有肝膽系統超音波</td></tr><tr><td>BG22ZZZ</td><td>雙側腎上腺電腦斷層掃描</td></tr><tr><td>BG23ZZZ</td><td>副甲狀腺電腦斷層掃描</td></tr><tr><td>BG24ZZZ</td><td>甲狀腺電腦斷層掃描</td></tr><tr><td>BG32ZZZ</td><td>雙側腎上腺磁振造影</td></tr><tr><td>BG33ZZZ</td><td>副甲狀腺磁振造影</td></tr><tr><td>BG34ZZZ</td><td>甲狀腺磁振造影</td></tr><tr><td>BG40ZZZ</td><td>右腎上腺超音波</td></tr><tr><td>BG41ZZZ</td><td>左腎上腺超音波</td></tr><tr><td>BG42ZZZ</td><td>雙側腎上腺超音波</td></tr><tr><td>BG43ZZZ</td><td>副甲狀腺超音波</td></tr><tr><td>BG44ZZZ</td><td>甲狀腺超音波</td></tr><tr><td>BH00ZZZ</td><td>右側乳房一般放射線攝影</td></tr><tr><td>BH01ZZZ</td><td>左側乳房一般放射線攝影</td></tr><tr><td>BH02ZZZ</td><td>雙側乳房一般放射線攝影</td></tr><tr><td>BH03ZZZ</td><td>右側單乳腺導管一般放射線攝影</td></tr><tr><td>BH04ZZZ</td><td>左側單乳腺導管一般放射線攝影</td></tr><tr><td>BH05ZZZ</td><td>右側多條乳腺導管一般放射線攝影</td></tr><tr><td>BH06ZZZ</td><td>左側多條乳腺導管一般放射線攝影</td></tr><tr><td>BH30ZZZ</td><td>右側乳房磁振造影</td></tr><tr><td>BH31ZZZ</td><td>左側乳房磁振造影</td></tr><tr><td>BH32ZZZ</td><td>雙側乳房磁振造影</td></tr><tr><td>BH3DZZZ</td><td>頭/頸部皮下組織磁振造影</td></tr><tr><td>BH3FZZZ</td><td>上肢皮下組織磁振造影</td></tr><tr><td>BH3GZZZ</td><td>胸部皮下組織磁振造影</td></tr><tr><td>BH3HZZZ</td><td>皮下組織、腹部及骨盆磁振造影</td></tr><tr><td>BH3JZZZ</td><td>下肢皮下組織磁振造影</td></tr><tr><td>BH40ZZZ</td><td>右側乳房超音波</td></tr><tr><td>BH41ZZZ</td><td>左側乳房超音波</td></tr><tr><td>BH42ZZZ</td><td>雙側乳房超音波</td></tr><tr><td>BH47ZZZ</td><td>上肢超音波</td></tr><tr><td>BH48ZZZ</td><td>下肢超音波</td></tr><tr><td>BH49ZZZ</td><td>腹壁超音波</td></tr><tr><td>BH4BZZZ</td><td>胸壁超音波</td></tr><tr><td>BH4CZZZ</td><td>頭及頸部超音波</td></tr><tr><td>BL30ZZZ</td><td>上肢結締組織磁振造影</td></tr><tr><td>BL31ZZZ</td><td>下肢結締組織磁振造影</td></tr><tr><td>BL32ZZZ</td><td>上肢肌腱磁振造影</td></tr><tr><td>BL33ZZZ</td><td>下肢肌腱磁振造影</td></tr><tr><td>BL40ZZZ</td><td>上肢結締組織超音波</td></tr><tr><td>BL41ZZZ</td><td>下肢結締組織超音波</td></tr><tr><td>BL42ZZZ</td><td>上肢肌腱超音波</td></tr><tr><td>BL43ZZZ</td><td>下肢肌腱超音波</td></tr><tr><td>BN00ZZZ</td><td>顱骨一般放射線攝影</td></tr><tr><td>BN01ZZZ</td><td>右眼眶一般放射線攝影</td></tr><tr><td>BN02ZZZ</td><td>左眼眶一般放射線攝影</td></tr><tr><td>BN03ZZZ</td><td>雙側眼眶一般放射線攝影</td></tr><tr><td>BN04ZZZ</td><td>鼻骨一般放射線攝影</td></tr><tr><td>BN05ZZZ</td><td>顏面骨一般放射線攝影</td></tr><tr><td>BN06ZZZ</td><td>下頜骨一般放射線攝影</td></tr><tr><td>BN07ZZZ</td><td>右顳顎關節一般放射線攝影</td></tr><tr><td>BN08ZZZ</td><td>左顳顎關節一般放射線攝影</td></tr><tr><td>BN09ZZZ</td><td>雙側顳顎關節一般放射線攝影</td></tr><tr><td>BN0BZZZ</td><td>右顴弓一般放射線攝影</td></tr><tr><td>BN0CZZZ</td><td>左顴弓一般放射線攝影</td></tr><tr><td>BN0DZZZ</td><td>雙側顴弓一般放射線攝影</td></tr><tr><td>BN0GZZZ</td><td>單顆牙齒一般放射線攝影</td></tr><tr><td>BN0HZZZ</td><td>多顆牙齒一般放射線攝影</td></tr><tr><td>BN0JZZZ</td><td>全部牙齒一般放射線攝影</td></tr><tr><td>BN17ZZZ</td><td>右顳顎關節透視攝影</td></tr><tr><td>BN18ZZZ</td><td>左顳顎關節透視攝影</td></tr><tr><td>BN19ZZZ</td><td>雙側顳顎關節透視攝影</td></tr><tr><td>BN20ZZZ</td><td>顱骨電腦斷層掃描</td></tr><tr><td>BN23ZZZ</td><td>雙側眼眶電腦斷層掃描</td></tr><tr><td>BN25ZZZ</td><td>顏面骨電腦斷層掃描</td></tr><tr><td>BN26ZZZ</td><td>下頜骨電腦斷層掃描</td></tr><tr><td>BN29ZZZ</td><td>雙側顳顎關節電腦斷層掃描</td></tr><tr><td>BN2FZZZ</td><td>顳骨電腦斷層掃描</td></tr><tr><td>BN39ZZZ</td><td>雙側顳顎關節磁振造影</td></tr><tr><td>BP00ZZZ</td><td>右胸鎖關節一般放射線攝影</td></tr><tr><td>BP01ZZZ</td><td>左胸鎖關節一般放射線攝影</td></tr><tr><td>BP02ZZZ</td><td>雙側胸鎖關節一般放射線攝影</td></tr><tr><td>BP03ZZZ</td><td>雙側肩鎖關節一般放射線攝影</td></tr><tr><td>BP04ZZZ</td><td>右側鎖骨一般放射線攝影</td></tr><tr><td>BP05ZZZ</td><td>左側鎖骨一般放射線攝影</td></tr><tr><td>BP06ZZZ</td><td>右側肩胛骨一般放射線攝影</td></tr><tr><td>BP07ZZZ</td><td>左側肩胛骨一般放射線攝影</td></tr><tr><td>BP08ZZZ</td><td>右肩一般放射線攝影</td></tr><tr><td>BP09ZZZ</td><td>左肩一般放射線攝影</td></tr><tr><td>BP0AZZZ</td><td>右側肱骨一般放射線攝影</td></tr><tr><td>BP0BZZZ</td><td>左側肱骨一般放射線攝影</td></tr><tr><td>BP0CZZZ</td><td>右手/手指關節一般放射線攝影</td></tr><tr><td>BP0DZZZ</td><td>左手/手指關節一般放射線攝影</td></tr><tr><td>BP0EZZZ</td><td>右上臂一般放射線攝影</td></tr><tr><td>BP0FZZZ</td><td>左上臂一般放射線攝影</td></tr><tr><td>BP0GZZZ</td><td>右肘一般放射線攝影</td></tr><tr><td>BP0HZZZ</td><td>左肘一般放射線攝影</td></tr><tr><td>BP0JZZZ</td><td>右前臂一般放射線攝影</td></tr><tr><td>BP0KZZZ</td><td>左前臂一般放射線攝影</td></tr><tr><td>BP0LZZZ</td><td>右手腕一般放射線攝影</td></tr><tr><td>BP0MZZZ</td><td>左手腕一般放射線攝影</td></tr><tr><td>BP0NZZZ</td><td>右手一般放射線攝影</td></tr><tr><td>BP0PZZZ</td><td>左手一般放射線攝影</td></tr><tr><td>BP0RZZZ</td><td>右手指一般放射線攝影</td></tr><tr><td>BP0SZZZ</td><td>左手指一般放射線攝影</td></tr><tr><td>BP0XZZZ</td><td>右側肋骨一般放射線攝影</td></tr><tr><td>BP0YZZZ</td><td>左側肋骨一般放射線攝影</td></tr><tr><td>BP10ZZZ</td><td>右胸鎖關節透視攝影</td></tr><tr><td>BP11ZZZ</td><td>左胸鎖關節透視攝影</td></tr><tr><td>BP12ZZZ</td><td>雙側胸鎖關節透視攝影</td></tr><tr><td>BP13ZZZ</td><td>雙側肩鎖關節透視攝影</td></tr><tr><td>BP14ZZZ</td><td>右側鎖骨透視攝影</td></tr><tr><td>BP15ZZZ</td><td>左側鎖骨透視攝影</td></tr><tr><td>BP16ZZZ</td><td>右側肩胛骨透視攝影</td></tr><tr><td>BP17ZZZ</td><td>左側肩胛骨透視攝影</td></tr><tr><td>BP18ZZZ</td><td>右肩透視攝影</td></tr><tr><td>BP19ZZZ</td><td>左肩透視攝影</td></tr><tr><td>BP1AZZZ</td><td>右側肱骨透視攝影</td></tr><tr><td>BP1BZZZ</td><td>左側肱骨透視攝影</td></tr><tr><td>BP1EZZZ</td><td>右上臂透視攝影</td></tr><tr><td>BP1FZZZ</td><td>左上臂透視攝影</td></tr><tr><td>BP1JZZZ</td><td>右前臂透視攝影</td></tr><tr><td>BP1KZZZ</td><td>左前臂透視攝影</td></tr><tr><td>BP1LZZZ</td><td>右手腕透視攝影</td></tr><tr><td>BP1MZZZ</td><td>左手腕透視攝影</td></tr><tr><td>BP1NZZZ</td><td>右手透視攝影</td></tr><tr><td>BP1PZZZ</td><td>左手透視攝影</td></tr><tr><td>BP1RZZZ</td><td>右手指透視攝影</td></tr><tr><td>BP1SZZZ</td><td>左手指透視攝影</td></tr><tr><td>BP1XZZZ</td><td>右側肋骨透視攝影</td></tr><tr><td>BP1YZZZ</td><td>左側肋骨透視攝影</td></tr><tr><td>BP22ZZZ</td><td>雙側胸鎖關節電腦斷層掃描</td></tr><tr><td>BP23ZZZ</td><td>雙側肩鎖關節電腦斷層掃描</td></tr><tr><td>BP24ZZZ</td><td>右側鎖骨電腦斷層掃描</td></tr><tr><td>BP25ZZZ</td><td>左側鎖骨電腦斷層掃描</td></tr><tr><td>BP26ZZZ</td><td>右側肩胛骨電腦斷層掃描</td></tr><tr><td>BP27ZZZ</td><td>左側肩胛骨電腦斷層掃描</td></tr><tr><td>BP28ZZZ</td><td>右肩電腦斷層掃描</td></tr><tr><td>BP29ZZZ</td><td>左肩電腦斷層掃描</td></tr><tr><td>BP2AZZZ</td><td>右側肱骨電腦斷層掃描</td></tr><tr><td>BP2BZZZ</td><td>左側肱骨電腦斷層掃描</td></tr><tr><td>BP2CZZZ</td><td>右手/手指關節電腦斷層掃描</td></tr><tr><td>BP2DZZZ</td><td>左手/手指關節電腦斷層掃描</td></tr><tr><td>BP2EZZZ</td><td>右上臂電腦斷層掃描</td></tr><tr><td>BP2FZZZ</td><td>左上臂電腦斷層掃描</td></tr><tr><td>BP2GZZZ</td><td>右肘電腦斷層掃描</td></tr><tr><td>BP2HZZZ</td><td>左肘電腦斷層掃描</td></tr><tr><td>BP2JZZZ</td><td>右前臂電腦斷層掃描</td></tr><tr><td>BP2KZZZ</td><td>左前臂電腦斷層掃描</td></tr><tr><td>BP2LZZZ</td><td>右手腕電腦斷層掃描</td></tr><tr><td>BP2MZZZ</td><td>左手腕電腦斷層掃描</td></tr><tr><td>BP2NZZZ</td><td>右手電腦斷層掃描</td></tr><tr><td>BP2PZZZ</td><td>左手電腦斷層掃描</td></tr><tr><td>BP2QZZZ</td><td>雙側手及手腕電腦斷層掃描</td></tr><tr><td>BP2RZZZ</td><td>右手指電腦斷層掃描</td></tr><tr><td>BP2SZZZ</td><td>左手指電腦斷層掃描</td></tr><tr><td>BP2TZZZ</td><td>右上肢電腦斷層掃描</td></tr><tr><td>BP2UZZZ</td><td>左上肢電腦斷層掃描</td></tr><tr><td>BP2VZZZ</td><td>雙側上肢電腦斷層掃描</td></tr><tr><td>BP2XZZZ</td><td>右側肋骨電腦斷層掃描</td></tr><tr><td>BP2YZZZ</td><td>左側肋骨電腦斷層掃描</td></tr><tr><td>BP38ZZZ</td><td>右肩磁振造影</td></tr><tr><td>BP39ZZZ</td><td>左肩磁振造影</td></tr><tr><td>BP3CZZZ</td><td>右手/手指關節磁振造影</td></tr><tr><td>BP3DZZZ</td><td>左手/手指關節磁振造影</td></tr><tr><td>BP3EZZZ</td><td>右上臂磁振造影</td></tr><tr><td>BP3FZZZ</td><td>左上臂磁振造影</td></tr><tr><td>BP3GZZZ</td><td>右肘磁振造影</td></tr><tr><td>BP3HZZZ</td><td>左肘磁振造影</td></tr><tr><td>BP3JZZZ</td><td>右前臂磁振造影</td></tr><tr><td>BP3KZZZ</td><td>左前臂磁振造影</td></tr><tr><td>BP3LZZZ</td><td>右手腕磁振造影</td></tr><tr><td>BP3MZZZ</td><td>左手腕磁振造影</td></tr><tr><td>BP48ZZ1</td><td>右肩骨質密度超音波</td></tr><tr><td>BP48ZZZ</td><td>右肩超音波</td></tr><tr><td>BP49ZZ1</td><td>左肩骨質密度超音波</td></tr><tr><td>BP49ZZZ</td><td>左肩超音波</td></tr><tr><td>BP4GZZ1</td><td>右肘骨質密度超音波</td></tr><tr><td>BP4GZZZ</td><td>右肘超音波</td></tr><tr><td>BP4HZZ1</td><td>左肘骨質密度超音波</td></tr><tr><td>BP4HZZZ</td><td>左肘超音波</td></tr><tr><td>BP4LZZ1</td><td>右手腕骨質密度超音波</td></tr><tr><td>BP4LZZZ</td><td>右手腕超音波</td></tr><tr><td>BP4MZZ1</td><td>左手腕骨質密度超音波</td></tr><tr><td>BP4MZZZ</td><td>左手腕超音波</td></tr><tr><td>BP4NZZ1</td><td>右手骨質密度超音波</td></tr><tr><td>BP4NZZZ</td><td>右手超音波</td></tr><tr><td>BP4PZZ1</td><td>左手骨質密度超音波</td></tr><tr><td>BP4PZZZ</td><td>左手超音波</td></tr><tr><td>BQ00ZZ1</td><td>右髖關節骨質密度一般放射線攝影</td></tr><tr><td>BQ00ZZZ</td><td>右髖關節一般放射線攝影</td></tr><tr><td>BQ01ZZ1</td><td>左髖關節骨質密度一般放射線攝影</td></tr><tr><td>BQ01ZZZ</td><td>左髖關節一般放射線攝影</td></tr><tr><td>BQ03ZZ1</td><td>右側股骨骨質密度一般放射線攝影</td></tr><tr><td>BQ03ZZZ</td><td>右側股骨一般放射線攝影</td></tr><tr><td>BQ04ZZ1</td><td>左側股骨骨質密度一般放射線攝影</td></tr><tr><td>BQ04ZZZ</td><td>左側股骨一般放射線攝影</td></tr><tr><td>BQ07ZZZ</td><td>右膝一般放射線攝影</td></tr><tr><td>BQ08ZZZ</td><td>左膝一般放射線攝影</td></tr><tr><td>BQ0DZZZ</td><td>右小腿一般放射線攝影</td></tr><tr><td>BQ0FZZZ</td><td>左小腿一般放射線攝影</td></tr><tr><td>BQ0GZZZ</td><td>右踝一般放射線攝影</td></tr><tr><td>BQ0HZZZ</td><td>左踝一般放射線攝影</td></tr><tr><td>BQ0JZZZ</td><td>右側跟骨一般放射線攝影</td></tr><tr><td>BQ0KZZZ</td><td>左側跟骨一般放射線攝影</td></tr><tr><td>BQ0LZZZ</td><td>右足一般放射線攝影</td></tr><tr><td>BQ0MZZZ</td><td>左足一般放射線攝影</td></tr><tr><td>BQ0PZZZ</td><td>右趾一般放射線攝影</td></tr><tr><td>BQ0QZZZ</td><td>左趾一般放射線攝影</td></tr><tr><td>BQ0VZZZ</td><td>右側髕骨一般放射線攝影</td></tr><tr><td>BQ0WZZZ</td><td>左側髕骨一般放射線攝影</td></tr><tr><td>BQ10ZZZ</td><td>右髖關節透視攝影</td></tr><tr><td>BQ11ZZZ</td><td>左髖關節透視攝影</td></tr><tr><td>BQ13ZZZ</td><td>右側股骨透視攝影</td></tr><tr><td>BQ14ZZZ</td><td>左側股骨透視攝影</td></tr><tr><td>BQ17ZZZ</td><td>右膝透視攝影</td></tr><tr><td>BQ18ZZZ</td><td>左膝透視攝影</td></tr><tr><td>BQ1DZZZ</td><td>右小腿透視攝影</td></tr><tr><td>BQ1FZZZ</td><td>左小腿透視攝影</td></tr><tr><td>BQ1GZZZ</td><td>右踝透視攝影</td></tr><tr><td>BQ1HZZZ</td><td>左踝透視攝影</td></tr><tr><td>BQ1JZZZ</td><td>右側跟骨透視攝影</td></tr><tr><td>BQ1KZZZ</td><td>左側跟骨透視攝影</td></tr><tr><td>BQ1LZZZ</td><td>右足透視攝影</td></tr><tr><td>BQ1MZZZ</td><td>左足透視攝影</td></tr><tr><td>BQ1PZZZ</td><td>右趾透視攝影</td></tr><tr><td>BQ1QZZZ</td><td>左趾透視攝影</td></tr><tr><td>BQ1VZZZ</td><td>右側髕骨透視攝影</td></tr><tr><td>BQ1WZZZ</td><td>左側髕骨透視攝影</td></tr><tr><td>BQ1XZZZ</td><td>右足/腳趾關節透視攝影</td></tr><tr><td>BQ1YZZZ</td><td>左足/腳趾關節透視攝影</td></tr><tr><td>BQ20ZZZ</td><td>右髖關節電腦斷層掃描</td></tr><tr><td>BQ21ZZZ</td><td>左髖關節電腦斷層掃描</td></tr><tr><td>BQ23ZZZ</td><td>右側股骨電腦斷層掃描</td></tr><tr><td>BQ24ZZZ</td><td>左側股骨電腦斷層掃描</td></tr><tr><td>BQ27ZZZ</td><td>右膝電腦斷層掃描</td></tr><tr><td>BQ28ZZZ</td><td>左膝電腦斷層掃描</td></tr><tr><td>BQ2DZZZ</td><td>右小腿電腦斷層掃描</td></tr><tr><td>BQ2FZZZ</td><td>左小腿電腦斷層掃描</td></tr><tr><td>BQ2GZZZ</td><td>右踝電腦斷層掃描</td></tr><tr><td>BQ2HZZZ</td><td>左踝電腦斷層掃描</td></tr><tr><td>BQ2JZZZ</td><td>右側跟骨電腦斷層掃描</td></tr><tr><td>BQ2KZZZ</td><td>左側跟骨電腦斷層掃描</td></tr><tr><td>BQ2LZZZ</td><td>右足電腦斷層掃描</td></tr><tr><td>BQ2MZZZ</td><td>左足電腦斷層掃描</td></tr><tr><td>BQ2PZZZ</td><td>右趾電腦斷層掃描</td></tr><tr><td>BQ2QZZZ</td><td>左趾電腦斷層掃描</td></tr><tr><td>BQ2RZZZ</td><td>右下肢電腦斷層掃描</td></tr><tr><td>BQ2SZZZ</td><td>左下肢電腦斷層掃描</td></tr><tr><td>BQ2VZZZ</td><td>右側髕骨電腦斷層掃描</td></tr><tr><td>BQ2WZZZ</td><td>左側髕骨電腦斷層掃描</td></tr><tr><td>BQ2XZZZ</td><td>右足/腳趾關節電腦斷層掃描</td></tr><tr><td>BQ2YZZZ</td><td>左足/腳趾關節電腦斷層掃描</td></tr><tr><td>BQ30ZZZ</td><td>右髖關節磁振造影</td></tr><tr><td>BQ31ZZZ</td><td>左髖關節磁振造影</td></tr><tr><td>BQ33ZZZ</td><td>右側股骨磁振造影</td></tr><tr><td>BQ34ZZZ</td><td>左側股骨磁振造影</td></tr><tr><td>BQ37ZZZ</td><td>右膝磁振造影</td></tr><tr><td>BQ38ZZZ</td><td>左膝磁振造影</td></tr><tr><td>BQ3DZZZ</td><td>右小腿磁振造影</td></tr><tr><td>BQ3FZZZ</td><td>左小腿磁振造影</td></tr><tr><td>BQ3GZZZ</td><td>右踝磁振造影</td></tr><tr><td>BQ3HZZZ</td><td>左踝磁振造影</td></tr><tr><td>BQ3JZZZ</td><td>右側跟骨磁振造影</td></tr><tr><td>BQ3KZZZ</td><td>左側跟骨磁振造影</td></tr><tr><td>BQ3LZZZ</td><td>右足磁振造影</td></tr><tr><td>BQ3MZZZ</td><td>左足磁振造影</td></tr><tr><td>BQ3PZZZ</td><td>右趾磁振造影</td></tr><tr><td>BQ3QZZZ</td><td>左趾磁振造影</td></tr><tr><td>BQ3VZZZ</td><td>右側髕骨磁振造影</td></tr><tr><td>BQ3WZZZ</td><td>左側髕骨磁振造影</td></tr><tr><td>BQ40ZZZ</td><td>右髖關節超音波</td></tr><tr><td>BQ41ZZZ</td><td>左髖關節超音波</td></tr><tr><td>BQ42ZZZ</td><td>雙髖關節超音波</td></tr><tr><td>BQ47ZZZ</td><td>右膝超音波</td></tr><tr><td>BQ48ZZZ</td><td>左膝超音波</td></tr><tr><td>BQ49ZZZ</td><td>雙膝超音波</td></tr><tr><td>BR00ZZ1</td><td>頸椎骨質密度一般放射線攝影</td></tr><tr><td>BR00ZZZ</td><td>頸椎一般放射線攝影</td></tr><tr><td>BR01ZZZ</td><td>頸椎間盤一般放射線攝影</td></tr><tr><td>BR02ZZZ</td><td>胸椎間盤一般放射線攝影</td></tr><tr><td>BR03ZZZ</td><td>腰椎間盤一般放射線攝影</td></tr><tr><td>BR04ZZZ</td><td>頸椎小面關節一般放射線攝影</td></tr><tr><td>BR05ZZZ</td><td>胸椎小面關節一般放射線攝影</td></tr><tr><td>BR06ZZZ</td><td>腰椎小面關節一般放射線攝影</td></tr><tr><td>BR07ZZ1</td><td>胸椎骨質密度一般放射線攝影</td></tr><tr><td>BR07ZZZ</td><td>胸椎一般放射線攝影</td></tr><tr><td>BR08ZZZ</td><td>胸腰椎關節一般放射線攝影</td></tr><tr><td>BR09ZZ1</td><td>腰椎骨質密度一般放射線攝影</td></tr><tr><td>BR09ZZZ</td><td>腰椎一般放射線攝影</td></tr><tr><td>BR0BZZZ</td><td>腰薦關節一般放射線攝影</td></tr><tr><td>BR0CZZZ</td><td>骨盆一般放射線攝影</td></tr><tr><td>BR0DZZZ</td><td>薦髂關節一般放射線攝影</td></tr><tr><td>BR0FZZZ</td><td>薦骨和尾骨一般放射線攝影</td></tr><tr><td>BR0GZZ1</td><td>全脊骨骨質密度一般放射線攝影</td></tr><tr><td>BR0GZZZ</td><td>全脊骨一般放射線攝影</td></tr><tr><td>BR0HZZZ</td><td>胸骨一般放射線攝影</td></tr><tr><td>BR10ZZZ</td><td>頸椎透視攝影</td></tr><tr><td>BR11ZZZ</td><td>頸椎間盤透視攝影</td></tr><tr><td>BR12ZZZ</td><td>胸椎間盤透視攝影</td></tr><tr><td>BR13ZZZ</td><td>腰椎間盤透視攝影</td></tr><tr><td>BR14ZZZ</td><td>頸椎小面關節透視攝影</td></tr><tr><td>BR15ZZZ</td><td>胸椎小面關節透視攝影</td></tr><tr><td>BR16ZZZ</td><td>腰椎小面關節透視攝影</td></tr><tr><td>BR17ZZZ</td><td>胸椎透視攝影</td></tr><tr><td>BR18ZZZ</td><td>胸腰椎關節透視攝影</td></tr><tr><td>BR19ZZZ</td><td>腰椎透視攝影</td></tr><tr><td>BR1BZZZ</td><td>腰薦關節透視攝影</td></tr><tr><td>BR1CZZZ</td><td>骨盆透視攝影</td></tr><tr><td>BR1DZZZ</td><td>薦髂關節透視攝影</td></tr><tr><td>BR1FZZZ</td><td>薦骨和尾骨透視攝影</td></tr><tr><td>BR1GZZZ</td><td>全脊骨透視攝影</td></tr><tr><td>BR1HZZZ</td><td>胸骨透視攝影</td></tr><tr><td>BR20ZZZ</td><td>頸椎電腦斷層掃描</td></tr><tr><td>BR27ZZZ</td><td>胸椎電腦斷層掃描</td></tr><tr><td>BR29ZZZ</td><td>腰椎電腦斷層掃描</td></tr><tr><td>BR2CZZZ</td><td>骨盆電腦斷層掃描</td></tr><tr><td>BR2DZZZ</td><td>薦髂關節電腦斷層掃描</td></tr><tr><td>BR2FZZZ</td><td>薦骨和尾骨電腦斷層掃描</td></tr><tr><td>BR30ZZZ</td><td>頸椎磁振造影</td></tr><tr><td>BR31ZZZ</td><td>頸椎間盤磁振造影</td></tr><tr><td>BR32ZZZ</td><td>胸椎間盤磁振造影</td></tr><tr><td>BR33ZZZ</td><td>腰椎間盤磁振造影</td></tr><tr><td>BR37ZZZ</td><td>胸椎磁振造影</td></tr><tr><td>BR39ZZZ</td><td>腰椎磁振造影</td></tr><tr><td>BR3CZZZ</td><td>骨盆磁振造影</td></tr><tr><td>BR3FZZZ</td><td>薦骨和尾骨磁振造影</td></tr><tr><td>BR40ZZZ</td><td>頸椎超音波</td></tr><tr><td>BR47ZZZ</td><td>胸椎超音波</td></tr><tr><td>BR49ZZZ</td><td>腰椎超音波</td></tr><tr><td>BR4FZZZ</td><td>薦骨和尾骨超音波</td></tr><tr><td>BT00ZZZ</td><td>膀胱一般放射線攝影</td></tr><tr><td>BT01ZZZ</td><td>右腎一般放射線攝影</td></tr><tr><td>BT02ZZZ</td><td>左腎一般放射線攝影</td></tr><tr><td>BT03ZZZ</td><td>雙側腎臟一般放射線攝影</td></tr><tr><td>BT04ZZZ</td><td>腎臟、輸尿管及膀胱一般放射線攝影</td></tr><tr><td>BT05ZZZ</td><td>尿道一般放射線攝影</td></tr><tr><td>BT06ZZZ</td><td>右輸尿管一般放射線攝影</td></tr><tr><td>BT07ZZZ</td><td>左輸尿管一般放射線攝影</td></tr><tr><td>BT08ZZZ</td><td>雙側輸尿管一般放射線攝影</td></tr><tr><td>BT0BZZZ</td><td>膀胱及尿道一般放射線攝影</td></tr><tr><td>BT0CZZZ</td><td>迴腸導流環一般放射線攝影</td></tr><tr><td>BT10ZZZ</td><td>膀胱透視攝影</td></tr><tr><td>BT11ZZZ</td><td>右腎透視攝影</td></tr><tr><td>BT12ZZZ</td><td>左腎透視攝影</td></tr><tr><td>BT13ZZZ</td><td>雙側腎臟透視攝影</td></tr><tr><td>BT14ZZZ</td><td>腎臟、輸尿管及膀胱透視攝影</td></tr><tr><td>BT15ZZZ</td><td>尿道透視攝影</td></tr><tr><td>BT16ZZZ</td><td>右輸尿管透視攝影</td></tr><tr><td>BT17ZZZ</td><td>左輸尿管透視攝影</td></tr><tr><td>BT1BZZZ</td><td>膀胱及尿道透視攝影</td></tr><tr><td>BT1CZZZ</td><td>迴腸導流環透視攝影</td></tr><tr><td>BT1DZZZ</td><td>右側腎臟、輸尿管及膀胱透視攝影</td></tr><tr><td>BT1FZZZ</td><td>左側腎臟、輸尿管及膀胱透視攝影</td></tr><tr><td>BT1GZZZ</td><td>迴腸迴路、輸尿管及腎臟透視攝影</td></tr><tr><td>BT20ZZZ</td><td>膀胱電腦斷層掃描</td></tr><tr><td>BT21ZZZ</td><td>右腎電腦斷層掃描</td></tr><tr><td>BT22ZZZ</td><td>左腎電腦斷層掃描</td></tr><tr><td>BT23ZZZ</td><td>雙側腎臟電腦斷層掃描</td></tr><tr><td>BT29ZZZ</td><td>腎臟移植電腦斷層掃描</td></tr><tr><td>BT30ZZZ</td><td>膀胱磁振造影</td></tr><tr><td>BT31ZZZ</td><td>右腎磁振造影</td></tr><tr><td>BT32ZZZ</td><td>左腎磁振造影</td></tr><tr><td>BT33ZZZ</td><td>雙側腎臟磁振造影</td></tr><tr><td>BT39ZZZ</td><td>腎臟移植磁振造影</td></tr><tr><td>BT40ZZZ</td><td>膀胱超音波</td></tr><tr><td>BT41ZZZ</td><td>右腎超音波</td></tr><tr><td>BT42ZZZ</td><td>左腎超音波</td></tr><tr><td>BT43ZZZ</td><td>雙側腎臟超音波</td></tr><tr><td>BT45ZZZ</td><td>尿道超音波</td></tr><tr><td>BT46ZZZ</td><td>右輸尿管超音波</td></tr><tr><td>BT47ZZZ</td><td>左輸尿管超音波</td></tr><tr><td>BT48ZZZ</td><td>雙側輸尿管超音波</td></tr><tr><td>BT49ZZZ</td><td>腎臟移植超音波</td></tr><tr><td>BT4JZZZ</td><td>腎臟及膀胱超音波</td></tr><tr><td>BU10ZZZ</td><td>右側輸卵管透視攝影</td></tr><tr><td>BU11ZZZ</td><td>左側輸卵管透視攝影</td></tr><tr><td>BU12ZZZ</td><td>雙側輸卵管透視攝影</td></tr><tr><td>BU16ZZZ</td><td>子宮透視攝影</td></tr><tr><td>BU18ZZZ</td><td>子宮及輸卵管透視攝影</td></tr><tr><td>BU19ZZZ</td><td>陰道透視攝影</td></tr><tr><td>BU33ZZZ</td><td>右側卵巢磁振造影</td></tr><tr><td>BU34ZZZ</td><td>左側卵巢磁振造影</td></tr><tr><td>BU35ZZZ</td><td>雙側卵巢磁振造影</td></tr><tr><td>BU36ZZZ</td><td>子宮磁振造影</td></tr><tr><td>BU39ZZZ</td><td>陰道磁振造影</td></tr><tr><td>BU3BZZZ</td><td>受孕子宮磁振造影</td></tr><tr><td>BU3CZZZ</td><td>子宮及卵巢磁振造影</td></tr><tr><td>BU40ZZZ</td><td>右側輸卵管超音波</td></tr><tr><td>BU41ZZZ</td><td>左側輸卵管超音波</td></tr><tr><td>BU42ZZZ</td><td>雙側輸卵管超音波</td></tr><tr><td>BU43ZZZ</td><td>右側卵巢超音波</td></tr><tr><td>BU44ZZZ</td><td>左側卵巢超音波</td></tr><tr><td>BU45ZZZ</td><td>雙側卵巢超音波</td></tr><tr><td>BU46ZZZ</td><td>子宮超音波</td></tr><tr><td>BU4CZZZ</td><td>子宮及卵巢超音波</td></tr><tr><td>BV10ZZZ</td><td>海綿體透視攝影</td></tr><tr><td>BV18ZZZ</td><td>營養血管透視攝影</td></tr><tr><td>BV23ZZZ</td><td>攝護腺電腦斷層掃描</td></tr><tr><td>BV30ZZZ</td><td>海綿體磁振造影</td></tr><tr><td>BV33ZZZ</td><td>攝護腺磁振造影</td></tr><tr><td>BV34ZZZ</td><td>陰囊磁振造影</td></tr><tr><td>BV35ZZZ</td><td>右側睾丸磁振造影</td></tr><tr><td>BV36ZZZ</td><td>左側睾丸磁振造影</td></tr><tr><td>BV37ZZZ</td><td>雙側睾丸磁振造影</td></tr><tr><td>BV44ZZZ</td><td>陰囊超音波</td></tr><tr><td>BV49ZZZ</td><td>攝護腺及儲精囊超音波</td></tr><tr><td>BV4BZZZ</td><td>陰莖超音波</td></tr><tr><td>BW00ZZZ</td><td>腹部一般放射線攝影</td></tr><tr><td>BW01ZZZ</td><td>腹部及骨盆一般放射線攝影</td></tr><tr><td>BW03ZZZ</td><td>胸部一般放射線攝影</td></tr><tr><td>BW0BZZZ</td><td>所有長骨一般放射線攝影</td></tr><tr><td>BW0CZZZ</td><td>下肢一般放射線攝影</td></tr><tr><td>BW0JZZZ</td><td>上肢一般放射線攝影</td></tr><tr><td>BW0KZZZ</td><td>全身一般放射線攝影</td></tr><tr><td>BW0LZZZ</td><td>全骨骼一般放射線攝影</td></tr><tr><td>BW0MZZZ</td><td>嬰兒全身一般放射線攝影</td></tr><tr><td>BW11ZZZ</td><td>腹部及骨盆透視攝影</td></tr><tr><td>BW19ZZZ</td><td>頭及頸部透視攝影</td></tr><tr><td>BW1CZZZ</td><td>下肢透視攝影</td></tr><tr><td>BW1JZZZ</td><td>上肢透視攝影</td></tr><tr><td>BW20ZZZ</td><td>腹部電腦斷層掃描</td></tr><tr><td>BW21ZZZ</td><td>腹部及骨盆電腦斷層掃描</td></tr><tr><td>BW24ZZZ</td><td>胸部及腹部電腦斷層掃描</td></tr><tr><td>BW25ZZZ</td><td>胸部、腹部及骨盆電腦斷層掃描</td></tr><tr><td>BW28ZZZ</td><td>頭部電腦斷層掃描</td></tr><tr><td>BW29ZZZ</td><td>頭及頸部電腦斷層掃描</td></tr><tr><td>BW2FZZZ</td><td>頸部電腦斷層掃描</td></tr><tr><td>BW2GZZZ</td><td>骨盆區電腦斷層掃描</td></tr><tr><td>BW30ZZZ</td><td>腹部磁振造影</td></tr><tr><td>BW38ZZZ</td><td>頭部磁振造影</td></tr><tr><td>BW3FZZZ</td><td>頸部磁振造影</td></tr><tr><td>BW3GZZZ</td><td>骨盆區磁振造影</td></tr><tr><td>BW3HZZZ</td><td>後腹膜磁振造影</td></tr><tr><td>BW3PZZZ</td><td>臂神經叢磁振造影</td></tr><tr><td>BW40ZZZ</td><td>腹部超音波</td></tr><tr><td>BW41ZZZ</td><td>腹部及骨盆超音波</td></tr><tr><td>BW4FZZZ</td><td>頸部超音波</td></tr><tr><td>BW4GZZZ</td><td>骨盆區超音波</td></tr><tr><td>BY30ZZZ</td><td>胎頭磁振造影</td></tr><tr><td>BY31ZZZ</td><td>胎心磁振造影</td></tr><tr><td>BY32ZZZ</td><td>胎兒胸部磁振造影</td></tr><tr><td>BY33ZZZ</td><td>胎兒腹部磁振造影</td></tr><tr><td>BY34ZZZ</td><td>胎兒脊柱磁振造影</td></tr><tr><td>BY35ZZZ</td><td>胎兒四肢磁振造影</td></tr><tr><td>BY36ZZZ</td><td>全胚胎磁振造影</td></tr><tr><td>BY47ZZZ</td><td>胎兒臍帶超音波</td></tr><tr><td>BY48ZZZ</td><td>胎盤超音波</td></tr><tr><td>BY49ZZZ</td><td>單胎妊娠，第一孕期超音波</td></tr><tr><td>BY4BZZZ</td><td>多胎妊娠，第一孕期超音波</td></tr><tr><td>BY4CZZZ</td><td>單胎妊娠，第二孕期超音波</td></tr><tr><td>BY4DZZZ</td><td>多胎妊娠，第二孕期超音波</td></tr><tr><td>BY4FZZZ</td><td>單胎妊娠，第三孕期超音波</td></tr><tr><td>BY4GZZZ</td><td>多胎妊娠，第三孕期超音波</td></tr><tr><td>C0101ZZ</td><td>腦部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C010YZZ</td><td>腦部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C015DZZ</td><td>腦脊液平面核子醫學影像</td></tr><tr><td>C015YZZ</td><td>腦脊液平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C01YYZZ</td><td>中樞神經系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C0201ZZ</td><td>腦部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C020FZZ</td><td>腦部斷層核子醫學影像</td></tr><tr><td>C020SZZ</td><td>腦部斷層核子醫學影像</td></tr><tr><td>C020YZZ</td><td>腦部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C025DZZ</td><td>腦脊液斷層核子醫學影像</td></tr><tr><td>C025YZZ</td><td>腦脊液斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C02YYZZ</td><td>中樞神經系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C030BZZ</td><td>腦部正子發射斷層掃描</td></tr><tr><td>C030KZZ</td><td>腦部正子發射斷層掃描</td></tr><tr><td>C030MZZ</td><td>腦部正子發射斷層掃描</td></tr><tr><td>C030YZZ</td><td>腦部正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>C03YYZZ</td><td>中樞神經系統正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>C050VZZ</td><td>腦部非影像核子醫學探測</td></tr><tr><td>C050YZZ</td><td>腦部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C05YYZZ</td><td>中樞神經系統非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C2161ZZ</td><td>左心及右心平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C216YZZ</td><td>左心及右心平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C21G1ZZ</td><td>心肌平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C21GDZZ</td><td>心肌平面核子醫學影像</td></tr><tr><td>C21GSZZ</td><td>心肌平面核子醫學影像</td></tr><tr><td>C21GYZZ</td><td>心肌平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C21GZZZ</td><td>心肌平面核子醫學影像</td></tr><tr><td>C21YYZZ</td><td>心臟平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C2261ZZ</td><td>左心及右心斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C226YZZ</td><td>左心及右心斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C22G1ZZ</td><td>心肌斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C22GDZZ</td><td>心肌斷層核子醫學影像</td></tr><tr><td>C22GKZZ</td><td>心肌斷層核子醫學影像</td></tr><tr><td>C22GSZZ</td><td>心肌斷層核子醫學影像</td></tr><tr><td>C22GYZZ</td><td>心肌斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C22GZZZ</td><td>心肌斷層核子醫學影像</td></tr><tr><td>C22YYZZ</td><td>心臟斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C23GKZZ</td><td>心肌正子發射斷層掃描</td></tr><tr><td>C23GMZZ</td><td>心肌正子發射斷層掃描</td></tr><tr><td>C23GQZZ</td><td>心肌正子發射斷層掃描</td></tr><tr><td>C23GRZZ</td><td>心肌正子發射斷層掃描</td></tr><tr><td>C23GYZZ</td><td>心肌正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>C23YYZZ</td><td>心臟正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>C2561ZZ</td><td>左心及右心非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C256YZZ</td><td>左心及右心非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C25YYZZ</td><td>心臟非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C51B1ZZ</td><td>右下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51BYZZ</td><td>右下肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51C1ZZ</td><td>左下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51CYZZ</td><td>左下肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51D1ZZ</td><td>雙側下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51DYZZ</td><td>雙側下肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51N1ZZ</td><td>右上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51NYZZ</td><td>右上肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51P1ZZ</td><td>左上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51PYZZ</td><td>左上肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51Q1ZZ</td><td>雙側上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51QYZZ</td><td>雙側上肢靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51R1ZZ</td><td>中央靜脈平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C51RYZZ</td><td>中央靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C51YYZZ</td><td>靜脈平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C7101ZZ</td><td>骨髓平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C710DZZ</td><td>骨髓平面核子醫學影像</td></tr><tr><td>C710YZZ</td><td>骨髓平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C7121ZZ</td><td>脾臟平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C712YZZ</td><td>脾臟平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C713DZZ</td><td>血液平面核子醫學影像</td></tr><tr><td>C713YZZ</td><td>血液平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C7151ZZ</td><td>頭部及頸部淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C715YZZ</td><td>頭部及頸部淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71D1ZZ</td><td>骨盆腔淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71DYZZ</td><td>骨盆腔淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71J1ZZ</td><td>頭部淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71JYZZ</td><td>頭部淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71K1ZZ</td><td>頸部淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71KYZZ</td><td>頸部淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71L1ZZ</td><td>上胸部淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71LYZZ</td><td>上胸部淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71M1ZZ</td><td>軀幹淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71MYZZ</td><td>軀幹淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71N1ZZ</td><td>上肢淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71NYZZ</td><td>上肢淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71P1ZZ</td><td>下肢淋巴平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C71PYZZ</td><td>下肢淋巴平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C71YYZZ</td><td>淋巴及血液系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C7221ZZ</td><td>脾臟斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C722YZZ</td><td>脾臟斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C72YYZZ</td><td>淋巴及血液系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>C7551ZZ</td><td>頭部及頸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C755YZZ</td><td>頭部及頸部淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75D1ZZ</td><td>骨盆腔淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75DYZZ</td><td>骨盆腔淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75J1ZZ</td><td>頭部淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75JYZZ</td><td>頭部淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75K1ZZ</td><td>頸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75KYZZ</td><td>頸部淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75L1ZZ</td><td>上胸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75LYZZ</td><td>上胸部淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75M1ZZ</td><td>軀幹淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75MYZZ</td><td>軀幹淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75N1ZZ</td><td>上肢淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75NYZZ</td><td>上肢淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75P1ZZ</td><td>下肢淋巴非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>C75PYZZ</td><td>下肢淋巴非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C75YYZZ</td><td>淋巴及血液系統非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>C7631ZZ</td><td>血液非影像核子醫學檢測，使用鎝（鎝-99m）</td></tr><tr><td>C7637ZZ</td><td>血液非影像核子醫學檢測</td></tr><tr><td>C763CZZ</td><td>血液非影像核子醫學檢測</td></tr><tr><td>C763DZZ</td><td>血液非影像核子醫學檢測</td></tr><tr><td>C763HZZ</td><td>血液非影像核子醫學檢測</td></tr><tr><td>C763WZZ</td><td>血液非影像核子醫學檢測</td></tr><tr><td>C763YZZ</td><td>血液非影像核子醫學檢測，使用其他放射性核素</td></tr><tr><td>C76YYZZ</td><td>淋巴及血液系統非影像核子醫學檢測，使用其他放射性核素</td></tr><tr><td>C8191ZZ</td><td>雙側淚管平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C819YZZ</td><td>雙側淚管平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C81YYZZ</td><td>眼睛平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C91B1ZZ</td><td>雙側唾液腺平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>C91BYZZ</td><td>雙側唾液腺平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>C91YYZZ</td><td>耳、鼻、口腔及咽喉平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CB121ZZ</td><td>肺臟及支氣管平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CB129ZZ</td><td>肺臟及支氣管平面核子醫學影像</td></tr><tr><td>CB12TZZ</td><td>肺臟及支氣管平面核子醫學影像</td></tr><tr><td>CB12VZZ</td><td>肺臟及支氣管平面核子醫學影像</td></tr><tr><td>CB12YZZ</td><td>肺臟及支氣管平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CB1YYZZ</td><td>呼吸系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CB221ZZ</td><td>肺臟及支氣管斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CB229ZZ</td><td>肺臟及支氣管斷層核子醫學影像</td></tr><tr><td>CB22YZZ</td><td>肺臟及支氣管斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CB2YYZZ</td><td>呼吸系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CB32KZZ</td><td>肺臟及支氣管正子發射斷層掃描</td></tr><tr><td>CB32YZZ</td><td>肺臟及支氣管正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>CB3YYZZ</td><td>呼吸系統正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>CD151ZZ</td><td>上消化道平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CD15DZZ</td><td>上消化道平面核子醫學影像</td></tr><tr><td>CD15YZZ</td><td>上消化道平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CD171ZZ</td><td>胃腸道平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CD17DZZ</td><td>胃腸道平面核子醫學影像</td></tr><tr><td>CD17YZZ</td><td>胃腸道平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CD1YYZZ</td><td>消化系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CD271ZZ</td><td>胃腸道斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CD27DZZ</td><td>胃腸道斷層核子醫學影像</td></tr><tr><td>CD27YZZ</td><td>胃腸道斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CD2YYZZ</td><td>消化系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF141ZZ</td><td>膽囊平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF14YZZ</td><td>膽囊平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF151ZZ</td><td>肝臟平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF15YZZ</td><td>肝臟平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF161ZZ</td><td>肝臟及脾臟平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF16YZZ</td><td>肝臟及脾臟平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF1C1ZZ</td><td>所有肝膽系統平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF1CYZZ</td><td>所有肝膽系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF1YYZZ</td><td>肝膽系統及胰臟平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF241ZZ</td><td>膽囊斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF24YZZ</td><td>膽囊斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF251ZZ</td><td>肝臟斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF25YZZ</td><td>肝臟斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF261ZZ</td><td>肝臟及脾臟斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CF26YZZ</td><td>肝臟及脾臟斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CF2YYZZ</td><td>肝膽系統及胰臟斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG111ZZ</td><td>副甲狀腺平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CG11SZZ</td><td>副甲狀腺平面核子醫學影像</td></tr><tr><td>CG11YZZ</td><td>副甲狀腺平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG121ZZ</td><td>甲狀腺平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CG12FZZ</td><td>甲狀腺平面核子醫學影像</td></tr><tr><td>CG12GZZ</td><td>甲狀腺平面核子醫學影像</td></tr><tr><td>CG12YZZ</td><td>甲狀腺平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG14GZZ</td><td>雙側腎上腺平面核子醫學影像</td></tr><tr><td>CG14YZZ</td><td>雙側腎上腺平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG1YYZZ</td><td>內分泌系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG211ZZ</td><td>副甲狀腺斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CG21SZZ</td><td>副甲狀腺斷層核子醫學影像</td></tr><tr><td>CG21YZZ</td><td>副甲狀腺斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG2YYZZ</td><td>內分泌系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CG421ZZ</td><td>甲狀腺非影像核子醫學吸收，使用鎝（鎝-99m）</td></tr><tr><td>CG42FZZ</td><td>甲狀腺非影像核子醫學吸收</td></tr><tr><td>CG42GZZ</td><td>甲狀腺非影像核子醫學吸收</td></tr><tr><td>CG42YZZ</td><td>甲狀腺非影像核子醫學吸收，使用其他放射性核素</td></tr><tr><td>CG4YYZZ</td><td>內分泌系統非影像核子醫學吸收，使用其他放射性核素</td></tr><tr><td>CH101ZZ</td><td>右側乳房平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH10SZZ</td><td>右側乳房平面核子醫學影像</td></tr><tr><td>CH10YZZ</td><td>右側乳房平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH111ZZ</td><td>左側乳房平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH11SZZ</td><td>左側乳房平面核子醫學影像</td></tr><tr><td>CH11YZZ</td><td>左側乳房平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH121ZZ</td><td>雙側乳房平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH12SZZ</td><td>雙側乳房平面核子醫學影像</td></tr><tr><td>CH12YZZ</td><td>雙側乳房平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH1YYZZ</td><td>皮膚、皮下組織及乳房平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH201ZZ</td><td>右側乳房斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH20SZZ</td><td>右側乳房斷層核子醫學影像</td></tr><tr><td>CH20YZZ</td><td>右側乳房斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH211ZZ</td><td>左側乳房斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH21SZZ</td><td>左側乳房斷層核子醫學影像</td></tr><tr><td>CH21YZZ</td><td>左側乳房斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH221ZZ</td><td>雙側乳房斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CH22SZZ</td><td>雙側乳房斷層核子醫學影像</td></tr><tr><td>CH22YZZ</td><td>雙側乳房斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CH2YYZZ</td><td>皮膚、皮下組織及乳房斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP111ZZ</td><td>顱骨平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP11YZZ</td><td>顱骨平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP141ZZ</td><td>胸部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP14YZZ</td><td>胸部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP151ZZ</td><td>脊柱平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP15YZZ</td><td>脊柱平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP161ZZ</td><td>骨盆平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP16YZZ</td><td>骨盆平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP171ZZ</td><td>脊柱及骨盆平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP17YZZ</td><td>脊柱及骨盆平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP181ZZ</td><td>右上肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP18YZZ</td><td>右上肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP191ZZ</td><td>左上肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP19YZZ</td><td>左上肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1B1ZZ</td><td>雙側上肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP1BYZZ</td><td>雙側上肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1C1ZZ</td><td>右下肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP1CYZZ</td><td>右下肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1D1ZZ</td><td>左下肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP1DYZZ</td><td>左下肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1F1ZZ</td><td>雙側下肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP1FYZZ</td><td>雙側下肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1YYZZ</td><td>其他肌肉骨骼系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP1Z1ZZ</td><td>所有肌肉骨骼系統平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP1ZYZZ</td><td>所有肌肉骨骼系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP211ZZ</td><td>顱骨斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP21YZZ</td><td>顱骨斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP221ZZ</td><td>頸椎斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP22YZZ</td><td>頸椎斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP231ZZ</td><td>顱骨及頸椎斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP23YZZ</td><td>顱骨及頸椎斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP241ZZ</td><td>胸部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP24YZZ</td><td>胸部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP261ZZ</td><td>骨盆斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP26YZZ</td><td>骨盆斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP271ZZ</td><td>脊柱及骨盆斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP27YZZ</td><td>脊柱及骨盆斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP281ZZ</td><td>右上肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP28YZZ</td><td>右上肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP291ZZ</td><td>左上肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP29YZZ</td><td>左上肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2B1ZZ</td><td>雙側上肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2BYZZ</td><td>雙側上肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2C1ZZ</td><td>右下肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2CYZZ</td><td>右下肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2D1ZZ</td><td>左下肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2DYZZ</td><td>左下肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2F1ZZ</td><td>雙側下肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2FYZZ</td><td>雙側下肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2G1ZZ</td><td>胸椎斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2GYZZ</td><td>胸椎斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2H1ZZ</td><td>腰椎斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2HYZZ</td><td>腰椎斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2J1ZZ</td><td>胸腰椎脊髓斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CP2JYZZ</td><td>胸腰椎脊髓斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP2YYZZ</td><td>其他肌肉骨骼系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CP55ZZZ</td><td>脊柱非影像核子醫學探測</td></tr><tr><td>CP5NZZZ</td><td>上肢非影像核子醫學探測</td></tr><tr><td>CP5PZZZ</td><td>下肢非影像核子醫學探測</td></tr><tr><td>CP5YYZZ</td><td>其他肌肉骨骼系統非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CT131ZZ</td><td>腎臟、輸尿管及膀胱平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CT13FZZ</td><td>腎臟、輸尿管及膀胱平面核子醫學影像</td></tr><tr><td>CT13GZZ</td><td>腎臟、輸尿管及膀胱平面核子醫學影像</td></tr><tr><td>CT13YZZ</td><td>腎臟、輸尿管及膀胱平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CT1H1ZZ</td><td>膀胱及輸尿管平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CT1HYZZ</td><td>膀胱及輸尿管平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CT1YYZZ</td><td>泌尿系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CT231ZZ</td><td>腎臟、輸尿管及膀胱斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CT23YZZ</td><td>腎臟、輸尿管及膀胱斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CT2YYZZ</td><td>泌尿系統斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CT631ZZ</td><td>腎臟、輸尿管及膀胱非影像核子醫學檢測，使用鎝（鎝-99m）</td></tr><tr><td>CT63FZZ</td><td>腎臟、輸尿管及膀胱非影像核子醫學檢測</td></tr><tr><td>CT63GZZ</td><td>腎臟、輸尿管及膀胱非影像核子醫學檢測</td></tr><tr><td>CT63HZZ</td><td>腎臟、輸尿管及膀胱非影像核子醫學檢測</td></tr><tr><td>CT63YZZ</td><td>腎臟、輸尿管及膀胱非影像核子醫學檢測，使用其他放射性核素</td></tr><tr><td>CT6YYZZ</td><td>泌尿系統非影像核子醫學檢測，使用其他放射性核素</td></tr><tr><td>CV191ZZ</td><td>雙側睾丸平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CV19YZZ</td><td>雙側睾丸平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CV1YYZZ</td><td>男性生殖系統平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW101ZZ</td><td>腹部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW10DZZ</td><td>腹部平面核子醫學影像</td></tr><tr><td>CW10FZZ</td><td>腹部平面核子醫學影像</td></tr><tr><td>CW10GZZ</td><td>腹部平面核子醫學影像</td></tr><tr><td>CW10LZZ</td><td>腹部平面核子醫學影像</td></tr><tr><td>CW10SZZ</td><td>腹部平面核子醫學影像</td></tr><tr><td>CW10YZZ</td><td>腹部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW111ZZ</td><td>腹部及骨盆平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW11DZZ</td><td>腹部及骨盆平面核子醫學影像</td></tr><tr><td>CW11FZZ</td><td>腹部及骨盆平面核子醫學影像</td></tr><tr><td>CW11GZZ</td><td>腹部及骨盆平面核子醫學影像</td></tr><tr><td>CW11LZZ</td><td>腹部及骨盆平面核子醫學影像</td></tr><tr><td>CW11SZZ</td><td>腹部及骨盆平面核子醫學影像</td></tr><tr><td>CW11YZZ</td><td>腹部及骨盆平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW131ZZ</td><td>胸部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW13DZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13FZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13GZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13KZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13LZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13SZZ</td><td>胸部平面核子醫學影像</td></tr><tr><td>CW13YZZ</td><td>胸部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW141ZZ</td><td>胸部及腹部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW14DZZ</td><td>胸部及腹部平面核子醫學影像</td></tr><tr><td>CW14FZZ</td><td>胸部及腹部平面核子醫學影像</td></tr><tr><td>CW14GZZ</td><td>胸部及腹部平面核子醫學影像</td></tr><tr><td>CW14LZZ</td><td>胸部及腹部平面核子醫學影像</td></tr><tr><td>CW14SZZ</td><td>胸部及腹部平面核子醫學影像</td></tr><tr><td>CW14YZZ</td><td>胸部及腹部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW161ZZ</td><td>胸部及頸部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW16DZZ</td><td>胸部及頸部平面核子醫學影像</td></tr><tr><td>CW16FZZ</td><td>胸部及頸部平面核子醫學影像</td></tr><tr><td>CW16GZZ</td><td>胸部及頸部平面核子醫學影像</td></tr><tr><td>CW16LZZ</td><td>胸部及頸部平面核子醫學影像</td></tr><tr><td>CW16SZZ</td><td>胸部及頸部平面核子醫學影像</td></tr><tr><td>CW16YZZ</td><td>胸部及頸部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1B1ZZ</td><td>頭及頸部平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW1BDZZ</td><td>頭及頸部平面核子醫學影像</td></tr><tr><td>CW1BFZZ</td><td>頭及頸部平面核子醫學影像</td></tr><tr><td>CW1BGZZ</td><td>頭及頸部平面核子醫學影像</td></tr><tr><td>CW1BLZZ</td><td>頭及頸部平面核子醫學影像</td></tr><tr><td>CW1BSZZ</td><td>頭及頸部平面核子醫學影像</td></tr><tr><td>CW1BYZZ</td><td>頭及頸部平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1D1ZZ</td><td>下肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW1DDZZ</td><td>下肢平面核子醫學影像</td></tr><tr><td>CW1DFZZ</td><td>下肢平面核子醫學影像</td></tr><tr><td>CW1DGZZ</td><td>下肢平面核子醫學影像</td></tr><tr><td>CW1DLZZ</td><td>下肢平面核子醫學影像</td></tr><tr><td>CW1DSZZ</td><td>下肢平面核子醫學影像</td></tr><tr><td>CW1DYZZ</td><td>下肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1J1ZZ</td><td>骨盆區平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW1JDZZ</td><td>骨盆區平面核子醫學影像</td></tr><tr><td>CW1JFZZ</td><td>骨盆區平面核子醫學影像</td></tr><tr><td>CW1JGZZ</td><td>骨盆區平面核子醫學影像</td></tr><tr><td>CW1JLZZ</td><td>骨盆區平面核子醫學影像</td></tr><tr><td>CW1JSZZ</td><td>骨盆區平面核子醫學影像</td></tr><tr><td>CW1JYZZ</td><td>骨盆區平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1M1ZZ</td><td>上肢平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW1MDZZ</td><td>上肢平面核子醫學影像</td></tr><tr><td>CW1MFZZ</td><td>上肢平面核子醫學影像</td></tr><tr><td>CW1MGZZ</td><td>上肢平面核子醫學影像</td></tr><tr><td>CW1MLZZ</td><td>上肢平面核子醫學影像</td></tr><tr><td>CW1MSZZ</td><td>上肢平面核子醫學影像</td></tr><tr><td>CW1MYZZ</td><td>上肢平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1N1ZZ</td><td>全身平面核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW1NDZZ</td><td>全身平面核子醫學影像</td></tr><tr><td>CW1NFZZ</td><td>全身平面核子醫學影像</td></tr><tr><td>CW1NGZZ</td><td>全身平面核子醫學影像</td></tr><tr><td>CW1NLZZ</td><td>全身平面核子醫學影像</td></tr><tr><td>CW1NSZZ</td><td>全身平面核子醫學影像</td></tr><tr><td>CW1NYZZ</td><td>全身平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1YYZZ</td><td>多處解剖區域平面核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW1ZZZZ</td><td>其他解剖區域平面核子醫學影像</td></tr><tr><td>CW201ZZ</td><td>腹部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW20DZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20FZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20GZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20KZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20LZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20SZZ</td><td>腹部斷層核子醫學影像</td></tr><tr><td>CW20YZZ</td><td>腹部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW211ZZ</td><td>腹部及骨盆斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW21DZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21FZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21GZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21KZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21LZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21SZZ</td><td>腹部及骨盆斷層核子醫學影像</td></tr><tr><td>CW21YZZ</td><td>腹部及骨盆斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW231ZZ</td><td>胸部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW23DZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23FZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23GZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23KZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23LZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23SZZ</td><td>胸部斷層核子醫學影像</td></tr><tr><td>CW23YZZ</td><td>胸部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW241ZZ</td><td>胸部及腹部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW24DZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24FZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24GZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24KZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24LZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24SZZ</td><td>胸部及腹部斷層核子醫學影像</td></tr><tr><td>CW24YZZ</td><td>胸部及腹部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW261ZZ</td><td>胸部及頸部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW26DZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26FZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26GZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26KZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26LZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26SZZ</td><td>胸部及頸部斷層核子醫學影像</td></tr><tr><td>CW26YZZ</td><td>胸部及頸部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW2B1ZZ</td><td>頭及頸部斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW2BDZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BFZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BGZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BKZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BLZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BSZZ</td><td>頭及頸部斷層核子醫學影像</td></tr><tr><td>CW2BYZZ</td><td>頭及頸部斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW2D1ZZ</td><td>下肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW2DDZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DFZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DGZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DKZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DLZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DSZZ</td><td>下肢斷層核子醫學影像</td></tr><tr><td>CW2DYZZ</td><td>下肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW2J1ZZ</td><td>骨盆區斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW2JDZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JFZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JGZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JKZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JLZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JSZZ</td><td>骨盆區斷層核子醫學影像</td></tr><tr><td>CW2JYZZ</td><td>骨盆區斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW2M1ZZ</td><td>上肢斷層核子醫學影像，使用鎝（鎝-99m）</td></tr><tr><td>CW2MDZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MFZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MGZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MKZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MLZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MSZZ</td><td>上肢斷層核子醫學影像</td></tr><tr><td>CW2MYZZ</td><td>上肢斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW2YYZZ</td><td>多處解剖區域斷層核子醫學影像，使用其他放射性核素</td></tr><tr><td>CW3NYZZ</td><td>全身正子發射斷層掃描，使用其他放射性核素</td></tr><tr><td>CW501ZZ</td><td>腹部非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW50DZZ</td><td>腹部非影像核子醫學探測</td></tr><tr><td>CW50YZZ</td><td>腹部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW511ZZ</td><td>腹部及骨盆非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW51DZZ</td><td>腹部及骨盆非影像核子醫學探測</td></tr><tr><td>CW51YZZ</td><td>腹部及骨盆非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW531ZZ</td><td>胸部非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW53DZZ</td><td>胸部非影像核子醫學探測</td></tr><tr><td>CW53YZZ</td><td>胸部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW541ZZ</td><td>胸部及腹部非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW54DZZ</td><td>胸部及腹部非影像核子醫學探測</td></tr><tr><td>CW54YZZ</td><td>胸部及腹部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW561ZZ</td><td>胸部及頸部非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW56DZZ</td><td>胸部及頸部非影像核子醫學探測</td></tr><tr><td>CW56YZZ</td><td>胸部及頸部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW5B1ZZ</td><td>頭及頸部非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW5BDZZ</td><td>頭及頸部非影像核子醫學探測</td></tr><tr><td>CW5BYZZ</td><td>頭及頸部非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW5D1ZZ</td><td>下肢非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW5DDZZ</td><td>下肢非影像核子醫學探測</td></tr><tr><td>CW5DYZZ</td><td>下肢非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW5J1ZZ</td><td>骨盆區非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW5JDZZ</td><td>骨盆區非影像核子醫學探測</td></tr><tr><td>CW5JYZZ</td><td>骨盆區非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW5M1ZZ</td><td>上肢非影像核子醫學探測，使用鎝（鎝-99m）</td></tr><tr><td>CW5MDZZ</td><td>上肢非影像核子醫學探測</td></tr><tr><td>CW5MYZZ</td><td>上肢非影像核子醫學探測，使用其他放射性核素</td></tr><tr><td>CW70NZZ</td><td>腹部系統性核子醫學治療</td></tr><tr><td>CW70YZZ</td><td>腹部系統性核子醫學治療，使用其他放射性核素</td></tr><tr><td>CW73NZZ</td><td>胸部系統性核子醫學治療</td></tr><tr><td>CW73YZZ</td><td>胸部系統性核子醫學治療，使用其他放射性核素</td></tr><tr><td>CW7GGZZ</td><td>甲狀腺系統性核子醫學治療</td></tr><tr><td>CW7GYZZ</td><td>甲狀腺系統性核子醫學治療，使用其他放射性核素</td></tr><tr><td>CW7N8ZZ</td><td>全身系統性核子醫學治療</td></tr><tr><td>CW7NGZZ</td><td>全身系統性核子醫學治療</td></tr><tr><td>CW7NNZZ</td><td>全身系統性核子醫學治療</td></tr><tr><td>CW7NPZZ</td><td>全身系統性核子醫學治療</td></tr><tr><td>CW7NYZZ</td><td>全身系統性核子醫學治療，使用其他放射性核素</td></tr><tr><td>CW7YYZZ</td><td>多處解剖區域系統性核子醫學治療，使用其他放射性核素</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://nhicore.nhi.gov.tw/pas/ValueSet/icd-10-pcs-2023-image",
+  "version" : "1.2.2",
+  "name" : "ICD10PCS2023Image",
+  "title" : "NHI-臺灣健保署2023年中文版ICD 10 PCS-影像報告值集",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-05-04",
+  "publisher" : "衛生福利部中央健康保險署",
+  "contact" : [{
+    "name" : "衛生福利部中央健康保險署",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.nhi.gov.tw"
+    }]
+  }],
+  "description" : "NHI-臺灣健保署2023年中文版ICD 10 PCS-影像報告值集",
+  "compose" : {
+    "include" : [{
+      "system" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/icd-10-pcs-2023-tw",
+      "concept" : [{
+        "code" : "B00BZZZ",
+        "display" : "脊髓一般放射線攝影"
+      },
+      {
+        "code" : "B01BZZZ",
+        "display" : "脊髓透視攝影"
+      },
+      {
+        "code" : "B020ZZZ",
+        "display" : "腦部電腦斷層掃描"
+      },
+      {
+        "code" : "B027ZZZ",
+        "display" : "腦池電腦斷層掃描"
+      },
+      {
+        "code" : "B028ZZZ",
+        "display" : "腦室電腦斷層掃描"
+      },
+      {
+        "code" : "B029ZZZ",
+        "display" : "蝶鞍/腦下垂體腺電腦斷層掃描"
+      },
+      {
+        "code" : "B02BZZZ",
+        "display" : "脊髓電腦斷層掃描"
+      },
+      {
+        "code" : "B030ZZZ",
+        "display" : "腦部磁振造影"
+      },
+      {
+        "code" : "B039ZZZ",
+        "display" : "蝶鞍/腦下垂體腺磁振造影"
+      },
+      {
+        "code" : "B03BZZZ",
+        "display" : "脊髓磁振造影"
+      },
+      {
+        "code" : "B03CZZZ",
+        "display" : "聽神經磁振造影"
+      },
+      {
+        "code" : "B040ZZZ",
+        "display" : "腦部超音波"
+      },
+      {
+        "code" : "B04BZZZ",
+        "display" : "脊髓超音波"
+      },
+      {
+        "code" : "B221ZZZ",
+        "display" : "多條冠狀動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B223ZZZ",
+        "display" : "多條繞道移植冠狀動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B226ZZZ",
+        "display" : "左心及右心電腦斷層掃描"
+      },
+      {
+        "code" : "B231ZZZ",
+        "display" : "多條冠狀動脈磁振造影"
+      },
+      {
+        "code" : "B233ZZZ",
+        "display" : "多條繞道移植冠狀動脈磁振造影"
+      },
+      {
+        "code" : "B236ZZZ",
+        "display" : "左心及右心磁振造影"
+      },
+      {
+        "code" : "B240ZZ3",
+        "display" : "單條冠狀動脈血管內超音波"
+      },
+      {
+        "code" : "B240ZZ4",
+        "display" : "單條冠狀動脈經食道超音波"
+      },
+      {
+        "code" : "B240ZZZ",
+        "display" : "單條冠狀動脈超音波"
+      },
+      {
+        "code" : "B241ZZ3",
+        "display" : "多條冠狀動脈血管內超音波"
+      },
+      {
+        "code" : "B241ZZ4",
+        "display" : "多條冠狀動脈經食道超音波"
+      },
+      {
+        "code" : "B241ZZZ",
+        "display" : "多條冠狀動脈超音波"
+      },
+      {
+        "code" : "B244ZZ3",
+        "display" : "右心血管內超音波"
+      },
+      {
+        "code" : "B244ZZ4",
+        "display" : "右心經食道超音波"
+      },
+      {
+        "code" : "B244ZZZ",
+        "display" : "右心超音波"
+      },
+      {
+        "code" : "B245ZZ3",
+        "display" : "左心血管內超音波"
+      },
+      {
+        "code" : "B245ZZ4",
+        "display" : "左心經食道超音波"
+      },
+      {
+        "code" : "B245ZZZ",
+        "display" : "左心超音波"
+      },
+      {
+        "code" : "B246ZZ3",
+        "display" : "左心及右心血管內超音波"
+      },
+      {
+        "code" : "B246ZZ4",
+        "display" : "左心及右心經食道超音波"
+      },
+      {
+        "code" : "B246ZZZ",
+        "display" : "左心及右心超音波"
+      },
+      {
+        "code" : "B24BZZ3",
+        "display" : "心臟併主動脈血管內超音波"
+      },
+      {
+        "code" : "B24BZZ4",
+        "display" : "心臟併主動脈經食道超音波"
+      },
+      {
+        "code" : "B24BZZZ",
+        "display" : "心臟併主動脈超音波"
+      },
+      {
+        "code" : "B24CZZ3",
+        "display" : "心包膜血管內超音波"
+      },
+      {
+        "code" : "B24CZZ4",
+        "display" : "心包膜經食道超音波"
+      },
+      {
+        "code" : "B24CZZZ",
+        "display" : "心包膜超音波"
+      },
+      {
+        "code" : "B24DZZ3",
+        "display" : "小兒心臟血管內超音波"
+      },
+      {
+        "code" : "B24DZZ4",
+        "display" : "小兒心臟經食道超音波"
+      },
+      {
+        "code" : "B24DZZZ",
+        "display" : "小兒心臟超音波"
+      },
+      {
+        "code" : "B300ZZZ",
+        "display" : "胸主動脈一般放射線攝影"
+      },
+      {
+        "code" : "B301ZZZ",
+        "display" : "右側頭臂鎖骨下動脈一般放射線攝影"
+      },
+      {
+        "code" : "B302ZZZ",
+        "display" : "左鎖骨下動脈一般放射線攝影"
+      },
+      {
+        "code" : "B303ZZZ",
+        "display" : "右總頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B304ZZZ",
+        "display" : "左總頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B305ZZZ",
+        "display" : "雙側總頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B306ZZZ",
+        "display" : "右內頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B307ZZZ",
+        "display" : "左內頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B308ZZZ",
+        "display" : "雙側內頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B309ZZZ",
+        "display" : "右外頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30BZZZ",
+        "display" : "左外頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30CZZZ",
+        "display" : "雙側外頸動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30DZZZ",
+        "display" : "右椎動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30FZZZ",
+        "display" : "左椎動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30GZZZ",
+        "display" : "雙側椎動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30HZZZ",
+        "display" : "右上肢動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30JZZZ",
+        "display" : "左上肢動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30KZZZ",
+        "display" : "雙側上肢動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30LZZZ",
+        "display" : "肋間及支氣管動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30MZZZ",
+        "display" : "脊髓動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30NZZZ",
+        "display" : "其他上部動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30PZZZ",
+        "display" : "胸腹主動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30QZZZ",
+        "display" : "頸腦弓一般放射線攝影"
+      },
+      {
+        "code" : "B30RZZZ",
+        "display" : "顱內動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30SZZZ",
+        "display" : "右肺動脈一般放射線攝影"
+      },
+      {
+        "code" : "B30TZZZ",
+        "display" : "左肺動脈一般放射線攝影"
+      },
+      {
+        "code" : "B310ZZZ",
+        "display" : "胸主動脈透視攝影"
+      },
+      {
+        "code" : "B311ZZZ",
+        "display" : "右側頭臂鎖骨下動脈透視攝影"
+      },
+      {
+        "code" : "B312ZZZ",
+        "display" : "左鎖骨下動脈透視攝影"
+      },
+      {
+        "code" : "B313ZZZ",
+        "display" : "右總頸動脈透視攝影"
+      },
+      {
+        "code" : "B314ZZZ",
+        "display" : "左總頸動脈透視攝影"
+      },
+      {
+        "code" : "B315ZZZ",
+        "display" : "雙側總頸動脈透視攝影"
+      },
+      {
+        "code" : "B316ZZZ",
+        "display" : "右內頸動脈透視攝影"
+      },
+      {
+        "code" : "B317ZZZ",
+        "display" : "左內頸動脈透視攝影"
+      },
+      {
+        "code" : "B318ZZZ",
+        "display" : "雙側內頸動脈透視攝影"
+      },
+      {
+        "code" : "B319ZZZ",
+        "display" : "右外頸動脈透視攝影"
+      },
+      {
+        "code" : "B31BZZZ",
+        "display" : "左外頸動脈透視攝影"
+      },
+      {
+        "code" : "B31CZZZ",
+        "display" : "雙側外頸動脈透視攝影"
+      },
+      {
+        "code" : "B31DZZZ",
+        "display" : "右椎動脈透視攝影"
+      },
+      {
+        "code" : "B31FZZZ",
+        "display" : "左椎動脈透視攝影"
+      },
+      {
+        "code" : "B31GZZZ",
+        "display" : "雙側椎動脈透視攝影"
+      },
+      {
+        "code" : "B31HZZZ",
+        "display" : "右上肢動脈透視攝影"
+      },
+      {
+        "code" : "B31JZZZ",
+        "display" : "左上肢動脈透視攝影"
+      },
+      {
+        "code" : "B31KZZZ",
+        "display" : "雙側上肢動脈透視攝影"
+      },
+      {
+        "code" : "B31LZZZ",
+        "display" : "肋間及支氣管動脈透視攝影"
+      },
+      {
+        "code" : "B31MZZZ",
+        "display" : "脊髓動脈透視攝影"
+      },
+      {
+        "code" : "B31NZZZ",
+        "display" : "其他上部動脈透視攝影"
+      },
+      {
+        "code" : "B31PZZZ",
+        "display" : "胸腹主動脈透視攝影"
+      },
+      {
+        "code" : "B31QZZZ",
+        "display" : "頸腦弓透視攝影"
+      },
+      {
+        "code" : "B31RZZZ",
+        "display" : "顱內動脈透視攝影"
+      },
+      {
+        "code" : "B31SZZZ",
+        "display" : "右肺動脈透視攝影"
+      },
+      {
+        "code" : "B31TZZZ",
+        "display" : "左肺動脈透視攝影"
+      },
+      {
+        "code" : "B31UZZZ",
+        "display" : "肺動脈幹透視攝影"
+      },
+      {
+        "code" : "B320ZZZ",
+        "display" : "胸主動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B325ZZZ",
+        "display" : "雙側總頸動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B328ZZZ",
+        "display" : "雙側內頸動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B32GZZZ",
+        "display" : "雙側椎動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B32RZZZ",
+        "display" : "顱內動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B32SZZZ",
+        "display" : "右肺動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B32TZZZ",
+        "display" : "左肺動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B330ZZZ",
+        "display" : "胸主動脈磁振造影"
+      },
+      {
+        "code" : "B335ZZZ",
+        "display" : "雙側總頸動脈磁振造影"
+      },
+      {
+        "code" : "B338ZZZ",
+        "display" : "雙側內頸動脈磁振造影"
+      },
+      {
+        "code" : "B33GZZZ",
+        "display" : "雙側椎動脈磁振造影"
+      },
+      {
+        "code" : "B33HZZZ",
+        "display" : "右上肢動脈磁振造影"
+      },
+      {
+        "code" : "B33JZZZ",
+        "display" : "左上肢動脈磁振造影"
+      },
+      {
+        "code" : "B33KZZZ",
+        "display" : "雙側上肢動脈磁振造影"
+      },
+      {
+        "code" : "B33MZZZ",
+        "display" : "脊髓動脈磁振造影"
+      },
+      {
+        "code" : "B33QZZZ",
+        "display" : "頸腦弓磁振造影"
+      },
+      {
+        "code" : "B33RZZZ",
+        "display" : "顱內動脈磁振造影"
+      },
+      {
+        "code" : "B340ZZ3",
+        "display" : "胸主動脈血管內超音波"
+      },
+      {
+        "code" : "B340ZZZ",
+        "display" : "胸主動脈超音波"
+      },
+      {
+        "code" : "B341ZZ3",
+        "display" : "右側頭臂鎖骨下動脈血管內超音波"
+      },
+      {
+        "code" : "B341ZZZ",
+        "display" : "右側頭臂鎖骨下動脈超音波"
+      },
+      {
+        "code" : "B342ZZ3",
+        "display" : "左鎖骨下動脈血管內超音波"
+      },
+      {
+        "code" : "B342ZZZ",
+        "display" : "左鎖骨下動脈超音波"
+      },
+      {
+        "code" : "B343ZZ3",
+        "display" : "右總頸動脈血管內超音波"
+      },
+      {
+        "code" : "B343ZZZ",
+        "display" : "右總頸動脈超音波"
+      },
+      {
+        "code" : "B344ZZ3",
+        "display" : "左總頸動脈血管內超音波"
+      },
+      {
+        "code" : "B344ZZZ",
+        "display" : "左總頸動脈超音波"
+      },
+      {
+        "code" : "B345ZZ3",
+        "display" : "雙側總頸動脈血管內超音波"
+      },
+      {
+        "code" : "B345ZZZ",
+        "display" : "雙側總頸動脈超音波"
+      },
+      {
+        "code" : "B346ZZ3",
+        "display" : "右內頸動脈血管內超音波"
+      },
+      {
+        "code" : "B346ZZZ",
+        "display" : "右內頸動脈超音波"
+      },
+      {
+        "code" : "B347ZZ3",
+        "display" : "左內頸動脈血管內超音波"
+      },
+      {
+        "code" : "B347ZZZ",
+        "display" : "左內頸動脈超音波"
+      },
+      {
+        "code" : "B348ZZ3",
+        "display" : "雙側內頸動脈血管內超音波"
+      },
+      {
+        "code" : "B348ZZZ",
+        "display" : "雙側內頸動脈超音波"
+      },
+      {
+        "code" : "B34HZZ3",
+        "display" : "右上肢動脈血管內超音波"
+      },
+      {
+        "code" : "B34HZZZ",
+        "display" : "右上肢動脈超音波"
+      },
+      {
+        "code" : "B34JZZ3",
+        "display" : "左上肢動脈血管內超音波"
+      },
+      {
+        "code" : "B34JZZZ",
+        "display" : "左上肢動脈超音波"
+      },
+      {
+        "code" : "B34KZZ3",
+        "display" : "雙側上肢動脈血管內超音波"
+      },
+      {
+        "code" : "B34KZZZ",
+        "display" : "雙側上肢動脈超音波"
+      },
+      {
+        "code" : "B34RZZ3",
+        "display" : "顱內動脈血管內超音波"
+      },
+      {
+        "code" : "B34RZZZ",
+        "display" : "顱內動脈超音波"
+      },
+      {
+        "code" : "B34SZZ3",
+        "display" : "右肺動脈血管內超音波"
+      },
+      {
+        "code" : "B34SZZZ",
+        "display" : "右肺動脈超音波"
+      },
+      {
+        "code" : "B34TZZ3",
+        "display" : "左肺動脈血管內超音波"
+      },
+      {
+        "code" : "B34TZZZ",
+        "display" : "左肺動脈超音波"
+      },
+      {
+        "code" : "B34VZZ3",
+        "display" : "眼動脈血管內超音波"
+      },
+      {
+        "code" : "B34VZZZ",
+        "display" : "眼動脈超音波"
+      },
+      {
+        "code" : "B410ZZZ",
+        "display" : "腹主動脈透視攝影"
+      },
+      {
+        "code" : "B412ZZZ",
+        "display" : "肝動脈透視攝影"
+      },
+      {
+        "code" : "B413ZZZ",
+        "display" : "脾動脈透視攝影"
+      },
+      {
+        "code" : "B414ZZZ",
+        "display" : "腸系膜上動脈透視攝影"
+      },
+      {
+        "code" : "B415ZZZ",
+        "display" : "腸系膜下動脈透視攝影"
+      },
+      {
+        "code" : "B416ZZZ",
+        "display" : "右腎動脈透視攝影"
+      },
+      {
+        "code" : "B417ZZZ",
+        "display" : "左腎動脈透視攝影"
+      },
+      {
+        "code" : "B418ZZZ",
+        "display" : "雙側腎動脈透視攝影"
+      },
+      {
+        "code" : "B419ZZZ",
+        "display" : "腰動脈透視攝影"
+      },
+      {
+        "code" : "B41BZZZ",
+        "display" : "其他腹腔內動脈透視攝影"
+      },
+      {
+        "code" : "B41CZZZ",
+        "display" : "盆腔動脈透視攝影"
+      },
+      {
+        "code" : "B41DZZZ",
+        "display" : "主動脈及雙側下肢動脈透視攝影"
+      },
+      {
+        "code" : "B41FZZZ",
+        "display" : "右下肢動脈透視攝影"
+      },
+      {
+        "code" : "B41GZZZ",
+        "display" : "左下肢動脈透視攝影"
+      },
+      {
+        "code" : "B41JZZZ",
+        "display" : "其他下部動脈透視攝影"
+      },
+      {
+        "code" : "B420ZZZ",
+        "display" : "腹主動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B421ZZZ",
+        "display" : "腹腔動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B424ZZZ",
+        "display" : "腸系膜上動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B428ZZZ",
+        "display" : "雙側腎動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B42CZZZ",
+        "display" : "盆腔動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B42FZZZ",
+        "display" : "右下肢動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B42GZZZ",
+        "display" : "左下肢動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B42HZZZ",
+        "display" : "雙側下肢動脈電腦斷層掃描"
+      },
+      {
+        "code" : "B42MZZZ",
+        "display" : "腎動脈移植電腦斷層掃描"
+      },
+      {
+        "code" : "B430ZZZ",
+        "display" : "腹主動脈磁振造影"
+      },
+      {
+        "code" : "B431ZZZ",
+        "display" : "腹腔動脈磁振造影"
+      },
+      {
+        "code" : "B434ZZZ",
+        "display" : "腸系膜上動脈磁振造影"
+      },
+      {
+        "code" : "B438ZZZ",
+        "display" : "雙側腎動脈磁振造影"
+      },
+      {
+        "code" : "B43CZZZ",
+        "display" : "盆腔動脈磁振造影"
+      },
+      {
+        "code" : "B43FZZZ",
+        "display" : "右下肢動脈磁振造影"
+      },
+      {
+        "code" : "B43GZZZ",
+        "display" : "左下肢動脈磁振造影"
+      },
+      {
+        "code" : "B43HZZZ",
+        "display" : "雙側下肢動脈磁振造影"
+      },
+      {
+        "code" : "B440ZZ3",
+        "display" : "腹主動脈血管內超音波"
+      },
+      {
+        "code" : "B440ZZZ",
+        "display" : "腹主動脈超音波"
+      },
+      {
+        "code" : "B444ZZ3",
+        "display" : "腸系膜上動脈血管內超音波"
+      },
+      {
+        "code" : "B444ZZZ",
+        "display" : "腸系膜上動脈超音波"
+      },
+      {
+        "code" : "B445ZZ3",
+        "display" : "腸系膜下動脈血管內超音波"
+      },
+      {
+        "code" : "B445ZZZ",
+        "display" : "腸系膜下動脈超音波"
+      },
+      {
+        "code" : "B446ZZ3",
+        "display" : "右腎動脈血管內超音波"
+      },
+      {
+        "code" : "B446ZZZ",
+        "display" : "右腎動脈超音波"
+      },
+      {
+        "code" : "B447ZZ3",
+        "display" : "左腎動脈血管內超音波"
+      },
+      {
+        "code" : "B447ZZZ",
+        "display" : "左腎動脈超音波"
+      },
+      {
+        "code" : "B448ZZ3",
+        "display" : "雙側腎動脈血管內超音波"
+      },
+      {
+        "code" : "B448ZZZ",
+        "display" : "雙側腎動脈超音波"
+      },
+      {
+        "code" : "B44BZZ3",
+        "display" : "其他腹腔內動脈血管內超音波"
+      },
+      {
+        "code" : "B44BZZZ",
+        "display" : "其他腹腔內動脈超音波"
+      },
+      {
+        "code" : "B44FZZ3",
+        "display" : "右下肢動脈血管內超音波"
+      },
+      {
+        "code" : "B44FZZZ",
+        "display" : "右下肢動脈超音波"
+      },
+      {
+        "code" : "B44GZZ3",
+        "display" : "左下肢動脈血管內超音波"
+      },
+      {
+        "code" : "B44GZZZ",
+        "display" : "左下肢動脈超音波"
+      },
+      {
+        "code" : "B44HZZ3",
+        "display" : "雙側下肢動脈血管內超音波"
+      },
+      {
+        "code" : "B44HZZZ",
+        "display" : "雙側下肢動脈超音波"
+      },
+      {
+        "code" : "B44KZZ3",
+        "display" : "腹腔動脈及腸系膜動脈血管內超音波"
+      },
+      {
+        "code" : "B44KZZZ",
+        "display" : "腹腔動脈及腸系膜動脈超音波"
+      },
+      {
+        "code" : "B44LZZ3",
+        "display" : "股動脈血管內超音波"
+      },
+      {
+        "code" : "B44LZZZ",
+        "display" : "股動脈超音波"
+      },
+      {
+        "code" : "B44NZZ3",
+        "display" : "陰莖動脈血管內超音波"
+      },
+      {
+        "code" : "B44NZZZ",
+        "display" : "陰莖動脈超音波"
+      },
+      {
+        "code" : "B510ZZA",
+        "display" : "硬膜外靜脈導引透視攝影"
+      },
+      {
+        "code" : "B510ZZZ",
+        "display" : "硬膜外靜脈透視攝影"
+      },
+      {
+        "code" : "B511ZZA",
+        "display" : "腦及小腦靜脈導引透視攝影"
+      },
+      {
+        "code" : "B511ZZZ",
+        "display" : "腦及小腦靜脈透視攝影"
+      },
+      {
+        "code" : "B512ZZA",
+        "display" : "顱內竇導引透視攝影"
+      },
+      {
+        "code" : "B512ZZZ",
+        "display" : "顱內竇透視攝影"
+      },
+      {
+        "code" : "B513ZZA",
+        "display" : "右頸靜脈導引透視攝影"
+      },
+      {
+        "code" : "B513ZZZ",
+        "display" : "右頸靜脈透視攝影"
+      },
+      {
+        "code" : "B514ZZA",
+        "display" : "左頸靜脈導引透視攝影"
+      },
+      {
+        "code" : "B514ZZZ",
+        "display" : "左頸靜脈透視攝影"
+      },
+      {
+        "code" : "B515ZZA",
+        "display" : "雙側頸靜脈導引透視攝影"
+      },
+      {
+        "code" : "B515ZZZ",
+        "display" : "雙側頸靜脈透視攝影"
+      },
+      {
+        "code" : "B516ZZA",
+        "display" : "右鎖骨下靜脈導引透視攝影"
+      },
+      {
+        "code" : "B516ZZZ",
+        "display" : "右鎖骨下靜脈透視攝影"
+      },
+      {
+        "code" : "B517ZZA",
+        "display" : "左鎖骨下靜脈導引透視攝影"
+      },
+      {
+        "code" : "B517ZZZ",
+        "display" : "左鎖骨下靜脈透視攝影"
+      },
+      {
+        "code" : "B518ZZA",
+        "display" : "上腔靜脈導引透視攝影"
+      },
+      {
+        "code" : "B518ZZZ",
+        "display" : "上腔靜脈透視攝影"
+      },
+      {
+        "code" : "B519ZZA",
+        "display" : "下腔靜脈導引透視攝影"
+      },
+      {
+        "code" : "B519ZZZ",
+        "display" : "下腔靜脈透視攝影"
+      },
+      {
+        "code" : "B51BZZA",
+        "display" : "右下肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51BZZZ",
+        "display" : "右下肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51CZZA",
+        "display" : "左下肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51CZZZ",
+        "display" : "左下肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51DZZA",
+        "display" : "雙側下肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51DZZZ",
+        "display" : "雙側下肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51FZZA",
+        "display" : "右骨盆（髂）靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51FZZZ",
+        "display" : "右骨盆（髂）靜脈透視攝影"
+      },
+      {
+        "code" : "B51GZZA",
+        "display" : "左骨盆（髂）靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51GZZZ",
+        "display" : "左骨盆（髂）靜脈透視攝影"
+      },
+      {
+        "code" : "B51HZZA",
+        "display" : "雙側骨盆（髂）靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51HZZZ",
+        "display" : "雙側骨盆（髂）靜脈透視攝影"
+      },
+      {
+        "code" : "B51JZZA",
+        "display" : "右腎靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51JZZZ",
+        "display" : "右腎靜脈透視攝影"
+      },
+      {
+        "code" : "B51KZZA",
+        "display" : "左腎靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51KZZZ",
+        "display" : "左腎靜脈透視攝影"
+      },
+      {
+        "code" : "B51LZZA",
+        "display" : "雙側腎靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51LZZZ",
+        "display" : "雙側腎靜脈透視攝影"
+      },
+      {
+        "code" : "B51MZZA",
+        "display" : "右上肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51MZZZ",
+        "display" : "右上肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51NZZA",
+        "display" : "左上肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51NZZZ",
+        "display" : "左上肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51PZZA",
+        "display" : "雙側上肢靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51PZZZ",
+        "display" : "雙側上肢靜脈透視攝影"
+      },
+      {
+        "code" : "B51QZZA",
+        "display" : "右肺靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51QZZZ",
+        "display" : "右肺靜脈透視攝影"
+      },
+      {
+        "code" : "B51RZZA",
+        "display" : "左肺靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51RZZZ",
+        "display" : "左肺靜脈透視攝影"
+      },
+      {
+        "code" : "B51SZZA",
+        "display" : "雙側肺靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51SZZZ",
+        "display" : "雙側肺靜脈透視攝影"
+      },
+      {
+        "code" : "B51TZZA",
+        "display" : "門靜脈及內臟靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51TZZZ",
+        "display" : "門靜脈及內臟靜脈透視攝影"
+      },
+      {
+        "code" : "B51VZZA",
+        "display" : "其他靜脈導引透視攝影"
+      },
+      {
+        "code" : "B51VZZZ",
+        "display" : "其他靜脈透視攝影"
+      },
+      {
+        "code" : "B51WZZA",
+        "display" : "透析分流/廔管導引透視攝影"
+      },
+      {
+        "code" : "B51WZZZ",
+        "display" : "透析分流/廔管透視攝影"
+      },
+      {
+        "code" : "B522ZZZ",
+        "display" : "顱內竇電腦斷層掃描"
+      },
+      {
+        "code" : "B528ZZZ",
+        "display" : "上腔靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B529ZZZ",
+        "display" : "下腔靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52FZZZ",
+        "display" : "右骨盆（髂）靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52GZZZ",
+        "display" : "左骨盆（髂）靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52HZZZ",
+        "display" : "雙側骨盆（髂）靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52JZZZ",
+        "display" : "右腎靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52KZZZ",
+        "display" : "左腎靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52LZZZ",
+        "display" : "雙側腎靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52QZZZ",
+        "display" : "右肺靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52RZZZ",
+        "display" : "左肺靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52SZZZ",
+        "display" : "雙側肺靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B52TZZZ",
+        "display" : "門靜脈及內臟靜脈電腦斷層掃描"
+      },
+      {
+        "code" : "B531ZZZ",
+        "display" : "腦及小腦靜脈磁振造影"
+      },
+      {
+        "code" : "B532ZZZ",
+        "display" : "顱內竇磁振造影"
+      },
+      {
+        "code" : "B535ZZZ",
+        "display" : "雙側頸靜脈磁振造影"
+      },
+      {
+        "code" : "B538ZZZ",
+        "display" : "上腔靜脈磁振造影"
+      },
+      {
+        "code" : "B539ZZZ",
+        "display" : "下腔靜脈磁振造影"
+      },
+      {
+        "code" : "B53BZZZ",
+        "display" : "右下肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53CZZZ",
+        "display" : "左下肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53DZZZ",
+        "display" : "雙側下肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53HZZZ",
+        "display" : "雙側骨盆（髂）靜脈磁振造影"
+      },
+      {
+        "code" : "B53LZZZ",
+        "display" : "雙側腎靜脈磁振造影"
+      },
+      {
+        "code" : "B53MZZZ",
+        "display" : "右上肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53NZZZ",
+        "display" : "左上肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53PZZZ",
+        "display" : "雙側上肢靜脈磁振造影"
+      },
+      {
+        "code" : "B53SZZZ",
+        "display" : "雙側肺靜脈磁振造影"
+      },
+      {
+        "code" : "B53TZZZ",
+        "display" : "門靜脈及內臟靜脈磁振造影"
+      },
+      {
+        "code" : "B53VZZZ",
+        "display" : "其他靜脈磁振造影"
+      },
+      {
+        "code" : "B543ZZ3",
+        "display" : "右頸靜脈血管內超音波"
+      },
+      {
+        "code" : "B543ZZA",
+        "display" : "右頸靜脈導引超音波"
+      },
+      {
+        "code" : "B543ZZZ",
+        "display" : "右頸靜脈超音波"
+      },
+      {
+        "code" : "B544ZZ3",
+        "display" : "左頸靜脈血管內超音波"
+      },
+      {
+        "code" : "B544ZZA",
+        "display" : "左頸靜脈導引超音波"
+      },
+      {
+        "code" : "B544ZZZ",
+        "display" : "左頸靜脈超音波"
+      },
+      {
+        "code" : "B546ZZ3",
+        "display" : "右鎖骨下靜脈血管內超音波"
+      },
+      {
+        "code" : "B546ZZA",
+        "display" : "右鎖骨下靜脈導引超音波"
+      },
+      {
+        "code" : "B546ZZZ",
+        "display" : "右鎖骨下靜脈超音波"
+      },
+      {
+        "code" : "B547ZZ3",
+        "display" : "左鎖骨下靜脈血管內超音波"
+      },
+      {
+        "code" : "B547ZZA",
+        "display" : "左鎖骨下靜脈導引超音波"
+      },
+      {
+        "code" : "B547ZZZ",
+        "display" : "左鎖骨下靜脈超音波"
+      },
+      {
+        "code" : "B548ZZ3",
+        "display" : "上腔靜脈血管內超音波"
+      },
+      {
+        "code" : "B548ZZA",
+        "display" : "上腔靜脈導引超音波"
+      },
+      {
+        "code" : "B548ZZZ",
+        "display" : "上腔靜脈超音波"
+      },
+      {
+        "code" : "B549ZZ3",
+        "display" : "下腔靜脈血管內超音波"
+      },
+      {
+        "code" : "B549ZZA",
+        "display" : "下腔靜脈導引超音波"
+      },
+      {
+        "code" : "B549ZZZ",
+        "display" : "下腔靜脈超音波"
+      },
+      {
+        "code" : "B54BZZ3",
+        "display" : "右下肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54BZZA",
+        "display" : "右下肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54BZZZ",
+        "display" : "右下肢靜脈超音波"
+      },
+      {
+        "code" : "B54CZZ3",
+        "display" : "左下肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54CZZA",
+        "display" : "左下肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54CZZZ",
+        "display" : "左下肢靜脈超音波"
+      },
+      {
+        "code" : "B54DZZ3",
+        "display" : "雙側下肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54DZZA",
+        "display" : "雙側下肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54DZZZ",
+        "display" : "雙側下肢靜脈超音波"
+      },
+      {
+        "code" : "B54JZZ3",
+        "display" : "右腎靜脈血管內超音波"
+      },
+      {
+        "code" : "B54JZZA",
+        "display" : "右腎靜脈導引超音波"
+      },
+      {
+        "code" : "B54JZZZ",
+        "display" : "右腎靜脈超音波"
+      },
+      {
+        "code" : "B54KZZ3",
+        "display" : "左腎靜脈血管內超音波"
+      },
+      {
+        "code" : "B54KZZA",
+        "display" : "左腎靜脈導引超音波"
+      },
+      {
+        "code" : "B54KZZZ",
+        "display" : "左腎靜脈超音波"
+      },
+      {
+        "code" : "B54LZZ3",
+        "display" : "雙側腎靜脈血管內超音波"
+      },
+      {
+        "code" : "B54LZZA",
+        "display" : "雙側腎靜脈導引超音波"
+      },
+      {
+        "code" : "B54LZZZ",
+        "display" : "雙側腎靜脈超音波"
+      },
+      {
+        "code" : "B54MZZ3",
+        "display" : "右上肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54MZZA",
+        "display" : "右上肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54MZZZ",
+        "display" : "右上肢靜脈超音波"
+      },
+      {
+        "code" : "B54NZZ3",
+        "display" : "左上肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54NZZA",
+        "display" : "左上肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54NZZZ",
+        "display" : "左上肢靜脈超音波"
+      },
+      {
+        "code" : "B54PZZ3",
+        "display" : "雙側上肢靜脈血管內超音波"
+      },
+      {
+        "code" : "B54PZZA",
+        "display" : "雙側上肢靜脈導引超音波"
+      },
+      {
+        "code" : "B54PZZZ",
+        "display" : "雙側上肢靜脈超音波"
+      },
+      {
+        "code" : "B54TZZ3",
+        "display" : "門靜脈及內臟靜脈血管內超音波"
+      },
+      {
+        "code" : "B54TZZA",
+        "display" : "門靜脈及內臟靜脈導引超音波"
+      },
+      {
+        "code" : "B54TZZZ",
+        "display" : "門靜脈及內臟靜脈超音波"
+      },
+      {
+        "code" : "B803ZZZ",
+        "display" : "右側視神經孔一般放射線攝影"
+      },
+      {
+        "code" : "B804ZZZ",
+        "display" : "左側視神經孔一般放射線攝影"
+      },
+      {
+        "code" : "B805ZZZ",
+        "display" : "右眼一般放射線攝影"
+      },
+      {
+        "code" : "B806ZZZ",
+        "display" : "左眼一般放射線攝影"
+      },
+      {
+        "code" : "B807ZZZ",
+        "display" : "雙眼一般放射線攝影"
+      },
+      {
+        "code" : "B825ZZZ",
+        "display" : "右眼電腦斷層掃描"
+      },
+      {
+        "code" : "B826ZZZ",
+        "display" : "左眼電腦斷層掃描"
+      },
+      {
+        "code" : "B827ZZZ",
+        "display" : "雙眼電腦斷層掃描"
+      },
+      {
+        "code" : "B835ZZZ",
+        "display" : "右眼磁振造影"
+      },
+      {
+        "code" : "B836ZZZ",
+        "display" : "左眼磁振造影"
+      },
+      {
+        "code" : "B837ZZZ",
+        "display" : "雙眼磁振造影"
+      },
+      {
+        "code" : "B845ZZZ",
+        "display" : "右眼超音波"
+      },
+      {
+        "code" : "B846ZZZ",
+        "display" : "左眼超音波"
+      },
+      {
+        "code" : "B847ZZZ",
+        "display" : "雙眼超音波"
+      },
+      {
+        "code" : "B902ZZZ",
+        "display" : "副鼻竇一般放射線攝影"
+      },
+      {
+        "code" : "B90FZZZ",
+        "display" : "鼻咽/口咽一般放射線攝影"
+      },
+      {
+        "code" : "B90HZZZ",
+        "display" : "乳突一般放射線攝影"
+      },
+      {
+        "code" : "B91GZZZ",
+        "display" : "咽及會厭透視攝影"
+      },
+      {
+        "code" : "B91JZZZ",
+        "display" : "喉透視攝影"
+      },
+      {
+        "code" : "B920ZZZ",
+        "display" : "耳朵電腦斷層掃描"
+      },
+      {
+        "code" : "B922ZZZ",
+        "display" : "副鼻竇電腦斷層掃描"
+      },
+      {
+        "code" : "B926ZZZ",
+        "display" : "雙側腮腺電腦斷層掃描"
+      },
+      {
+        "code" : "B929ZZZ",
+        "display" : "雙側頜下腺電腦斷層掃描"
+      },
+      {
+        "code" : "B92DZZZ",
+        "display" : "雙側唾液腺電腦斷層掃描"
+      },
+      {
+        "code" : "B92FZZZ",
+        "display" : "鼻咽/口咽電腦斷層掃描"
+      },
+      {
+        "code" : "B92JZZZ",
+        "display" : "喉電腦斷層掃描"
+      },
+      {
+        "code" : "B930ZZZ",
+        "display" : "耳朵磁振造影"
+      },
+      {
+        "code" : "B932ZZZ",
+        "display" : "副鼻竇磁振造影"
+      },
+      {
+        "code" : "B936ZZZ",
+        "display" : "雙側腮腺磁振造影"
+      },
+      {
+        "code" : "B939ZZZ",
+        "display" : "雙側頜下腺磁振造影"
+      },
+      {
+        "code" : "B93DZZZ",
+        "display" : "雙側唾液腺磁振造影"
+      },
+      {
+        "code" : "B93FZZZ",
+        "display" : "鼻咽/口咽磁振造影"
+      },
+      {
+        "code" : "B93JZZZ",
+        "display" : "喉磁振造影"
+      },
+      {
+        "code" : "BB0DZZZ",
+        "display" : "上呼吸道一般放射線攝影"
+      },
+      {
+        "code" : "BB12ZZZ",
+        "display" : "右肺透視攝影"
+      },
+      {
+        "code" : "BB13ZZZ",
+        "display" : "左肺透視攝影"
+      },
+      {
+        "code" : "BB14ZZZ",
+        "display" : "雙側肺臟透視攝影"
+      },
+      {
+        "code" : "BB16ZZZ",
+        "display" : "橫膈膜透視攝影"
+      },
+      {
+        "code" : "BB1CZZZ",
+        "display" : "縱隔透視攝影"
+      },
+      {
+        "code" : "BB1DZZZ",
+        "display" : "上呼吸道透視攝影"
+      },
+      {
+        "code" : "BB24ZZZ",
+        "display" : "雙側肺臟電腦斷層掃描"
+      },
+      {
+        "code" : "BB27ZZZ",
+        "display" : "右側氣管支氣管樹電腦斷層掃描"
+      },
+      {
+        "code" : "BB28ZZZ",
+        "display" : "左側氣管支氣管樹電腦斷層掃描"
+      },
+      {
+        "code" : "BB29ZZZ",
+        "display" : "雙側氣管支氣管樹電腦斷層掃描"
+      },
+      {
+        "code" : "BB2FZZZ",
+        "display" : "氣管/氣道電腦斷層掃描"
+      },
+      {
+        "code" : "BB3GZZZ",
+        "display" : "肺尖磁振造影"
+      },
+      {
+        "code" : "BB4BZZZ",
+        "display" : "肋膜超音波"
+      },
+      {
+        "code" : "BB4CZZZ",
+        "display" : "縱隔超音波"
+      },
+      {
+        "code" : "BD11ZZZ",
+        "display" : "食道透視攝影"
+      },
+      {
+        "code" : "BD12ZZZ",
+        "display" : "胃透視攝影"
+      },
+      {
+        "code" : "BD13ZZZ",
+        "display" : "小腸透視攝影"
+      },
+      {
+        "code" : "BD14ZZZ",
+        "display" : "結腸透視攝影"
+      },
+      {
+        "code" : "BD15ZZZ",
+        "display" : "上消化道透視攝影"
+      },
+      {
+        "code" : "BD16ZZZ",
+        "display" : "上消化道及小腸透視攝影"
+      },
+      {
+        "code" : "BD19ZZZ",
+        "display" : "十二指腸透視攝影"
+      },
+      {
+        "code" : "BD1BZZZ",
+        "display" : "口/口咽部透視攝影"
+      },
+      {
+        "code" : "BD24ZZZ",
+        "display" : "結腸電腦斷層掃描"
+      },
+      {
+        "code" : "BD41ZZZ",
+        "display" : "食道超音波"
+      },
+      {
+        "code" : "BD42ZZZ",
+        "display" : "胃超音波"
+      },
+      {
+        "code" : "BD47ZZZ",
+        "display" : "胃腸道超音波"
+      },
+      {
+        "code" : "BD48ZZZ",
+        "display" : "闌尾超音波"
+      },
+      {
+        "code" : "BD49ZZZ",
+        "display" : "十二指腸超音波"
+      },
+      {
+        "code" : "BD4CZZZ",
+        "display" : "直腸超音波"
+      },
+      {
+        "code" : "BF15ZZA",
+        "display" : "肝臟導引透視攝影"
+      },
+      {
+        "code" : "BF25ZZZ",
+        "display" : "肝臟電腦斷層掃描"
+      },
+      {
+        "code" : "BF26ZZZ",
+        "display" : "肝臟及脾臟電腦斷層掃描"
+      },
+      {
+        "code" : "BF27ZZZ",
+        "display" : "胰臟電腦斷層掃描"
+      },
+      {
+        "code" : "BF2CZZZ",
+        "display" : "所有肝膽系統電腦斷層掃描"
+      },
+      {
+        "code" : "BF35ZZZ",
+        "display" : "肝臟磁振造影"
+      },
+      {
+        "code" : "BF36ZZZ",
+        "display" : "肝臟及脾臟磁振造影"
+      },
+      {
+        "code" : "BF37ZZZ",
+        "display" : "胰臟磁振造影"
+      },
+      {
+        "code" : "BF40ZZZ",
+        "display" : "膽管超音波"
+      },
+      {
+        "code" : "BF42ZZZ",
+        "display" : "膽囊超音波"
+      },
+      {
+        "code" : "BF43ZZZ",
+        "display" : "膽囊及膽管超音波"
+      },
+      {
+        "code" : "BF45ZZZ",
+        "display" : "肝臟超音波"
+      },
+      {
+        "code" : "BF46ZZZ",
+        "display" : "肝臟及脾臟超音波"
+      },
+      {
+        "code" : "BF47ZZZ",
+        "display" : "胰臟超音波"
+      },
+      {
+        "code" : "BF4CZZZ",
+        "display" : "所有肝膽系統超音波"
+      },
+      {
+        "code" : "BG22ZZZ",
+        "display" : "雙側腎上腺電腦斷層掃描"
+      },
+      {
+        "code" : "BG23ZZZ",
+        "display" : "副甲狀腺電腦斷層掃描"
+      },
+      {
+        "code" : "BG24ZZZ",
+        "display" : "甲狀腺電腦斷層掃描"
+      },
+      {
+        "code" : "BG32ZZZ",
+        "display" : "雙側腎上腺磁振造影"
+      },
+      {
+        "code" : "BG33ZZZ",
+        "display" : "副甲狀腺磁振造影"
+      },
+      {
+        "code" : "BG34ZZZ",
+        "display" : "甲狀腺磁振造影"
+      },
+      {
+        "code" : "BG40ZZZ",
+        "display" : "右腎上腺超音波"
+      },
+      {
+        "code" : "BG41ZZZ",
+        "display" : "左腎上腺超音波"
+      },
+      {
+        "code" : "BG42ZZZ",
+        "display" : "雙側腎上腺超音波"
+      },
+      {
+        "code" : "BG43ZZZ",
+        "display" : "副甲狀腺超音波"
+      },
+      {
+        "code" : "BG44ZZZ",
+        "display" : "甲狀腺超音波"
+      },
+      {
+        "code" : "BH00ZZZ",
+        "display" : "右側乳房一般放射線攝影"
+      },
+      {
+        "code" : "BH01ZZZ",
+        "display" : "左側乳房一般放射線攝影"
+      },
+      {
+        "code" : "BH02ZZZ",
+        "display" : "雙側乳房一般放射線攝影"
+      },
+      {
+        "code" : "BH03ZZZ",
+        "display" : "右側單乳腺導管一般放射線攝影"
+      },
+      {
+        "code" : "BH04ZZZ",
+        "display" : "左側單乳腺導管一般放射線攝影"
+      },
+      {
+        "code" : "BH05ZZZ",
+        "display" : "右側多條乳腺導管一般放射線攝影"
+      },
+      {
+        "code" : "BH06ZZZ",
+        "display" : "左側多條乳腺導管一般放射線攝影"
+      },
+      {
+        "code" : "BH30ZZZ",
+        "display" : "右側乳房磁振造影"
+      },
+      {
+        "code" : "BH31ZZZ",
+        "display" : "左側乳房磁振造影"
+      },
+      {
+        "code" : "BH32ZZZ",
+        "display" : "雙側乳房磁振造影"
+      },
+      {
+        "code" : "BH3DZZZ",
+        "display" : "頭/頸部皮下組織磁振造影"
+      },
+      {
+        "code" : "BH3FZZZ",
+        "display" : "上肢皮下組織磁振造影"
+      },
+      {
+        "code" : "BH3GZZZ",
+        "display" : "胸部皮下組織磁振造影"
+      },
+      {
+        "code" : "BH3HZZZ",
+        "display" : "皮下組織、腹部及骨盆磁振造影"
+      },
+      {
+        "code" : "BH3JZZZ",
+        "display" : "下肢皮下組織磁振造影"
+      },
+      {
+        "code" : "BH40ZZZ",
+        "display" : "右側乳房超音波"
+      },
+      {
+        "code" : "BH41ZZZ",
+        "display" : "左側乳房超音波"
+      },
+      {
+        "code" : "BH42ZZZ",
+        "display" : "雙側乳房超音波"
+      },
+      {
+        "code" : "BH47ZZZ",
+        "display" : "上肢超音波"
+      },
+      {
+        "code" : "BH48ZZZ",
+        "display" : "下肢超音波"
+      },
+      {
+        "code" : "BH49ZZZ",
+        "display" : "腹壁超音波"
+      },
+      {
+        "code" : "BH4BZZZ",
+        "display" : "胸壁超音波"
+      },
+      {
+        "code" : "BH4CZZZ",
+        "display" : "頭及頸部超音波"
+      },
+      {
+        "code" : "BL30ZZZ",
+        "display" : "上肢結締組織磁振造影"
+      },
+      {
+        "code" : "BL31ZZZ",
+        "display" : "下肢結締組織磁振造影"
+      },
+      {
+        "code" : "BL32ZZZ",
+        "display" : "上肢肌腱磁振造影"
+      },
+      {
+        "code" : "BL33ZZZ",
+        "display" : "下肢肌腱磁振造影"
+      },
+      {
+        "code" : "BL40ZZZ",
+        "display" : "上肢結締組織超音波"
+      },
+      {
+        "code" : "BL41ZZZ",
+        "display" : "下肢結締組織超音波"
+      },
+      {
+        "code" : "BL42ZZZ",
+        "display" : "上肢肌腱超音波"
+      },
+      {
+        "code" : "BL43ZZZ",
+        "display" : "下肢肌腱超音波"
+      },
+      {
+        "code" : "BN00ZZZ",
+        "display" : "顱骨一般放射線攝影"
+      },
+      {
+        "code" : "BN01ZZZ",
+        "display" : "右眼眶一般放射線攝影"
+      },
+      {
+        "code" : "BN02ZZZ",
+        "display" : "左眼眶一般放射線攝影"
+      },
+      {
+        "code" : "BN03ZZZ",
+        "display" : "雙側眼眶一般放射線攝影"
+      },
+      {
+        "code" : "BN04ZZZ",
+        "display" : "鼻骨一般放射線攝影"
+      },
+      {
+        "code" : "BN05ZZZ",
+        "display" : "顏面骨一般放射線攝影"
+      },
+      {
+        "code" : "BN06ZZZ",
+        "display" : "下頜骨一般放射線攝影"
+      },
+      {
+        "code" : "BN07ZZZ",
+        "display" : "右顳顎關節一般放射線攝影"
+      },
+      {
+        "code" : "BN08ZZZ",
+        "display" : "左顳顎關節一般放射線攝影"
+      },
+      {
+        "code" : "BN09ZZZ",
+        "display" : "雙側顳顎關節一般放射線攝影"
+      },
+      {
+        "code" : "BN0BZZZ",
+        "display" : "右顴弓一般放射線攝影"
+      },
+      {
+        "code" : "BN0CZZZ",
+        "display" : "左顴弓一般放射線攝影"
+      },
+      {
+        "code" : "BN0DZZZ",
+        "display" : "雙側顴弓一般放射線攝影"
+      },
+      {
+        "code" : "BN0GZZZ",
+        "display" : "單顆牙齒一般放射線攝影"
+      },
+      {
+        "code" : "BN0HZZZ",
+        "display" : "多顆牙齒一般放射線攝影"
+      },
+      {
+        "code" : "BN0JZZZ",
+        "display" : "全部牙齒一般放射線攝影"
+      },
+      {
+        "code" : "BN17ZZZ",
+        "display" : "右顳顎關節透視攝影"
+      },
+      {
+        "code" : "BN18ZZZ",
+        "display" : "左顳顎關節透視攝影"
+      },
+      {
+        "code" : "BN19ZZZ",
+        "display" : "雙側顳顎關節透視攝影"
+      },
+      {
+        "code" : "BN20ZZZ",
+        "display" : "顱骨電腦斷層掃描"
+      },
+      {
+        "code" : "BN23ZZZ",
+        "display" : "雙側眼眶電腦斷層掃描"
+      },
+      {
+        "code" : "BN25ZZZ",
+        "display" : "顏面骨電腦斷層掃描"
+      },
+      {
+        "code" : "BN26ZZZ",
+        "display" : "下頜骨電腦斷層掃描"
+      },
+      {
+        "code" : "BN29ZZZ",
+        "display" : "雙側顳顎關節電腦斷層掃描"
+      },
+      {
+        "code" : "BN2FZZZ",
+        "display" : "顳骨電腦斷層掃描"
+      },
+      {
+        "code" : "BN39ZZZ",
+        "display" : "雙側顳顎關節磁振造影"
+      },
+      {
+        "code" : "BP00ZZZ",
+        "display" : "右胸鎖關節一般放射線攝影"
+      },
+      {
+        "code" : "BP01ZZZ",
+        "display" : "左胸鎖關節一般放射線攝影"
+      },
+      {
+        "code" : "BP02ZZZ",
+        "display" : "雙側胸鎖關節一般放射線攝影"
+      },
+      {
+        "code" : "BP03ZZZ",
+        "display" : "雙側肩鎖關節一般放射線攝影"
+      },
+      {
+        "code" : "BP04ZZZ",
+        "display" : "右側鎖骨一般放射線攝影"
+      },
+      {
+        "code" : "BP05ZZZ",
+        "display" : "左側鎖骨一般放射線攝影"
+      },
+      {
+        "code" : "BP06ZZZ",
+        "display" : "右側肩胛骨一般放射線攝影"
+      },
+      {
+        "code" : "BP07ZZZ",
+        "display" : "左側肩胛骨一般放射線攝影"
+      },
+      {
+        "code" : "BP08ZZZ",
+        "display" : "右肩一般放射線攝影"
+      },
+      {
+        "code" : "BP09ZZZ",
+        "display" : "左肩一般放射線攝影"
+      },
+      {
+        "code" : "BP0AZZZ",
+        "display" : "右側肱骨一般放射線攝影"
+      },
+      {
+        "code" : "BP0BZZZ",
+        "display" : "左側肱骨一般放射線攝影"
+      },
+      {
+        "code" : "BP0CZZZ",
+        "display" : "右手/手指關節一般放射線攝影"
+      },
+      {
+        "code" : "BP0DZZZ",
+        "display" : "左手/手指關節一般放射線攝影"
+      },
+      {
+        "code" : "BP0EZZZ",
+        "display" : "右上臂一般放射線攝影"
+      },
+      {
+        "code" : "BP0FZZZ",
+        "display" : "左上臂一般放射線攝影"
+      },
+      {
+        "code" : "BP0GZZZ",
+        "display" : "右肘一般放射線攝影"
+      },
+      {
+        "code" : "BP0HZZZ",
+        "display" : "左肘一般放射線攝影"
+      },
+      {
+        "code" : "BP0JZZZ",
+        "display" : "右前臂一般放射線攝影"
+      },
+      {
+        "code" : "BP0KZZZ",
+        "display" : "左前臂一般放射線攝影"
+      },
+      {
+        "code" : "BP0LZZZ",
+        "display" : "右手腕一般放射線攝影"
+      },
+      {
+        "code" : "BP0MZZZ",
+        "display" : "左手腕一般放射線攝影"
+      },
+      {
+        "code" : "BP0NZZZ",
+        "display" : "右手一般放射線攝影"
+      },
+      {
+        "code" : "BP0PZZZ",
+        "display" : "左手一般放射線攝影"
+      },
+      {
+        "code" : "BP0RZZZ",
+        "display" : "右手指一般放射線攝影"
+      },
+      {
+        "code" : "BP0SZZZ",
+        "display" : "左手指一般放射線攝影"
+      },
+      {
+        "code" : "BP0XZZZ",
+        "display" : "右側肋骨一般放射線攝影"
+      },
+      {
+        "code" : "BP0YZZZ",
+        "display" : "左側肋骨一般放射線攝影"
+      },
+      {
+        "code" : "BP10ZZZ",
+        "display" : "右胸鎖關節透視攝影"
+      },
+      {
+        "code" : "BP11ZZZ",
+        "display" : "左胸鎖關節透視攝影"
+      },
+      {
+        "code" : "BP12ZZZ",
+        "display" : "雙側胸鎖關節透視攝影"
+      },
+      {
+        "code" : "BP13ZZZ",
+        "display" : "雙側肩鎖關節透視攝影"
+      },
+      {
+        "code" : "BP14ZZZ",
+        "display" : "右側鎖骨透視攝影"
+      },
+      {
+        "code" : "BP15ZZZ",
+        "display" : "左側鎖骨透視攝影"
+      },
+      {
+        "code" : "BP16ZZZ",
+        "display" : "右側肩胛骨透視攝影"
+      },
+      {
+        "code" : "BP17ZZZ",
+        "display" : "左側肩胛骨透視攝影"
+      },
+      {
+        "code" : "BP18ZZZ",
+        "display" : "右肩透視攝影"
+      },
+      {
+        "code" : "BP19ZZZ",
+        "display" : "左肩透視攝影"
+      },
+      {
+        "code" : "BP1AZZZ",
+        "display" : "右側肱骨透視攝影"
+      },
+      {
+        "code" : "BP1BZZZ",
+        "display" : "左側肱骨透視攝影"
+      },
+      {
+        "code" : "BP1EZZZ",
+        "display" : "右上臂透視攝影"
+      },
+      {
+        "code" : "BP1FZZZ",
+        "display" : "左上臂透視攝影"
+      },
+      {
+        "code" : "BP1JZZZ",
+        "display" : "右前臂透視攝影"
+      },
+      {
+        "code" : "BP1KZZZ",
+        "display" : "左前臂透視攝影"
+      },
+      {
+        "code" : "BP1LZZZ",
+        "display" : "右手腕透視攝影"
+      },
+      {
+        "code" : "BP1MZZZ",
+        "display" : "左手腕透視攝影"
+      },
+      {
+        "code" : "BP1NZZZ",
+        "display" : "右手透視攝影"
+      },
+      {
+        "code" : "BP1PZZZ",
+        "display" : "左手透視攝影"
+      },
+      {
+        "code" : "BP1RZZZ",
+        "display" : "右手指透視攝影"
+      },
+      {
+        "code" : "BP1SZZZ",
+        "display" : "左手指透視攝影"
+      },
+      {
+        "code" : "BP1XZZZ",
+        "display" : "右側肋骨透視攝影"
+      },
+      {
+        "code" : "BP1YZZZ",
+        "display" : "左側肋骨透視攝影"
+      },
+      {
+        "code" : "BP22ZZZ",
+        "display" : "雙側胸鎖關節電腦斷層掃描"
+      },
+      {
+        "code" : "BP23ZZZ",
+        "display" : "雙側肩鎖關節電腦斷層掃描"
+      },
+      {
+        "code" : "BP24ZZZ",
+        "display" : "右側鎖骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP25ZZZ",
+        "display" : "左側鎖骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP26ZZZ",
+        "display" : "右側肩胛骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP27ZZZ",
+        "display" : "左側肩胛骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP28ZZZ",
+        "display" : "右肩電腦斷層掃描"
+      },
+      {
+        "code" : "BP29ZZZ",
+        "display" : "左肩電腦斷層掃描"
+      },
+      {
+        "code" : "BP2AZZZ",
+        "display" : "右側肱骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP2BZZZ",
+        "display" : "左側肱骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP2CZZZ",
+        "display" : "右手/手指關節電腦斷層掃描"
+      },
+      {
+        "code" : "BP2DZZZ",
+        "display" : "左手/手指關節電腦斷層掃描"
+      },
+      {
+        "code" : "BP2EZZZ",
+        "display" : "右上臂電腦斷層掃描"
+      },
+      {
+        "code" : "BP2FZZZ",
+        "display" : "左上臂電腦斷層掃描"
+      },
+      {
+        "code" : "BP2GZZZ",
+        "display" : "右肘電腦斷層掃描"
+      },
+      {
+        "code" : "BP2HZZZ",
+        "display" : "左肘電腦斷層掃描"
+      },
+      {
+        "code" : "BP2JZZZ",
+        "display" : "右前臂電腦斷層掃描"
+      },
+      {
+        "code" : "BP2KZZZ",
+        "display" : "左前臂電腦斷層掃描"
+      },
+      {
+        "code" : "BP2LZZZ",
+        "display" : "右手腕電腦斷層掃描"
+      },
+      {
+        "code" : "BP2MZZZ",
+        "display" : "左手腕電腦斷層掃描"
+      },
+      {
+        "code" : "BP2NZZZ",
+        "display" : "右手電腦斷層掃描"
+      },
+      {
+        "code" : "BP2PZZZ",
+        "display" : "左手電腦斷層掃描"
+      },
+      {
+        "code" : "BP2QZZZ",
+        "display" : "雙側手及手腕電腦斷層掃描"
+      },
+      {
+        "code" : "BP2RZZZ",
+        "display" : "右手指電腦斷層掃描"
+      },
+      {
+        "code" : "BP2SZZZ",
+        "display" : "左手指電腦斷層掃描"
+      },
+      {
+        "code" : "BP2TZZZ",
+        "display" : "右上肢電腦斷層掃描"
+      },
+      {
+        "code" : "BP2UZZZ",
+        "display" : "左上肢電腦斷層掃描"
+      },
+      {
+        "code" : "BP2VZZZ",
+        "display" : "雙側上肢電腦斷層掃描"
+      },
+      {
+        "code" : "BP2XZZZ",
+        "display" : "右側肋骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP2YZZZ",
+        "display" : "左側肋骨電腦斷層掃描"
+      },
+      {
+        "code" : "BP38ZZZ",
+        "display" : "右肩磁振造影"
+      },
+      {
+        "code" : "BP39ZZZ",
+        "display" : "左肩磁振造影"
+      },
+      {
+        "code" : "BP3CZZZ",
+        "display" : "右手/手指關節磁振造影"
+      },
+      {
+        "code" : "BP3DZZZ",
+        "display" : "左手/手指關節磁振造影"
+      },
+      {
+        "code" : "BP3EZZZ",
+        "display" : "右上臂磁振造影"
+      },
+      {
+        "code" : "BP3FZZZ",
+        "display" : "左上臂磁振造影"
+      },
+      {
+        "code" : "BP3GZZZ",
+        "display" : "右肘磁振造影"
+      },
+      {
+        "code" : "BP3HZZZ",
+        "display" : "左肘磁振造影"
+      },
+      {
+        "code" : "BP3JZZZ",
+        "display" : "右前臂磁振造影"
+      },
+      {
+        "code" : "BP3KZZZ",
+        "display" : "左前臂磁振造影"
+      },
+      {
+        "code" : "BP3LZZZ",
+        "display" : "右手腕磁振造影"
+      },
+      {
+        "code" : "BP3MZZZ",
+        "display" : "左手腕磁振造影"
+      },
+      {
+        "code" : "BP48ZZ1",
+        "display" : "右肩骨質密度超音波"
+      },
+      {
+        "code" : "BP48ZZZ",
+        "display" : "右肩超音波"
+      },
+      {
+        "code" : "BP49ZZ1",
+        "display" : "左肩骨質密度超音波"
+      },
+      {
+        "code" : "BP49ZZZ",
+        "display" : "左肩超音波"
+      },
+      {
+        "code" : "BP4GZZ1",
+        "display" : "右肘骨質密度超音波"
+      },
+      {
+        "code" : "BP4GZZZ",
+        "display" : "右肘超音波"
+      },
+      {
+        "code" : "BP4HZZ1",
+        "display" : "左肘骨質密度超音波"
+      },
+      {
+        "code" : "BP4HZZZ",
+        "display" : "左肘超音波"
+      },
+      {
+        "code" : "BP4LZZ1",
+        "display" : "右手腕骨質密度超音波"
+      },
+      {
+        "code" : "BP4LZZZ",
+        "display" : "右手腕超音波"
+      },
+      {
+        "code" : "BP4MZZ1",
+        "display" : "左手腕骨質密度超音波"
+      },
+      {
+        "code" : "BP4MZZZ",
+        "display" : "左手腕超音波"
+      },
+      {
+        "code" : "BP4NZZ1",
+        "display" : "右手骨質密度超音波"
+      },
+      {
+        "code" : "BP4NZZZ",
+        "display" : "右手超音波"
+      },
+      {
+        "code" : "BP4PZZ1",
+        "display" : "左手骨質密度超音波"
+      },
+      {
+        "code" : "BP4PZZZ",
+        "display" : "左手超音波"
+      },
+      {
+        "code" : "BQ00ZZ1",
+        "display" : "右髖關節骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BQ00ZZZ",
+        "display" : "右髖關節一般放射線攝影"
+      },
+      {
+        "code" : "BQ01ZZ1",
+        "display" : "左髖關節骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BQ01ZZZ",
+        "display" : "左髖關節一般放射線攝影"
+      },
+      {
+        "code" : "BQ03ZZ1",
+        "display" : "右側股骨骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BQ03ZZZ",
+        "display" : "右側股骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ04ZZ1",
+        "display" : "左側股骨骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BQ04ZZZ",
+        "display" : "左側股骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ07ZZZ",
+        "display" : "右膝一般放射線攝影"
+      },
+      {
+        "code" : "BQ08ZZZ",
+        "display" : "左膝一般放射線攝影"
+      },
+      {
+        "code" : "BQ0DZZZ",
+        "display" : "右小腿一般放射線攝影"
+      },
+      {
+        "code" : "BQ0FZZZ",
+        "display" : "左小腿一般放射線攝影"
+      },
+      {
+        "code" : "BQ0GZZZ",
+        "display" : "右踝一般放射線攝影"
+      },
+      {
+        "code" : "BQ0HZZZ",
+        "display" : "左踝一般放射線攝影"
+      },
+      {
+        "code" : "BQ0JZZZ",
+        "display" : "右側跟骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ0KZZZ",
+        "display" : "左側跟骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ0LZZZ",
+        "display" : "右足一般放射線攝影"
+      },
+      {
+        "code" : "BQ0MZZZ",
+        "display" : "左足一般放射線攝影"
+      },
+      {
+        "code" : "BQ0PZZZ",
+        "display" : "右趾一般放射線攝影"
+      },
+      {
+        "code" : "BQ0QZZZ",
+        "display" : "左趾一般放射線攝影"
+      },
+      {
+        "code" : "BQ0VZZZ",
+        "display" : "右側髕骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ0WZZZ",
+        "display" : "左側髕骨一般放射線攝影"
+      },
+      {
+        "code" : "BQ10ZZZ",
+        "display" : "右髖關節透視攝影"
+      },
+      {
+        "code" : "BQ11ZZZ",
+        "display" : "左髖關節透視攝影"
+      },
+      {
+        "code" : "BQ13ZZZ",
+        "display" : "右側股骨透視攝影"
+      },
+      {
+        "code" : "BQ14ZZZ",
+        "display" : "左側股骨透視攝影"
+      },
+      {
+        "code" : "BQ17ZZZ",
+        "display" : "右膝透視攝影"
+      },
+      {
+        "code" : "BQ18ZZZ",
+        "display" : "左膝透視攝影"
+      },
+      {
+        "code" : "BQ1DZZZ",
+        "display" : "右小腿透視攝影"
+      },
+      {
+        "code" : "BQ1FZZZ",
+        "display" : "左小腿透視攝影"
+      },
+      {
+        "code" : "BQ1GZZZ",
+        "display" : "右踝透視攝影"
+      },
+      {
+        "code" : "BQ1HZZZ",
+        "display" : "左踝透視攝影"
+      },
+      {
+        "code" : "BQ1JZZZ",
+        "display" : "右側跟骨透視攝影"
+      },
+      {
+        "code" : "BQ1KZZZ",
+        "display" : "左側跟骨透視攝影"
+      },
+      {
+        "code" : "BQ1LZZZ",
+        "display" : "右足透視攝影"
+      },
+      {
+        "code" : "BQ1MZZZ",
+        "display" : "左足透視攝影"
+      },
+      {
+        "code" : "BQ1PZZZ",
+        "display" : "右趾透視攝影"
+      },
+      {
+        "code" : "BQ1QZZZ",
+        "display" : "左趾透視攝影"
+      },
+      {
+        "code" : "BQ1VZZZ",
+        "display" : "右側髕骨透視攝影"
+      },
+      {
+        "code" : "BQ1WZZZ",
+        "display" : "左側髕骨透視攝影"
+      },
+      {
+        "code" : "BQ1XZZZ",
+        "display" : "右足/腳趾關節透視攝影"
+      },
+      {
+        "code" : "BQ1YZZZ",
+        "display" : "左足/腳趾關節透視攝影"
+      },
+      {
+        "code" : "BQ20ZZZ",
+        "display" : "右髖關節電腦斷層掃描"
+      },
+      {
+        "code" : "BQ21ZZZ",
+        "display" : "左髖關節電腦斷層掃描"
+      },
+      {
+        "code" : "BQ23ZZZ",
+        "display" : "右側股骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ24ZZZ",
+        "display" : "左側股骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ27ZZZ",
+        "display" : "右膝電腦斷層掃描"
+      },
+      {
+        "code" : "BQ28ZZZ",
+        "display" : "左膝電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2DZZZ",
+        "display" : "右小腿電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2FZZZ",
+        "display" : "左小腿電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2GZZZ",
+        "display" : "右踝電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2HZZZ",
+        "display" : "左踝電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2JZZZ",
+        "display" : "右側跟骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2KZZZ",
+        "display" : "左側跟骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2LZZZ",
+        "display" : "右足電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2MZZZ",
+        "display" : "左足電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2PZZZ",
+        "display" : "右趾電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2QZZZ",
+        "display" : "左趾電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2RZZZ",
+        "display" : "右下肢電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2SZZZ",
+        "display" : "左下肢電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2VZZZ",
+        "display" : "右側髕骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2WZZZ",
+        "display" : "左側髕骨電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2XZZZ",
+        "display" : "右足/腳趾關節電腦斷層掃描"
+      },
+      {
+        "code" : "BQ2YZZZ",
+        "display" : "左足/腳趾關節電腦斷層掃描"
+      },
+      {
+        "code" : "BQ30ZZZ",
+        "display" : "右髖關節磁振造影"
+      },
+      {
+        "code" : "BQ31ZZZ",
+        "display" : "左髖關節磁振造影"
+      },
+      {
+        "code" : "BQ33ZZZ",
+        "display" : "右側股骨磁振造影"
+      },
+      {
+        "code" : "BQ34ZZZ",
+        "display" : "左側股骨磁振造影"
+      },
+      {
+        "code" : "BQ37ZZZ",
+        "display" : "右膝磁振造影"
+      },
+      {
+        "code" : "BQ38ZZZ",
+        "display" : "左膝磁振造影"
+      },
+      {
+        "code" : "BQ3DZZZ",
+        "display" : "右小腿磁振造影"
+      },
+      {
+        "code" : "BQ3FZZZ",
+        "display" : "左小腿磁振造影"
+      },
+      {
+        "code" : "BQ3GZZZ",
+        "display" : "右踝磁振造影"
+      },
+      {
+        "code" : "BQ3HZZZ",
+        "display" : "左踝磁振造影"
+      },
+      {
+        "code" : "BQ3JZZZ",
+        "display" : "右側跟骨磁振造影"
+      },
+      {
+        "code" : "BQ3KZZZ",
+        "display" : "左側跟骨磁振造影"
+      },
+      {
+        "code" : "BQ3LZZZ",
+        "display" : "右足磁振造影"
+      },
+      {
+        "code" : "BQ3MZZZ",
+        "display" : "左足磁振造影"
+      },
+      {
+        "code" : "BQ3PZZZ",
+        "display" : "右趾磁振造影"
+      },
+      {
+        "code" : "BQ3QZZZ",
+        "display" : "左趾磁振造影"
+      },
+      {
+        "code" : "BQ3VZZZ",
+        "display" : "右側髕骨磁振造影"
+      },
+      {
+        "code" : "BQ3WZZZ",
+        "display" : "左側髕骨磁振造影"
+      },
+      {
+        "code" : "BQ40ZZZ",
+        "display" : "右髖關節超音波"
+      },
+      {
+        "code" : "BQ41ZZZ",
+        "display" : "左髖關節超音波"
+      },
+      {
+        "code" : "BQ42ZZZ",
+        "display" : "雙髖關節超音波"
+      },
+      {
+        "code" : "BQ47ZZZ",
+        "display" : "右膝超音波"
+      },
+      {
+        "code" : "BQ48ZZZ",
+        "display" : "左膝超音波"
+      },
+      {
+        "code" : "BQ49ZZZ",
+        "display" : "雙膝超音波"
+      },
+      {
+        "code" : "BR00ZZ1",
+        "display" : "頸椎骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BR00ZZZ",
+        "display" : "頸椎一般放射線攝影"
+      },
+      {
+        "code" : "BR01ZZZ",
+        "display" : "頸椎間盤一般放射線攝影"
+      },
+      {
+        "code" : "BR02ZZZ",
+        "display" : "胸椎間盤一般放射線攝影"
+      },
+      {
+        "code" : "BR03ZZZ",
+        "display" : "腰椎間盤一般放射線攝影"
+      },
+      {
+        "code" : "BR04ZZZ",
+        "display" : "頸椎小面關節一般放射線攝影"
+      },
+      {
+        "code" : "BR05ZZZ",
+        "display" : "胸椎小面關節一般放射線攝影"
+      },
+      {
+        "code" : "BR06ZZZ",
+        "display" : "腰椎小面關節一般放射線攝影"
+      },
+      {
+        "code" : "BR07ZZ1",
+        "display" : "胸椎骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BR07ZZZ",
+        "display" : "胸椎一般放射線攝影"
+      },
+      {
+        "code" : "BR08ZZZ",
+        "display" : "胸腰椎關節一般放射線攝影"
+      },
+      {
+        "code" : "BR09ZZ1",
+        "display" : "腰椎骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BR09ZZZ",
+        "display" : "腰椎一般放射線攝影"
+      },
+      {
+        "code" : "BR0BZZZ",
+        "display" : "腰薦關節一般放射線攝影"
+      },
+      {
+        "code" : "BR0CZZZ",
+        "display" : "骨盆一般放射線攝影"
+      },
+      {
+        "code" : "BR0DZZZ",
+        "display" : "薦髂關節一般放射線攝影"
+      },
+      {
+        "code" : "BR0FZZZ",
+        "display" : "薦骨和尾骨一般放射線攝影"
+      },
+      {
+        "code" : "BR0GZZ1",
+        "display" : "全脊骨骨質密度一般放射線攝影"
+      },
+      {
+        "code" : "BR0GZZZ",
+        "display" : "全脊骨一般放射線攝影"
+      },
+      {
+        "code" : "BR0HZZZ",
+        "display" : "胸骨一般放射線攝影"
+      },
+      {
+        "code" : "BR10ZZZ",
+        "display" : "頸椎透視攝影"
+      },
+      {
+        "code" : "BR11ZZZ",
+        "display" : "頸椎間盤透視攝影"
+      },
+      {
+        "code" : "BR12ZZZ",
+        "display" : "胸椎間盤透視攝影"
+      },
+      {
+        "code" : "BR13ZZZ",
+        "display" : "腰椎間盤透視攝影"
+      },
+      {
+        "code" : "BR14ZZZ",
+        "display" : "頸椎小面關節透視攝影"
+      },
+      {
+        "code" : "BR15ZZZ",
+        "display" : "胸椎小面關節透視攝影"
+      },
+      {
+        "code" : "BR16ZZZ",
+        "display" : "腰椎小面關節透視攝影"
+      },
+      {
+        "code" : "BR17ZZZ",
+        "display" : "胸椎透視攝影"
+      },
+      {
+        "code" : "BR18ZZZ",
+        "display" : "胸腰椎關節透視攝影"
+      },
+      {
+        "code" : "BR19ZZZ",
+        "display" : "腰椎透視攝影"
+      },
+      {
+        "code" : "BR1BZZZ",
+        "display" : "腰薦關節透視攝影"
+      },
+      {
+        "code" : "BR1CZZZ",
+        "display" : "骨盆透視攝影"
+      },
+      {
+        "code" : "BR1DZZZ",
+        "display" : "薦髂關節透視攝影"
+      },
+      {
+        "code" : "BR1FZZZ",
+        "display" : "薦骨和尾骨透視攝影"
+      },
+      {
+        "code" : "BR1GZZZ",
+        "display" : "全脊骨透視攝影"
+      },
+      {
+        "code" : "BR1HZZZ",
+        "display" : "胸骨透視攝影"
+      },
+      {
+        "code" : "BR20ZZZ",
+        "display" : "頸椎電腦斷層掃描"
+      },
+      {
+        "code" : "BR27ZZZ",
+        "display" : "胸椎電腦斷層掃描"
+      },
+      {
+        "code" : "BR29ZZZ",
+        "display" : "腰椎電腦斷層掃描"
+      },
+      {
+        "code" : "BR2CZZZ",
+        "display" : "骨盆電腦斷層掃描"
+      },
+      {
+        "code" : "BR2DZZZ",
+        "display" : "薦髂關節電腦斷層掃描"
+      },
+      {
+        "code" : "BR2FZZZ",
+        "display" : "薦骨和尾骨電腦斷層掃描"
+      },
+      {
+        "code" : "BR30ZZZ",
+        "display" : "頸椎磁振造影"
+      },
+      {
+        "code" : "BR31ZZZ",
+        "display" : "頸椎間盤磁振造影"
+      },
+      {
+        "code" : "BR32ZZZ",
+        "display" : "胸椎間盤磁振造影"
+      },
+      {
+        "code" : "BR33ZZZ",
+        "display" : "腰椎間盤磁振造影"
+      },
+      {
+        "code" : "BR37ZZZ",
+        "display" : "胸椎磁振造影"
+      },
+      {
+        "code" : "BR39ZZZ",
+        "display" : "腰椎磁振造影"
+      },
+      {
+        "code" : "BR3CZZZ",
+        "display" : "骨盆磁振造影"
+      },
+      {
+        "code" : "BR3FZZZ",
+        "display" : "薦骨和尾骨磁振造影"
+      },
+      {
+        "code" : "BR40ZZZ",
+        "display" : "頸椎超音波"
+      },
+      {
+        "code" : "BR47ZZZ",
+        "display" : "胸椎超音波"
+      },
+      {
+        "code" : "BR49ZZZ",
+        "display" : "腰椎超音波"
+      },
+      {
+        "code" : "BR4FZZZ",
+        "display" : "薦骨和尾骨超音波"
+      },
+      {
+        "code" : "BT00ZZZ",
+        "display" : "膀胱一般放射線攝影"
+      },
+      {
+        "code" : "BT01ZZZ",
+        "display" : "右腎一般放射線攝影"
+      },
+      {
+        "code" : "BT02ZZZ",
+        "display" : "左腎一般放射線攝影"
+      },
+      {
+        "code" : "BT03ZZZ",
+        "display" : "雙側腎臟一般放射線攝影"
+      },
+      {
+        "code" : "BT04ZZZ",
+        "display" : "腎臟、輸尿管及膀胱一般放射線攝影"
+      },
+      {
+        "code" : "BT05ZZZ",
+        "display" : "尿道一般放射線攝影"
+      },
+      {
+        "code" : "BT06ZZZ",
+        "display" : "右輸尿管一般放射線攝影"
+      },
+      {
+        "code" : "BT07ZZZ",
+        "display" : "左輸尿管一般放射線攝影"
+      },
+      {
+        "code" : "BT08ZZZ",
+        "display" : "雙側輸尿管一般放射線攝影"
+      },
+      {
+        "code" : "BT0BZZZ",
+        "display" : "膀胱及尿道一般放射線攝影"
+      },
+      {
+        "code" : "BT0CZZZ",
+        "display" : "迴腸導流環一般放射線攝影"
+      },
+      {
+        "code" : "BT10ZZZ",
+        "display" : "膀胱透視攝影"
+      },
+      {
+        "code" : "BT11ZZZ",
+        "display" : "右腎透視攝影"
+      },
+      {
+        "code" : "BT12ZZZ",
+        "display" : "左腎透視攝影"
+      },
+      {
+        "code" : "BT13ZZZ",
+        "display" : "雙側腎臟透視攝影"
+      },
+      {
+        "code" : "BT14ZZZ",
+        "display" : "腎臟、輸尿管及膀胱透視攝影"
+      },
+      {
+        "code" : "BT15ZZZ",
+        "display" : "尿道透視攝影"
+      },
+      {
+        "code" : "BT16ZZZ",
+        "display" : "右輸尿管透視攝影"
+      },
+      {
+        "code" : "BT17ZZZ",
+        "display" : "左輸尿管透視攝影"
+      },
+      {
+        "code" : "BT1BZZZ",
+        "display" : "膀胱及尿道透視攝影"
+      },
+      {
+        "code" : "BT1CZZZ",
+        "display" : "迴腸導流環透視攝影"
+      },
+      {
+        "code" : "BT1DZZZ",
+        "display" : "右側腎臟、輸尿管及膀胱透視攝影"
+      },
+      {
+        "code" : "BT1FZZZ",
+        "display" : "左側腎臟、輸尿管及膀胱透視攝影"
+      },
+      {
+        "code" : "BT1GZZZ",
+        "display" : "迴腸迴路、輸尿管及腎臟透視攝影"
+      },
+      {
+        "code" : "BT20ZZZ",
+        "display" : "膀胱電腦斷層掃描"
+      },
+      {
+        "code" : "BT21ZZZ",
+        "display" : "右腎電腦斷層掃描"
+      },
+      {
+        "code" : "BT22ZZZ",
+        "display" : "左腎電腦斷層掃描"
+      },
+      {
+        "code" : "BT23ZZZ",
+        "display" : "雙側腎臟電腦斷層掃描"
+      },
+      {
+        "code" : "BT29ZZZ",
+        "display" : "腎臟移植電腦斷層掃描"
+      },
+      {
+        "code" : "BT30ZZZ",
+        "display" : "膀胱磁振造影"
+      },
+      {
+        "code" : "BT31ZZZ",
+        "display" : "右腎磁振造影"
+      },
+      {
+        "code" : "BT32ZZZ",
+        "display" : "左腎磁振造影"
+      },
+      {
+        "code" : "BT33ZZZ",
+        "display" : "雙側腎臟磁振造影"
+      },
+      {
+        "code" : "BT39ZZZ",
+        "display" : "腎臟移植磁振造影"
+      },
+      {
+        "code" : "BT40ZZZ",
+        "display" : "膀胱超音波"
+      },
+      {
+        "code" : "BT41ZZZ",
+        "display" : "右腎超音波"
+      },
+      {
+        "code" : "BT42ZZZ",
+        "display" : "左腎超音波"
+      },
+      {
+        "code" : "BT43ZZZ",
+        "display" : "雙側腎臟超音波"
+      },
+      {
+        "code" : "BT45ZZZ",
+        "display" : "尿道超音波"
+      },
+      {
+        "code" : "BT46ZZZ",
+        "display" : "右輸尿管超音波"
+      },
+      {
+        "code" : "BT47ZZZ",
+        "display" : "左輸尿管超音波"
+      },
+      {
+        "code" : "BT48ZZZ",
+        "display" : "雙側輸尿管超音波"
+      },
+      {
+        "code" : "BT49ZZZ",
+        "display" : "腎臟移植超音波"
+      },
+      {
+        "code" : "BT4JZZZ",
+        "display" : "腎臟及膀胱超音波"
+      },
+      {
+        "code" : "BU10ZZZ",
+        "display" : "右側輸卵管透視攝影"
+      },
+      {
+        "code" : "BU11ZZZ",
+        "display" : "左側輸卵管透視攝影"
+      },
+      {
+        "code" : "BU12ZZZ",
+        "display" : "雙側輸卵管透視攝影"
+      },
+      {
+        "code" : "BU16ZZZ",
+        "display" : "子宮透視攝影"
+      },
+      {
+        "code" : "BU18ZZZ",
+        "display" : "子宮及輸卵管透視攝影"
+      },
+      {
+        "code" : "BU19ZZZ",
+        "display" : "陰道透視攝影"
+      },
+      {
+        "code" : "BU33ZZZ",
+        "display" : "右側卵巢磁振造影"
+      },
+      {
+        "code" : "BU34ZZZ",
+        "display" : "左側卵巢磁振造影"
+      },
+      {
+        "code" : "BU35ZZZ",
+        "display" : "雙側卵巢磁振造影"
+      },
+      {
+        "code" : "BU36ZZZ",
+        "display" : "子宮磁振造影"
+      },
+      {
+        "code" : "BU39ZZZ",
+        "display" : "陰道磁振造影"
+      },
+      {
+        "code" : "BU3BZZZ",
+        "display" : "受孕子宮磁振造影"
+      },
+      {
+        "code" : "BU3CZZZ",
+        "display" : "子宮及卵巢磁振造影"
+      },
+      {
+        "code" : "BU40ZZZ",
+        "display" : "右側輸卵管超音波"
+      },
+      {
+        "code" : "BU41ZZZ",
+        "display" : "左側輸卵管超音波"
+      },
+      {
+        "code" : "BU42ZZZ",
+        "display" : "雙側輸卵管超音波"
+      },
+      {
+        "code" : "BU43ZZZ",
+        "display" : "右側卵巢超音波"
+      },
+      {
+        "code" : "BU44ZZZ",
+        "display" : "左側卵巢超音波"
+      },
+      {
+        "code" : "BU45ZZZ",
+        "display" : "雙側卵巢超音波"
+      },
+      {
+        "code" : "BU46ZZZ",
+        "display" : "子宮超音波"
+      },
+      {
+        "code" : "BU4CZZZ",
+        "display" : "子宮及卵巢超音波"
+      },
+      {
+        "code" : "BV10ZZZ",
+        "display" : "海綿體透視攝影"
+      },
+      {
+        "code" : "BV18ZZZ",
+        "display" : "營養血管透視攝影"
+      },
+      {
+        "code" : "BV23ZZZ",
+        "display" : "攝護腺電腦斷層掃描"
+      },
+      {
+        "code" : "BV30ZZZ",
+        "display" : "海綿體磁振造影"
+      },
+      {
+        "code" : "BV33ZZZ",
+        "display" : "攝護腺磁振造影"
+      },
+      {
+        "code" : "BV34ZZZ",
+        "display" : "陰囊磁振造影"
+      },
+      {
+        "code" : "BV35ZZZ",
+        "display" : "右側睾丸磁振造影"
+      },
+      {
+        "code" : "BV36ZZZ",
+        "display" : "左側睾丸磁振造影"
+      },
+      {
+        "code" : "BV37ZZZ",
+        "display" : "雙側睾丸磁振造影"
+      },
+      {
+        "code" : "BV44ZZZ",
+        "display" : "陰囊超音波"
+      },
+      {
+        "code" : "BV49ZZZ",
+        "display" : "攝護腺及儲精囊超音波"
+      },
+      {
+        "code" : "BV4BZZZ",
+        "display" : "陰莖超音波"
+      },
+      {
+        "code" : "BW00ZZZ",
+        "display" : "腹部一般放射線攝影"
+      },
+      {
+        "code" : "BW01ZZZ",
+        "display" : "腹部及骨盆一般放射線攝影"
+      },
+      {
+        "code" : "BW03ZZZ",
+        "display" : "胸部一般放射線攝影"
+      },
+      {
+        "code" : "BW0BZZZ",
+        "display" : "所有長骨一般放射線攝影"
+      },
+      {
+        "code" : "BW0CZZZ",
+        "display" : "下肢一般放射線攝影"
+      },
+      {
+        "code" : "BW0JZZZ",
+        "display" : "上肢一般放射線攝影"
+      },
+      {
+        "code" : "BW0KZZZ",
+        "display" : "全身一般放射線攝影"
+      },
+      {
+        "code" : "BW0LZZZ",
+        "display" : "全骨骼一般放射線攝影"
+      },
+      {
+        "code" : "BW0MZZZ",
+        "display" : "嬰兒全身一般放射線攝影"
+      },
+      {
+        "code" : "BW11ZZZ",
+        "display" : "腹部及骨盆透視攝影"
+      },
+      {
+        "code" : "BW19ZZZ",
+        "display" : "頭及頸部透視攝影"
+      },
+      {
+        "code" : "BW1CZZZ",
+        "display" : "下肢透視攝影"
+      },
+      {
+        "code" : "BW1JZZZ",
+        "display" : "上肢透視攝影"
+      },
+      {
+        "code" : "BW20ZZZ",
+        "display" : "腹部電腦斷層掃描"
+      },
+      {
+        "code" : "BW21ZZZ",
+        "display" : "腹部及骨盆電腦斷層掃描"
+      },
+      {
+        "code" : "BW24ZZZ",
+        "display" : "胸部及腹部電腦斷層掃描"
+      },
+      {
+        "code" : "BW25ZZZ",
+        "display" : "胸部、腹部及骨盆電腦斷層掃描"
+      },
+      {
+        "code" : "BW28ZZZ",
+        "display" : "頭部電腦斷層掃描"
+      },
+      {
+        "code" : "BW29ZZZ",
+        "display" : "頭及頸部電腦斷層掃描"
+      },
+      {
+        "code" : "BW2FZZZ",
+        "display" : "頸部電腦斷層掃描"
+      },
+      {
+        "code" : "BW2GZZZ",
+        "display" : "骨盆區電腦斷層掃描"
+      },
+      {
+        "code" : "BW30ZZZ",
+        "display" : "腹部磁振造影"
+      },
+      {
+        "code" : "BW38ZZZ",
+        "display" : "頭部磁振造影"
+      },
+      {
+        "code" : "BW3FZZZ",
+        "display" : "頸部磁振造影"
+      },
+      {
+        "code" : "BW3GZZZ",
+        "display" : "骨盆區磁振造影"
+      },
+      {
+        "code" : "BW3HZZZ",
+        "display" : "後腹膜磁振造影"
+      },
+      {
+        "code" : "BW3PZZZ",
+        "display" : "臂神經叢磁振造影"
+      },
+      {
+        "code" : "BW40ZZZ",
+        "display" : "腹部超音波"
+      },
+      {
+        "code" : "BW41ZZZ",
+        "display" : "腹部及骨盆超音波"
+      },
+      {
+        "code" : "BW4FZZZ",
+        "display" : "頸部超音波"
+      },
+      {
+        "code" : "BW4GZZZ",
+        "display" : "骨盆區超音波"
+      },
+      {
+        "code" : "BY30ZZZ",
+        "display" : "胎頭磁振造影"
+      },
+      {
+        "code" : "BY31ZZZ",
+        "display" : "胎心磁振造影"
+      },
+      {
+        "code" : "BY32ZZZ",
+        "display" : "胎兒胸部磁振造影"
+      },
+      {
+        "code" : "BY33ZZZ",
+        "display" : "胎兒腹部磁振造影"
+      },
+      {
+        "code" : "BY34ZZZ",
+        "display" : "胎兒脊柱磁振造影"
+      },
+      {
+        "code" : "BY35ZZZ",
+        "display" : "胎兒四肢磁振造影"
+      },
+      {
+        "code" : "BY36ZZZ",
+        "display" : "全胚胎磁振造影"
+      },
+      {
+        "code" : "BY47ZZZ",
+        "display" : "胎兒臍帶超音波"
+      },
+      {
+        "code" : "BY48ZZZ",
+        "display" : "胎盤超音波"
+      },
+      {
+        "code" : "BY49ZZZ",
+        "display" : "單胎妊娠，第一孕期超音波"
+      },
+      {
+        "code" : "BY4BZZZ",
+        "display" : "多胎妊娠，第一孕期超音波"
+      },
+      {
+        "code" : "BY4CZZZ",
+        "display" : "單胎妊娠，第二孕期超音波"
+      },
+      {
+        "code" : "BY4DZZZ",
+        "display" : "多胎妊娠，第二孕期超音波"
+      },
+      {
+        "code" : "BY4FZZZ",
+        "display" : "單胎妊娠，第三孕期超音波"
+      },
+      {
+        "code" : "BY4GZZZ",
+        "display" : "多胎妊娠，第三孕期超音波"
+      },
+      {
+        "code" : "C0101ZZ",
+        "display" : "腦部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C010YZZ",
+        "display" : "腦部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C015DZZ",
+        "display" : "腦脊液平面核子醫學影像"
+      },
+      {
+        "code" : "C015YZZ",
+        "display" : "腦脊液平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C01YYZZ",
+        "display" : "中樞神經系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C0201ZZ",
+        "display" : "腦部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C020FZZ",
+        "display" : "腦部斷層核子醫學影像"
+      },
+      {
+        "code" : "C020SZZ",
+        "display" : "腦部斷層核子醫學影像"
+      },
+      {
+        "code" : "C020YZZ",
+        "display" : "腦部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C025DZZ",
+        "display" : "腦脊液斷層核子醫學影像"
+      },
+      {
+        "code" : "C025YZZ",
+        "display" : "腦脊液斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C02YYZZ",
+        "display" : "中樞神經系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C030BZZ",
+        "display" : "腦部正子發射斷層掃描"
+      },
+      {
+        "code" : "C030KZZ",
+        "display" : "腦部正子發射斷層掃描"
+      },
+      {
+        "code" : "C030MZZ",
+        "display" : "腦部正子發射斷層掃描"
+      },
+      {
+        "code" : "C030YZZ",
+        "display" : "腦部正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "C03YYZZ",
+        "display" : "中樞神經系統正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "C050VZZ",
+        "display" : "腦部非影像核子醫學探測"
+      },
+      {
+        "code" : "C050YZZ",
+        "display" : "腦部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C05YYZZ",
+        "display" : "中樞神經系統非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C2161ZZ",
+        "display" : "左心及右心平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C216YZZ",
+        "display" : "左心及右心平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C21G1ZZ",
+        "display" : "心肌平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C21GDZZ",
+        "display" : "心肌平面核子醫學影像"
+      },
+      {
+        "code" : "C21GSZZ",
+        "display" : "心肌平面核子醫學影像"
+      },
+      {
+        "code" : "C21GYZZ",
+        "display" : "心肌平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C21GZZZ",
+        "display" : "心肌平面核子醫學影像"
+      },
+      {
+        "code" : "C21YYZZ",
+        "display" : "心臟平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C2261ZZ",
+        "display" : "左心及右心斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C226YZZ",
+        "display" : "左心及右心斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C22G1ZZ",
+        "display" : "心肌斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C22GDZZ",
+        "display" : "心肌斷層核子醫學影像"
+      },
+      {
+        "code" : "C22GKZZ",
+        "display" : "心肌斷層核子醫學影像"
+      },
+      {
+        "code" : "C22GSZZ",
+        "display" : "心肌斷層核子醫學影像"
+      },
+      {
+        "code" : "C22GYZZ",
+        "display" : "心肌斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C22GZZZ",
+        "display" : "心肌斷層核子醫學影像"
+      },
+      {
+        "code" : "C22YYZZ",
+        "display" : "心臟斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C23GKZZ",
+        "display" : "心肌正子發射斷層掃描"
+      },
+      {
+        "code" : "C23GMZZ",
+        "display" : "心肌正子發射斷層掃描"
+      },
+      {
+        "code" : "C23GQZZ",
+        "display" : "心肌正子發射斷層掃描"
+      },
+      {
+        "code" : "C23GRZZ",
+        "display" : "心肌正子發射斷層掃描"
+      },
+      {
+        "code" : "C23GYZZ",
+        "display" : "心肌正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "C23YYZZ",
+        "display" : "心臟正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "C2561ZZ",
+        "display" : "左心及右心非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C256YZZ",
+        "display" : "左心及右心非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C25YYZZ",
+        "display" : "心臟非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C51B1ZZ",
+        "display" : "右下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51BYZZ",
+        "display" : "右下肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51C1ZZ",
+        "display" : "左下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51CYZZ",
+        "display" : "左下肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51D1ZZ",
+        "display" : "雙側下肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51DYZZ",
+        "display" : "雙側下肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51N1ZZ",
+        "display" : "右上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51NYZZ",
+        "display" : "右上肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51P1ZZ",
+        "display" : "左上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51PYZZ",
+        "display" : "左上肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51Q1ZZ",
+        "display" : "雙側上肢靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51QYZZ",
+        "display" : "雙側上肢靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51R1ZZ",
+        "display" : "中央靜脈平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C51RYZZ",
+        "display" : "中央靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C51YYZZ",
+        "display" : "靜脈平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C7101ZZ",
+        "display" : "骨髓平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C710DZZ",
+        "display" : "骨髓平面核子醫學影像"
+      },
+      {
+        "code" : "C710YZZ",
+        "display" : "骨髓平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C7121ZZ",
+        "display" : "脾臟平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C712YZZ",
+        "display" : "脾臟平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C713DZZ",
+        "display" : "血液平面核子醫學影像"
+      },
+      {
+        "code" : "C713YZZ",
+        "display" : "血液平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C7151ZZ",
+        "display" : "頭部及頸部淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C715YZZ",
+        "display" : "頭部及頸部淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71D1ZZ",
+        "display" : "骨盆腔淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71DYZZ",
+        "display" : "骨盆腔淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71J1ZZ",
+        "display" : "頭部淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71JYZZ",
+        "display" : "頭部淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71K1ZZ",
+        "display" : "頸部淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71KYZZ",
+        "display" : "頸部淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71L1ZZ",
+        "display" : "上胸部淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71LYZZ",
+        "display" : "上胸部淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71M1ZZ",
+        "display" : "軀幹淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71MYZZ",
+        "display" : "軀幹淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71N1ZZ",
+        "display" : "上肢淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71NYZZ",
+        "display" : "上肢淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71P1ZZ",
+        "display" : "下肢淋巴平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C71PYZZ",
+        "display" : "下肢淋巴平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C71YYZZ",
+        "display" : "淋巴及血液系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C7221ZZ",
+        "display" : "脾臟斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C722YZZ",
+        "display" : "脾臟斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C72YYZZ",
+        "display" : "淋巴及血液系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C7551ZZ",
+        "display" : "頭部及頸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C755YZZ",
+        "display" : "頭部及頸部淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75D1ZZ",
+        "display" : "骨盆腔淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75DYZZ",
+        "display" : "骨盆腔淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75J1ZZ",
+        "display" : "頭部淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75JYZZ",
+        "display" : "頭部淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75K1ZZ",
+        "display" : "頸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75KYZZ",
+        "display" : "頸部淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75L1ZZ",
+        "display" : "上胸部淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75LYZZ",
+        "display" : "上胸部淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75M1ZZ",
+        "display" : "軀幹淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75MYZZ",
+        "display" : "軀幹淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75N1ZZ",
+        "display" : "上肢淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75NYZZ",
+        "display" : "上肢淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75P1ZZ",
+        "display" : "下肢淋巴非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C75PYZZ",
+        "display" : "下肢淋巴非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C75YYZZ",
+        "display" : "淋巴及血液系統非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "C7631ZZ",
+        "display" : "血液非影像核子醫學檢測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C7637ZZ",
+        "display" : "血液非影像核子醫學檢測"
+      },
+      {
+        "code" : "C763CZZ",
+        "display" : "血液非影像核子醫學檢測"
+      },
+      {
+        "code" : "C763DZZ",
+        "display" : "血液非影像核子醫學檢測"
+      },
+      {
+        "code" : "C763HZZ",
+        "display" : "血液非影像核子醫學檢測"
+      },
+      {
+        "code" : "C763WZZ",
+        "display" : "血液非影像核子醫學檢測"
+      },
+      {
+        "code" : "C763YZZ",
+        "display" : "血液非影像核子醫學檢測，使用其他放射性核素"
+      },
+      {
+        "code" : "C76YYZZ",
+        "display" : "淋巴及血液系統非影像核子醫學檢測，使用其他放射性核素"
+      },
+      {
+        "code" : "C8191ZZ",
+        "display" : "雙側淚管平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C819YZZ",
+        "display" : "雙側淚管平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C81YYZZ",
+        "display" : "眼睛平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C91B1ZZ",
+        "display" : "雙側唾液腺平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "C91BYZZ",
+        "display" : "雙側唾液腺平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "C91YYZZ",
+        "display" : "耳、鼻、口腔及咽喉平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CB121ZZ",
+        "display" : "肺臟及支氣管平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CB129ZZ",
+        "display" : "肺臟及支氣管平面核子醫學影像"
+      },
+      {
+        "code" : "CB12TZZ",
+        "display" : "肺臟及支氣管平面核子醫學影像"
+      },
+      {
+        "code" : "CB12VZZ",
+        "display" : "肺臟及支氣管平面核子醫學影像"
+      },
+      {
+        "code" : "CB12YZZ",
+        "display" : "肺臟及支氣管平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CB1YYZZ",
+        "display" : "呼吸系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CB221ZZ",
+        "display" : "肺臟及支氣管斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CB229ZZ",
+        "display" : "肺臟及支氣管斷層核子醫學影像"
+      },
+      {
+        "code" : "CB22YZZ",
+        "display" : "肺臟及支氣管斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CB2YYZZ",
+        "display" : "呼吸系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CB32KZZ",
+        "display" : "肺臟及支氣管正子發射斷層掃描"
+      },
+      {
+        "code" : "CB32YZZ",
+        "display" : "肺臟及支氣管正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "CB3YYZZ",
+        "display" : "呼吸系統正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "CD151ZZ",
+        "display" : "上消化道平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CD15DZZ",
+        "display" : "上消化道平面核子醫學影像"
+      },
+      {
+        "code" : "CD15YZZ",
+        "display" : "上消化道平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CD171ZZ",
+        "display" : "胃腸道平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CD17DZZ",
+        "display" : "胃腸道平面核子醫學影像"
+      },
+      {
+        "code" : "CD17YZZ",
+        "display" : "胃腸道平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CD1YYZZ",
+        "display" : "消化系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CD271ZZ",
+        "display" : "胃腸道斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CD27DZZ",
+        "display" : "胃腸道斷層核子醫學影像"
+      },
+      {
+        "code" : "CD27YZZ",
+        "display" : "胃腸道斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CD2YYZZ",
+        "display" : "消化系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF141ZZ",
+        "display" : "膽囊平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF14YZZ",
+        "display" : "膽囊平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF151ZZ",
+        "display" : "肝臟平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF15YZZ",
+        "display" : "肝臟平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF161ZZ",
+        "display" : "肝臟及脾臟平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF16YZZ",
+        "display" : "肝臟及脾臟平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF1C1ZZ",
+        "display" : "所有肝膽系統平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF1CYZZ",
+        "display" : "所有肝膽系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF1YYZZ",
+        "display" : "肝膽系統及胰臟平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF241ZZ",
+        "display" : "膽囊斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF24YZZ",
+        "display" : "膽囊斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF251ZZ",
+        "display" : "肝臟斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF25YZZ",
+        "display" : "肝臟斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF261ZZ",
+        "display" : "肝臟及脾臟斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CF26YZZ",
+        "display" : "肝臟及脾臟斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CF2YYZZ",
+        "display" : "肝膽系統及胰臟斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG111ZZ",
+        "display" : "副甲狀腺平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CG11SZZ",
+        "display" : "副甲狀腺平面核子醫學影像"
+      },
+      {
+        "code" : "CG11YZZ",
+        "display" : "副甲狀腺平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG121ZZ",
+        "display" : "甲狀腺平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CG12FZZ",
+        "display" : "甲狀腺平面核子醫學影像"
+      },
+      {
+        "code" : "CG12GZZ",
+        "display" : "甲狀腺平面核子醫學影像"
+      },
+      {
+        "code" : "CG12YZZ",
+        "display" : "甲狀腺平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG14GZZ",
+        "display" : "雙側腎上腺平面核子醫學影像"
+      },
+      {
+        "code" : "CG14YZZ",
+        "display" : "雙側腎上腺平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG1YYZZ",
+        "display" : "內分泌系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG211ZZ",
+        "display" : "副甲狀腺斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CG21SZZ",
+        "display" : "副甲狀腺斷層核子醫學影像"
+      },
+      {
+        "code" : "CG21YZZ",
+        "display" : "副甲狀腺斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG2YYZZ",
+        "display" : "內分泌系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CG421ZZ",
+        "display" : "甲狀腺非影像核子醫學吸收，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CG42FZZ",
+        "display" : "甲狀腺非影像核子醫學吸收"
+      },
+      {
+        "code" : "CG42GZZ",
+        "display" : "甲狀腺非影像核子醫學吸收"
+      },
+      {
+        "code" : "CG42YZZ",
+        "display" : "甲狀腺非影像核子醫學吸收，使用其他放射性核素"
+      },
+      {
+        "code" : "CG4YYZZ",
+        "display" : "內分泌系統非影像核子醫學吸收，使用其他放射性核素"
+      },
+      {
+        "code" : "CH101ZZ",
+        "display" : "右側乳房平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH10SZZ",
+        "display" : "右側乳房平面核子醫學影像"
+      },
+      {
+        "code" : "CH10YZZ",
+        "display" : "右側乳房平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH111ZZ",
+        "display" : "左側乳房平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH11SZZ",
+        "display" : "左側乳房平面核子醫學影像"
+      },
+      {
+        "code" : "CH11YZZ",
+        "display" : "左側乳房平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH121ZZ",
+        "display" : "雙側乳房平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH12SZZ",
+        "display" : "雙側乳房平面核子醫學影像"
+      },
+      {
+        "code" : "CH12YZZ",
+        "display" : "雙側乳房平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH1YYZZ",
+        "display" : "皮膚、皮下組織及乳房平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH201ZZ",
+        "display" : "右側乳房斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH20SZZ",
+        "display" : "右側乳房斷層核子醫學影像"
+      },
+      {
+        "code" : "CH20YZZ",
+        "display" : "右側乳房斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH211ZZ",
+        "display" : "左側乳房斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH21SZZ",
+        "display" : "左側乳房斷層核子醫學影像"
+      },
+      {
+        "code" : "CH21YZZ",
+        "display" : "左側乳房斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH221ZZ",
+        "display" : "雙側乳房斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CH22SZZ",
+        "display" : "雙側乳房斷層核子醫學影像"
+      },
+      {
+        "code" : "CH22YZZ",
+        "display" : "雙側乳房斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CH2YYZZ",
+        "display" : "皮膚、皮下組織及乳房斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP111ZZ",
+        "display" : "顱骨平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP11YZZ",
+        "display" : "顱骨平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP141ZZ",
+        "display" : "胸部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP14YZZ",
+        "display" : "胸部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP151ZZ",
+        "display" : "脊柱平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP15YZZ",
+        "display" : "脊柱平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP161ZZ",
+        "display" : "骨盆平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP16YZZ",
+        "display" : "骨盆平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP171ZZ",
+        "display" : "脊柱及骨盆平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP17YZZ",
+        "display" : "脊柱及骨盆平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP181ZZ",
+        "display" : "右上肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP18YZZ",
+        "display" : "右上肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP191ZZ",
+        "display" : "左上肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP19YZZ",
+        "display" : "左上肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1B1ZZ",
+        "display" : "雙側上肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP1BYZZ",
+        "display" : "雙側上肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1C1ZZ",
+        "display" : "右下肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP1CYZZ",
+        "display" : "右下肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1D1ZZ",
+        "display" : "左下肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP1DYZZ",
+        "display" : "左下肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1F1ZZ",
+        "display" : "雙側下肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP1FYZZ",
+        "display" : "雙側下肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1YYZZ",
+        "display" : "其他肌肉骨骼系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP1Z1ZZ",
+        "display" : "所有肌肉骨骼系統平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP1ZYZZ",
+        "display" : "所有肌肉骨骼系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP211ZZ",
+        "display" : "顱骨斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP21YZZ",
+        "display" : "顱骨斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP221ZZ",
+        "display" : "頸椎斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP22YZZ",
+        "display" : "頸椎斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP231ZZ",
+        "display" : "顱骨及頸椎斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP23YZZ",
+        "display" : "顱骨及頸椎斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP241ZZ",
+        "display" : "胸部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP24YZZ",
+        "display" : "胸部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP261ZZ",
+        "display" : "骨盆斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP26YZZ",
+        "display" : "骨盆斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP271ZZ",
+        "display" : "脊柱及骨盆斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP27YZZ",
+        "display" : "脊柱及骨盆斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP281ZZ",
+        "display" : "右上肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP28YZZ",
+        "display" : "右上肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP291ZZ",
+        "display" : "左上肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP29YZZ",
+        "display" : "左上肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2B1ZZ",
+        "display" : "雙側上肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2BYZZ",
+        "display" : "雙側上肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2C1ZZ",
+        "display" : "右下肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2CYZZ",
+        "display" : "右下肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2D1ZZ",
+        "display" : "左下肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2DYZZ",
+        "display" : "左下肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2F1ZZ",
+        "display" : "雙側下肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2FYZZ",
+        "display" : "雙側下肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2G1ZZ",
+        "display" : "胸椎斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2GYZZ",
+        "display" : "胸椎斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2H1ZZ",
+        "display" : "腰椎斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2HYZZ",
+        "display" : "腰椎斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2J1ZZ",
+        "display" : "胸腰椎脊髓斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CP2JYZZ",
+        "display" : "胸腰椎脊髓斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP2YYZZ",
+        "display" : "其他肌肉骨骼系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CP55ZZZ",
+        "display" : "脊柱非影像核子醫學探測"
+      },
+      {
+        "code" : "CP5NZZZ",
+        "display" : "上肢非影像核子醫學探測"
+      },
+      {
+        "code" : "CP5PZZZ",
+        "display" : "下肢非影像核子醫學探測"
+      },
+      {
+        "code" : "CP5YYZZ",
+        "display" : "其他肌肉骨骼系統非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CT131ZZ",
+        "display" : "腎臟、輸尿管及膀胱平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CT13FZZ",
+        "display" : "腎臟、輸尿管及膀胱平面核子醫學影像"
+      },
+      {
+        "code" : "CT13GZZ",
+        "display" : "腎臟、輸尿管及膀胱平面核子醫學影像"
+      },
+      {
+        "code" : "CT13YZZ",
+        "display" : "腎臟、輸尿管及膀胱平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CT1H1ZZ",
+        "display" : "膀胱及輸尿管平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CT1HYZZ",
+        "display" : "膀胱及輸尿管平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CT1YYZZ",
+        "display" : "泌尿系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CT231ZZ",
+        "display" : "腎臟、輸尿管及膀胱斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CT23YZZ",
+        "display" : "腎臟、輸尿管及膀胱斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CT2YYZZ",
+        "display" : "泌尿系統斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CT631ZZ",
+        "display" : "腎臟、輸尿管及膀胱非影像核子醫學檢測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CT63FZZ",
+        "display" : "腎臟、輸尿管及膀胱非影像核子醫學檢測"
+      },
+      {
+        "code" : "CT63GZZ",
+        "display" : "腎臟、輸尿管及膀胱非影像核子醫學檢測"
+      },
+      {
+        "code" : "CT63HZZ",
+        "display" : "腎臟、輸尿管及膀胱非影像核子醫學檢測"
+      },
+      {
+        "code" : "CT63YZZ",
+        "display" : "腎臟、輸尿管及膀胱非影像核子醫學檢測，使用其他放射性核素"
+      },
+      {
+        "code" : "CT6YYZZ",
+        "display" : "泌尿系統非影像核子醫學檢測，使用其他放射性核素"
+      },
+      {
+        "code" : "CV191ZZ",
+        "display" : "雙側睾丸平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CV19YZZ",
+        "display" : "雙側睾丸平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CV1YYZZ",
+        "display" : "男性生殖系統平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW101ZZ",
+        "display" : "腹部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW10DZZ",
+        "display" : "腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW10FZZ",
+        "display" : "腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW10GZZ",
+        "display" : "腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW10LZZ",
+        "display" : "腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW10SZZ",
+        "display" : "腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW10YZZ",
+        "display" : "腹部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW111ZZ",
+        "display" : "腹部及骨盆平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW11DZZ",
+        "display" : "腹部及骨盆平面核子醫學影像"
+      },
+      {
+        "code" : "CW11FZZ",
+        "display" : "腹部及骨盆平面核子醫學影像"
+      },
+      {
+        "code" : "CW11GZZ",
+        "display" : "腹部及骨盆平面核子醫學影像"
+      },
+      {
+        "code" : "CW11LZZ",
+        "display" : "腹部及骨盆平面核子醫學影像"
+      },
+      {
+        "code" : "CW11SZZ",
+        "display" : "腹部及骨盆平面核子醫學影像"
+      },
+      {
+        "code" : "CW11YZZ",
+        "display" : "腹部及骨盆平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW131ZZ",
+        "display" : "胸部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW13DZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13FZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13GZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13KZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13LZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13SZZ",
+        "display" : "胸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW13YZZ",
+        "display" : "胸部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW141ZZ",
+        "display" : "胸部及腹部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW14DZZ",
+        "display" : "胸部及腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW14FZZ",
+        "display" : "胸部及腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW14GZZ",
+        "display" : "胸部及腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW14LZZ",
+        "display" : "胸部及腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW14SZZ",
+        "display" : "胸部及腹部平面核子醫學影像"
+      },
+      {
+        "code" : "CW14YZZ",
+        "display" : "胸部及腹部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW161ZZ",
+        "display" : "胸部及頸部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW16DZZ",
+        "display" : "胸部及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW16FZZ",
+        "display" : "胸部及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW16GZZ",
+        "display" : "胸部及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW16LZZ",
+        "display" : "胸部及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW16SZZ",
+        "display" : "胸部及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW16YZZ",
+        "display" : "胸部及頸部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1B1ZZ",
+        "display" : "頭及頸部平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW1BDZZ",
+        "display" : "頭及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW1BFZZ",
+        "display" : "頭及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW1BGZZ",
+        "display" : "頭及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW1BLZZ",
+        "display" : "頭及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW1BSZZ",
+        "display" : "頭及頸部平面核子醫學影像"
+      },
+      {
+        "code" : "CW1BYZZ",
+        "display" : "頭及頸部平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1D1ZZ",
+        "display" : "下肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW1DDZZ",
+        "display" : "下肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1DFZZ",
+        "display" : "下肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1DGZZ",
+        "display" : "下肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1DLZZ",
+        "display" : "下肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1DSZZ",
+        "display" : "下肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1DYZZ",
+        "display" : "下肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1J1ZZ",
+        "display" : "骨盆區平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW1JDZZ",
+        "display" : "骨盆區平面核子醫學影像"
+      },
+      {
+        "code" : "CW1JFZZ",
+        "display" : "骨盆區平面核子醫學影像"
+      },
+      {
+        "code" : "CW1JGZZ",
+        "display" : "骨盆區平面核子醫學影像"
+      },
+      {
+        "code" : "CW1JLZZ",
+        "display" : "骨盆區平面核子醫學影像"
+      },
+      {
+        "code" : "CW1JSZZ",
+        "display" : "骨盆區平面核子醫學影像"
+      },
+      {
+        "code" : "CW1JYZZ",
+        "display" : "骨盆區平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1M1ZZ",
+        "display" : "上肢平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW1MDZZ",
+        "display" : "上肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1MFZZ",
+        "display" : "上肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1MGZZ",
+        "display" : "上肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1MLZZ",
+        "display" : "上肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1MSZZ",
+        "display" : "上肢平面核子醫學影像"
+      },
+      {
+        "code" : "CW1MYZZ",
+        "display" : "上肢平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1N1ZZ",
+        "display" : "全身平面核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW1NDZZ",
+        "display" : "全身平面核子醫學影像"
+      },
+      {
+        "code" : "CW1NFZZ",
+        "display" : "全身平面核子醫學影像"
+      },
+      {
+        "code" : "CW1NGZZ",
+        "display" : "全身平面核子醫學影像"
+      },
+      {
+        "code" : "CW1NLZZ",
+        "display" : "全身平面核子醫學影像"
+      },
+      {
+        "code" : "CW1NSZZ",
+        "display" : "全身平面核子醫學影像"
+      },
+      {
+        "code" : "CW1NYZZ",
+        "display" : "全身平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1YYZZ",
+        "display" : "多處解剖區域平面核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW1ZZZZ",
+        "display" : "其他解剖區域平面核子醫學影像"
+      },
+      {
+        "code" : "CW201ZZ",
+        "display" : "腹部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW20DZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20FZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20GZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20KZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20LZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20SZZ",
+        "display" : "腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW20YZZ",
+        "display" : "腹部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW211ZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW21DZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21FZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21GZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21KZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21LZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21SZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像"
+      },
+      {
+        "code" : "CW21YZZ",
+        "display" : "腹部及骨盆斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW231ZZ",
+        "display" : "胸部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW23DZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23FZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23GZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23KZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23LZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23SZZ",
+        "display" : "胸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW23YZZ",
+        "display" : "胸部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW241ZZ",
+        "display" : "胸部及腹部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW24DZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24FZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24GZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24KZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24LZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24SZZ",
+        "display" : "胸部及腹部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW24YZZ",
+        "display" : "胸部及腹部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW261ZZ",
+        "display" : "胸部及頸部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW26DZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26FZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26GZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26KZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26LZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26SZZ",
+        "display" : "胸部及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW26YZZ",
+        "display" : "胸部及頸部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW2B1ZZ",
+        "display" : "頭及頸部斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW2BDZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BFZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BGZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BKZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BLZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BSZZ",
+        "display" : "頭及頸部斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2BYZZ",
+        "display" : "頭及頸部斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW2D1ZZ",
+        "display" : "下肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW2DDZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DFZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DGZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DKZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DLZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DSZZ",
+        "display" : "下肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2DYZZ",
+        "display" : "下肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW2J1ZZ",
+        "display" : "骨盆區斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW2JDZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JFZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JGZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JKZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JLZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JSZZ",
+        "display" : "骨盆區斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2JYZZ",
+        "display" : "骨盆區斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW2M1ZZ",
+        "display" : "上肢斷層核子醫學影像，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW2MDZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MFZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MGZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MKZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MLZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MSZZ",
+        "display" : "上肢斷層核子醫學影像"
+      },
+      {
+        "code" : "CW2MYZZ",
+        "display" : "上肢斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW2YYZZ",
+        "display" : "多處解剖區域斷層核子醫學影像，使用其他放射性核素"
+      },
+      {
+        "code" : "CW3NYZZ",
+        "display" : "全身正子發射斷層掃描，使用其他放射性核素"
+      },
+      {
+        "code" : "CW501ZZ",
+        "display" : "腹部非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW50DZZ",
+        "display" : "腹部非影像核子醫學探測"
+      },
+      {
+        "code" : "CW50YZZ",
+        "display" : "腹部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW511ZZ",
+        "display" : "腹部及骨盆非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW51DZZ",
+        "display" : "腹部及骨盆非影像核子醫學探測"
+      },
+      {
+        "code" : "CW51YZZ",
+        "display" : "腹部及骨盆非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW531ZZ",
+        "display" : "胸部非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW53DZZ",
+        "display" : "胸部非影像核子醫學探測"
+      },
+      {
+        "code" : "CW53YZZ",
+        "display" : "胸部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW541ZZ",
+        "display" : "胸部及腹部非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW54DZZ",
+        "display" : "胸部及腹部非影像核子醫學探測"
+      },
+      {
+        "code" : "CW54YZZ",
+        "display" : "胸部及腹部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW561ZZ",
+        "display" : "胸部及頸部非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW56DZZ",
+        "display" : "胸部及頸部非影像核子醫學探測"
+      },
+      {
+        "code" : "CW56YZZ",
+        "display" : "胸部及頸部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW5B1ZZ",
+        "display" : "頭及頸部非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW5BDZZ",
+        "display" : "頭及頸部非影像核子醫學探測"
+      },
+      {
+        "code" : "CW5BYZZ",
+        "display" : "頭及頸部非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW5D1ZZ",
+        "display" : "下肢非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW5DDZZ",
+        "display" : "下肢非影像核子醫學探測"
+      },
+      {
+        "code" : "CW5DYZZ",
+        "display" : "下肢非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW5J1ZZ",
+        "display" : "骨盆區非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW5JDZZ",
+        "display" : "骨盆區非影像核子醫學探測"
+      },
+      {
+        "code" : "CW5JYZZ",
+        "display" : "骨盆區非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW5M1ZZ",
+        "display" : "上肢非影像核子醫學探測，使用鎝（鎝-99m）"
+      },
+      {
+        "code" : "CW5MDZZ",
+        "display" : "上肢非影像核子醫學探測"
+      },
+      {
+        "code" : "CW5MYZZ",
+        "display" : "上肢非影像核子醫學探測，使用其他放射性核素"
+      },
+      {
+        "code" : "CW70NZZ",
+        "display" : "腹部系統性核子醫學治療"
+      },
+      {
+        "code" : "CW70YZZ",
+        "display" : "腹部系統性核子醫學治療，使用其他放射性核素"
+      },
+      {
+        "code" : "CW73NZZ",
+        "display" : "胸部系統性核子醫學治療"
+      },
+      {
+        "code" : "CW73YZZ",
+        "display" : "胸部系統性核子醫學治療，使用其他放射性核素"
+      },
+      {
+        "code" : "CW7GGZZ",
+        "display" : "甲狀腺系統性核子醫學治療"
+      },
+      {
+        "code" : "CW7GYZZ",
+        "display" : "甲狀腺系統性核子醫學治療，使用其他放射性核素"
+      },
+      {
+        "code" : "CW7N8ZZ",
+        "display" : "全身系統性核子醫學治療"
+      },
+      {
+        "code" : "CW7NGZZ",
+        "display" : "全身系統性核子醫學治療"
+      },
+      {
+        "code" : "CW7NNZZ",
+        "display" : "全身系統性核子醫學治療"
+      },
+      {
+        "code" : "CW7NPZZ",
+        "display" : "全身系統性核子醫學治療"
+      },
+      {
+        "code" : "CW7NYZZ",
+        "display" : "全身系統性核子醫學治療，使用其他放射性核素"
+      },
+      {
+        "code" : "CW7YYZZ",
+        "display" : "多處解剖區域系統性核子醫學治療，使用其他放射性核素"
+      }]
+    }]
+  }
+}
