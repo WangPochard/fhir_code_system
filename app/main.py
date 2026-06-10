@@ -12,7 +12,6 @@ from app.config import get_settings
 from app.response import err, error_code_for_status, ErrorCode
 from app.snomed.routers import router as snomed_router
 from app.icd10.routers import router as icd10_router
-from app.rxnorm.routers import router as rxnorm_router
 from app.loinc.routers import router as loinc_router
 from app.errorbot.router import router as errorbot_router
 from app.agent.routers import router as agent_router
@@ -41,7 +40,6 @@ app.add_middleware(
 _api_prefix = "/api/ai"
 app.include_router(snomed_router, prefix=_api_prefix)
 app.include_router(icd10_router, prefix=_api_prefix)
-app.include_router(rxnorm_router, prefix=_api_prefix)
 app.include_router(loinc_router, prefix=_api_prefix)
 app.include_router(errorbot_router, prefix=f"{_api_prefix}/errorbot", tags=["ErrorBot"])
 app.include_router(agent_router, prefix=_api_prefix)
