@@ -10,7 +10,6 @@ settings = get_settings()
 
 class OllamaValidationExplainService(ValidationExplainService):
     def __init__(self, temperature: float = 0.1):
-        from langchain_community.llms import Ollama
         self._llm = Ollama(
             model=settings.llm_model,
             base_url=settings.llm_base_url,

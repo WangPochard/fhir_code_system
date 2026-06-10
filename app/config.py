@@ -4,7 +4,7 @@ from typing import List
 
 class Settings(BaseSettings):
     """應用程式設定"""
-    
+
     # Database — SNOMED CT
     postgres_host: str
     postgres_port: int
@@ -17,7 +17,7 @@ class Settings(BaseSettings):
 
     # Database - Loinc
     loinc_db: str = "loinc_db"
-    
+
     # LLM 後端
     llm_backend: str = "ollama"   # "ollama" | "vllm"
     llm_ip: str = "localhost"
@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     vllm_temperature: float = 0.1
     vllm_connect_timeout: int = 5
     vllm_read_timeout: int = 180
-    
+
     # RAG
     chunk_size: int = 800
     chunk_overlap: int = 80
@@ -54,7 +54,7 @@ class Settings(BaseSettings):
     langchain_tracing_v2: str = "false"
     langchain_api_key: str = ""
     langchain_project: str = "medical-coding-agent"
-    
+
     # Computed properties
     @property
     def database_url(self) -> str:
@@ -65,7 +65,7 @@ class Settings(BaseSettings):
     def icd10_database_url(self) -> str:
         """ICD-10 PCS PostgreSQL 連線字串"""
         return f"postgresql://{self.postgres_user}:{self.postgres_password}@{self.postgres_host}:{self.postgres_port}/{self.icd10_db}"
-    
+
     @property
     def loinc_database_url(self) -> str:
         """LOINC PostgreSQL 連線字串"""
@@ -75,7 +75,7 @@ class Settings(BaseSettings):
     def llm_base_url(self) -> str:
         """LLM API 位址（Ollama 用）"""
         return f"http://{self.llm_ip}:{self.llm_port}"
-    
+
     class Config:
         env_file = ".env"
         case_sensitive = False
