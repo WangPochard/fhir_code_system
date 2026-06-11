@@ -13,7 +13,7 @@ from app.response import err, error_code_for_status, ErrorCode
 from app.snomed.routers import router as snomed_router
 from app.icd10.routers import router as icd10_router
 from app.loinc.routers import router as loinc_router
-from app.errorbot.router import router as errorbot_router
+from app.errorbot.routers import router as errorbot_router
 from app.agent.routers import router as agent_router
 
 settings = get_settings()

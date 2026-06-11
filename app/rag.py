@@ -19,7 +19,7 @@ from sqlalchemy import text as sa_text
 
 from app.logger import logger
 from app.embedding import EmbeddingService
-from app.llm.llm import LLMService
+from app.llm.llm import LLMService, get_llm_service
 
 
 class RAGService:
@@ -59,7 +59,7 @@ class RAGService:
         self.group_key = group_key
 
         self.embedding = EmbeddingService(model_name=model_name)
-        self.llm = llm_service or LLMService()
+        self.llm = llm_service or get_llm_service()
 
     # ------------------------------------------------------------------
     # 向量搜尋
