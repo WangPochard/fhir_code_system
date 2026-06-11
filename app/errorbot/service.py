@@ -3,6 +3,7 @@ import json
 from collections import defaultdict
 from typing import List, Dict, Any, Optional, Tuple
 
+from app.llm.llm import get_llm_service
 from app.logger import get_logger
 
 logger = get_logger("rag.errorbot")
@@ -94,7 +95,7 @@ class ValidationExplainService:
     """
 
     def _call_llm(self, prompt: str) -> str:
-        raise NotImplementedError
+        return get_llm_service()._call_llm(prompt)
 
     # ------------------------------------------------------------------
     # 主要入口

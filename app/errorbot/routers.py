@@ -2,14 +2,10 @@ from fastapi import APIRouter, Body, HTTPException, Query
 from pydantic import BaseModel
 from typing import Any, Dict, List, Optional
 
-from app.config import get_settings
 from app.response import ok
 from .service import ValidationExplainService
-from .service_ollama import OllamaValidationExplainService
-from .service_vllm import VllmValidationExplainService
 
 router = APIRouter()
-settings = get_settings()
 
 _service: Optional[ValidationExplainService] = None
 
@@ -30,10 +26,7 @@ _OUTCOME_EXAMPLE = {
 def get_service() -> ValidationExplainService:
     global _service
     if _service is None:
-        if settings.llm_backend == "vllm":
-            _service = VllmValidationExplainService()
-        else:
-            _service = OllamaValidationExplainService()
+        _service = ValidationExplainService()
     return _service
 
 

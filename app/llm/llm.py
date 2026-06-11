@@ -1,39 +1,23 @@
 import re
 import json
-from typing import List, Dict
-from langchain_community.llms import Ollama
+from typing import List, Dict, Optional
 
 from app.config import get_settings
 from app.logger import get_logger
 from app.llm.prompts import prompt_service
 
-settings = get_settings()
 logger = get_logger(__name__)
 
 
 class LLMService:
-    """LLM 服務，提供 chunk 分段、NER 辨識、reranking 等功能"""
+    """LLM 服務基底類別。子類別實作 _call_llm / _call_llm_score。"""
 
-    def __init__(
-        self,
-        model: str = None,
-        base_url: str = None,
-        temperature: float = 0.1,
-    ):
-        self.model_name = model or settings.llm_model
-        self.base_url = base_url or settings.llm_base_url
-        self.llm = Ollama(
-            model=self.model_name,
-            base_url=self.base_url,
-            temperature=temperature,
-        )
-        # 打分 / reranking 專用：temperature=0 確保同輸入同輸出
-        self.llm_score = Ollama(
-            model=self.model_name,
-            base_url=self.base_url,
-            temperature=0,
-        )
-        logger.info(f"LLM 服務初始化: {self.model_name} @ {self.base_url}")
+    def _call_llm(self, prompt: str) -> str:
+        raise NotImplementedError
+
+    def _call_llm_score(self, prompt: str) -> str:
+        """排序 / reranking 專用（temperature=0）。子類別可覆寫以使用 temp=0 實例。"""
+        return self._call_llm(prompt)
 
     # ------------------------------------------------------------------
     # Chunk 分段（純文字切分，不依賴 LLM）
@@ -67,7 +51,7 @@ class LLMService:
         prompt = prompt_service.render("ner_extract", clinical_text=clinical_text)
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 data = json.loads(json_match.group())
@@ -86,7 +70,7 @@ class LLMService:
         prompt = prompt_service.render("ner_with_reason", clinical_text=clinical_text)
 
         try:
-            response = self.llm_score.invoke(prompt)
+            response = self._call_llm_score(prompt)
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 data = json.loads(json_match.group())
@@ -122,9 +106,6 @@ class LLMService:
         logger.info(f"NER with reason 總計抽取 {len(all_terms)} 個不重複術語")
         return all_terms
 
-    # ------------------------------------------------------------------
-    # NER + Chunk：長文本先分段再逐段 NER
-    # ------------------------------------------------------------------
     def extract_ner_chunked(self, clinical_text: str, max_chars: int = 1500) -> List[str]:
         """長文本先 chunk 再逐段做 NER，合併去重"""
         chunks = self.chunk_text(clinical_text, max_chars=max_chars)
@@ -218,7 +199,7 @@ class LLMService:
         )
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 data = json.loads(json_match.group())
@@ -252,12 +233,46 @@ class LLMService:
             "pcs_body_system_reason": "LLM 萃取失敗",
         }
 
+    def extract_loinc_facts_from_report(self, report_text: str) -> Dict:
+        """從檢驗/病理/基因報告萃取 LOINC 6 大軸。
+        無法從報告判斷的軸填 unknown，由後續 rule-based 評分給予半分。"""
+        prompt = (
+            "你是 LOINC 臨床編碼助理。請從以下報告文字中萃取 LOINC 的 6 大軸。\n"
+            "無法從報告判斷的軸填入 unknown，不要猜測。\n\n"
+            "6 大軸定義：\n"
+            "  component   ：被測量的分析物或物質（英文，如 Glucose、Hemoglobin、Creatinine）\n"
+            "  property    ：測量的屬性類型（如 MCnc=質量濃度、ACnc=任意濃度、Naric=敘述）\n"
+            "  time_aspect ：時間區間（如 Pt=時間點、24H=24小時、8H=8小時）\n"
+            "  system      ：檢體/來源（如 Ser/Plas=血清/血漿、Urine=尿液、Blood=全血、CSF=腦脊液）\n"
+            "  scale       ：結果表達方式（如 Qn=定量、Ord=序列、Nom=名義、Nar=敘述）\n"
+            "  method      ：測量方法（如 Enzymatic=酵素法、Immunoassay=免疫測定）\n\n"
+            f"報告文字：\n{report_text}\n\n"
+            "請輸出 JSON：\n"
+            '{"component":"...","property":"...","time_aspect":"...","system":"...","scale":"...","method":"...","confidence":"high|medium|low"}'
+        )
+        try:
+            response = self._call_llm_score(prompt)
+            json_match = re.search(r'\{.*\}', response, re.DOTALL)
+            if json_match:
+                data = json.loads(json_match.group())
+                logger.info(
+                    f"LOINC 事實萃取完成 | "
+                    f"component={data.get('component')} system={data.get('system')} "
+                    f"time={data.get('time_aspect')} scale={data.get('scale')} "
+                    f"confidence={data.get('confidence')}"
+                )
+                return data
+        except Exception as e:
+            logger.warning(f"LOINC 事實萃取失敗: {e}")
+
+        return {k: "unknown" for k in ("component", "property", "time_aspect", "system", "scale", "method")}
+
     def extract_procedure_from_report(self, report_text: str) -> Dict:
         """從影像報告推斷執行的影像檢查程序"""
         prompt = prompt_service.render("procedure_infer", report_text=report_text)
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 data = json.loads(json_match.group())
@@ -324,7 +339,7 @@ class LLMService:
 }}"""
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             json_match = re.search(r'\{.*\}', response, re.DOTALL)
             if json_match:
                 data = json.loads(json_match.group())
@@ -382,7 +397,7 @@ confidence_pct 為 0–100，代表此代碼與報告的吻合程度（即使不
 ]"""
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             logger.debug(f"LOINC rerank LLM raw: {response[:300]}")
             json_match = re.search(r'\[.*\]', response, re.DOTALL)
             if not json_match:
@@ -470,7 +485,7 @@ confidence_pct 為 0–100，代表此代碼與報告的吻合程度（即使不
 ]"""
 
         try:
-            response = self.llm_score.invoke(prompt)
+            response = self._call_llm_score(prompt)
             logger.debug(f"SNOMED rank LLM raw: {response[:300]}")
             json_match = re.search(r'\[.*\]', response, re.DOTALL)
             if not json_match:
@@ -516,7 +531,7 @@ confidence_pct 為 0–100，代表此代碼與報告的吻合程度（即使不
         )
 
         try:
-            response = self.llm.invoke(prompt)
+            response = self._call_llm(prompt)
             json_match = re.search(r"\[.*\]", response, re.DOTALL)
             if json_match:
                 rankings = json.loads(json_match.group())
@@ -555,7 +570,28 @@ confidence_pct 為 0–100，代表此代碼與報告的吻合程度（即使不
         )
 
         try:
-            return self.llm.invoke(prompt)
+            return self._call_llm(prompt)
         except Exception as e:
             logger.error(f"LLM explain 失敗: {e}")
             return f"LLM 回應失敗: {e}"
+
+
+# ------------------------------------------------------------------
+# 全域 singleton factory
+# ------------------------------------------------------------------
+_llm_service: Optional[LLMService] = None
+
+
+def get_llm_service() -> LLMService:
+    global _llm_service
+    if _llm_service is None:
+        s = get_settings()
+        if s.llm_backend == "ollama":
+            from app.llm.service_ollama import OllamaLLMService
+            _llm_service = OllamaLLMService()
+        elif s.llm_backend == "vllm":
+            from app.llm.service_vllm import VllmLLMService
+            _llm_service = VllmLLMService()
+        else:
+            raise ValueError(f"不支援的 LLM backend: {s.llm_backend!r}，目前支援 ollama / vllm")
+    return _llm_service

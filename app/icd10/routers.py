@@ -5,7 +5,7 @@ from app.config import get_settings
 from app.rag import RAGService
 from app.logger import get_logger
 from app.response import ok
-from app.llm.llm import LLMService
+from app.llm.llm import get_llm_service
 from .schemas import (
     StatsResponse, CandidateResponse,
     PcsSuggestRequest, PcsSuggestResponse,
@@ -55,9 +55,10 @@ rag_eng = RAGService(
     result_mapper=icd10_mapper,
     stats_sql=STATS_SQL,
     model_name=ICD10_MODEL_ENG,
+    llm_service=get_llm_service(),
 )
 
-llm = LLMService()
+llm = get_llm_service()
 
 
 # ------------------------------------------------------------------

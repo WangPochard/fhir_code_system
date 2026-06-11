@@ -3,6 +3,7 @@ from fastapi import APIRouter, HTTPException
 from app.database import SnomedSession
 from app.config import get_settings
 from app.rag import RAGService
+from app.llm.llm import get_llm_service
 from app.logger import get_logger
 from app.response import ok
 from .schemas import (
@@ -63,6 +64,7 @@ rag = RAGService(
     stats_sql=STATS_SQL,
     model_name=settings.sentence_transformer_model,
     group_key="concept_id",
+    llm_service=get_llm_service(),
 )
 
 

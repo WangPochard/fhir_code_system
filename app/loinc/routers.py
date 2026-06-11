@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException
 from sqlalchemy import text
 from app.database import LOINCSession
 from app.logger import get_logger
-from app.llm.llm import LLMService
+from app.llm.llm import get_llm_service
 from app.response import ok
 from .schemas import (
     LookupRequest, LookupResponse,
@@ -14,7 +14,42 @@ from .schemas import (
 
 router = APIRouter(prefix="/loinc", tags=["LOINC"])
 logger = get_logger(__name__)
-llm = LLMService()
+llm = get_llm_service()
+
+# ------------------------------------------------------------------
+# LOINC 6 軸 rule-based 評分
+# ------------------------------------------------------------------
+_AXIS_WEIGHTS = {
+    "component":   35,
+    "system":      20,
+    "time_aspect": 15,
+    "scale":       15,
+    "property":    10,
+    "method":       5,
+}
+
+
+def _score_loinc_candidate(extracted: dict, candidate: dict) -> tuple[int, str]:
+    """逐軸比對，回傳 (總分, 可讀說明)。"""
+    score = 0
+    parts = []
+    for axis, max_pts in _AXIS_WEIGHTS.items():
+        ext_val = (extracted.get(axis) or "unknown").strip().lower()
+        cand_val = (candidate.get(axis) or "").strip().lower()
+
+        if ext_val == "unknown" or not ext_val:
+            pts = max_pts // 2
+            parts.append(f"{axis} 未知（給 {pts}/{max_pts}）")
+        elif ext_val == cand_val:
+            pts = max_pts
+            parts.append(f"{axis} 符合（{candidate.get(axis)}）")
+        else:
+            pts = 0
+            parts.append(f"{axis} 不符（報告:{extracted.get(axis)} ≠ 候選:{candidate.get(axis)}）")
+
+        score += pts
+
+    return score, "；".join(parts)
 
 
 # ------------------------------------------------------------------
@@ -216,28 +251,32 @@ async def report_suggest(req: ReportSuggestRequest):
         f"total={len(all_candidates)} after_filter={len(candidates)}"
     )
 
-    ranked = llm.rank_loinc_candidates_from_report(
-        report_text=req.report_text,
-        candidates=candidates,
-        nhi_name=nhi_name_cht or nhi_name_eng or "",
+    # Step 1：LLM 從報告萃取 6 軸
+    facts = llm.extract_loinc_facts_from_report(req.report_text)
+
+    # Step 2：Rule-based 逐軸評分並排序
+    scored = sorted(
+        [(_score_loinc_candidate(facts, c), c) for c in candidates],
+        key=lambda x: x[0][0],
+        reverse=True,
     )
 
     results = [
         ReportSuggestCandidate(
-            rank=item["rank"],
-            loinc_code=item["loinc_code"],
-            long_common_name=item.get("long_common_name"),
-            component=item.get("component"),
-            property=item.get("property"),
-            time_aspect=item.get("time_aspect"),
-            system=item.get("system"),
-            scale=item.get("scale"),
-            method=item.get("method"),
-            relation=item.get("relation"),
-            confidence_pct=item["confidence_pct"],
-            reason=item.get("reason", ""),
+            rank=i,
+            loinc_code=c["loinc_code"],
+            long_common_name=c.get("long_common_name"),
+            component=c.get("component"),
+            property=c.get("property"),
+            time_aspect=c.get("time_aspect"),
+            system=c.get("system"),
+            scale=c.get("scale"),
+            method=c.get("method"),
+            relation=c.get("relation"),
+            confidence_pct=float(score),
+            reason=reason,
         )
-        for item in ranked[: req.top_k]
+        for i, ((score, reason), c) in enumerate(scored[: req.top_k], 1)
     ]
 
     return ok(ReportSuggestResponse(

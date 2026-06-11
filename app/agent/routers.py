@@ -1,26 +1,14 @@
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
-from langchain_core.messages import HumanMessage
-
-from app.agent.graph import graph
 from app.response import ok
 from app.logger import get_logger
+from app.agent.schemas import AgentQueryRequest
+from app.agent.graph import MedicalCodingAgent
+from fastapi import APIRouter, HTTPException
+from langchain_core.messages import HumanMessage
 
 logger = get_logger(__name__)
 
+graph = MedicalCodingAgent().graph
 router = APIRouter(prefix="/agent", tags=["Medical Coding Agent"])
-
-
-class AgentQueryRequest(BaseModel):
-    query: str
-    model_config = {
-        "json_schema_extra": {
-            "example": {
-                "query": "第二型糖尿病合併高血壓，需要 SNOMED CT 代碼和相關血糖 LOINC 代碼"
-            }
-        }
-    }
-
 
 @router.post(
     "/query",
