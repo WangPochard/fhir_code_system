@@ -5,6 +5,7 @@ rag_document/
 rag_document_*
 tmuh
 snomed-venv
+code-venv
 test_*.json
 test_results*
 Benjamin.txt
