@@ -7,8 +7,6 @@ from app.snomed.routers import rag as snomed_rag
 from app.icd10.routers import rag_eng as icd10_rag
 from app.database import LOINCSession
 from app.logger import get_logger
-from app.errorbot.routers import get_service
-from typing import Any, Dict
 
 
 logger = get_logger(__name__)
@@ -104,32 +102,4 @@ def search_loinc(query: str) -> str:
     finally:
         db.close()
 
-@tool
-def explain_validation_result(
-    outcome: Dict[str, Any],
-    include_warning: bool = False,
-    include_cascading: bool = True,
-) -> str:
-    """
-    將 FHIR OperationOutcome 驗證結果翻譯成醫療人員看得懂的中文說明。
-    傳入 OperationOutcome JSON，回傳中文解釋。
-    """
-    if outcome.get("resourceType") != "OperationOutcome":
-        return "錯誤：請傳入有效的 OperationOutcome 資源"  # ← 不能用 HTTPException
-
-    if not include_warning:
-        outcome = {
-            **outcome,
-            "issue": [i for i in outcome.get("issue", []) if i.get("severity") == "error"],
-        }
-
-    service = get_service()
-    result = service.explain(outcome)
-
-    issues = result.get("issues", [])
-    if not include_cascading:
-        issues = [i for i in issues if i.get("category") != "cascading"]
-
-    return json.dumps(issues, ensure_ascii=False)
-
-medical_tools = [search_snomed_ct, search_icd10_pcs, search_loinc, explain_validation_result]
+medical_tools = [search_snomed_ct, search_icd10_pcs, search_loinc]
