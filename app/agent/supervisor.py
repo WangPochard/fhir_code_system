@@ -1,6 +1,7 @@
 import operator
 from typing import TypedDict, Annotated, Literal
 
+from langchain_core.exceptions import OutputParserException
 from langchain_core.messages import BaseMessage, SystemMessage, AIMessage, HumanMessage
 from langgraph.graph import StateGraph, END
 from pydantic import BaseModel
@@ -35,7 +36,7 @@ class RouteDecision(BaseModel):
 class MedicalCodingSupervisor:
 
     def __init__(self):
-        self._llm = build_chat_llm().with_structured_output(RouteDecision)
+        self._llm = build_chat_llm(json_format=True).with_structured_output(RouteDecision)
         self.graph = self._build_graph()
         logger.info("Medical Coding Supervisor graph 初始化完成")
 
@@ -44,7 +45,11 @@ class MedicalCodingSupervisor:
     # ------------------------------------------------------------------
     def _supervisor_node(self, state: SupervisorState):
         messages = [SystemMessage(content=_SUPERVISOR_PROMPT)] + state["messages"]
-        decision = self._llm.invoke(messages)
+        try:
+            decision = self._llm.invoke(messages)
+        except OutputParserException as e:
+            logger.warning(f"Supervisor 結構化輸出解析失敗，預設 FINISH：{e}")
+            decision = RouteDecision(next="FINISH", reason="LLM 輸出解析失敗")
         logger.info(f"Supervisor → {decision.next}（{decision.reason}）")
         return {"next": decision.next}
 
