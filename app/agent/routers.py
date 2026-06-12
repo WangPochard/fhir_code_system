@@ -18,7 +18,7 @@ router = APIRouter(prefix="/agent", tags=["Medical Coding Agent"])
     "/query",
     summary="醫療代碼 AI Agent 查詢（ReAct）",
     description=(
-        "輸入臨床自由文字，Agent 透過 tool calling 自動決定查詢哪些術語系統。\n\n"
+        "輸入臨床自由文字（症狀、診斷、處置、檢驗等），Agent 自動判斷需要查哪些術語系統並回傳對應代碼。\n\n"
         "**前提**：LLM 後端需支援 tool calling（function calling）。"
     ),
 )
@@ -36,8 +36,7 @@ async def agent_query(req: AgentQueryRequest):
     "/supervisor/query",
     summary="醫療代碼 Supervisor Agent 查詢",
     description=(
-        "輸入臨床自由文字，Supervisor 明確決定依序呼叫哪些 worker"
-        "（snomed / icd10 / loinc），每個 worker 獨立回傳結果。\n\n"
+        "輸入臨床自由文字（症狀、診斷、處置、檢驗等），Supervisor 明確決定依序呼叫哪些 worker，每個 worker 獨立回傳結果。\n\n"
         "與 /query 的差別：路由決策明確可見，適合需要追蹤推理過程的場景。"
     ),
 )
