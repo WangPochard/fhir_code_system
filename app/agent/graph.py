@@ -8,7 +8,8 @@ from app.config import get_settings
 from app.agent.tools import medical_tools
 from app.logger import get_logger
 
-_AGENT_SYSTEM_PROMPT = """你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
+_AGENT_SYSTEM_PROMPT = """/no_think
+你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
 - search_snomed_ct：查詢疾病、症狀、臨床發現
 - search_icd10_pcs：查詢手術、治療處置
 - search_loinc：查詢實驗室檢驗、影像檢查
@@ -17,6 +18,15 @@ _AGENT_SYSTEM_PROMPT = """你是醫療代碼查詢助理，可使用以下工具
 1. 根據臨床描述判斷需要查詢哪些工具，每個工具只呼叫一次。
 2. 取得所有需要的結果後，立即整理成繁體中文摘要回傳，不再呼叫任何工具。
 3. 回傳格式：列出每個找到的代碼、名稱與相似度分數。"""
+
+_AGENT_SUMMARY_PROMPT = """/think
+你是醫療代碼查詢助理。工具已完成搜尋，請整理所有結果。
+
+輸出規則：
+1. 用繁體中文撰寫摘要。
+2. 依系統分組（SNOMED CT / ICD-10-PCS / LOINC），列出代碼、名稱與相似度。
+3. 若某系統無結果，簡短說明即可。
+4. 不再呼叫任何工具。"""
 
 logger = get_logger(__name__)
 
@@ -60,7 +70,9 @@ class MedicalCodingAgent:
             logger.info(f"LangSmith tracing 啟用，project={s.langchain_project}")
 
     def _agent_node(self, state: MessagesState):
-        messages = [SystemMessage(content=_AGENT_SYSTEM_PROMPT)] + state["messages"]
+        has_tool_results = any(isinstance(m, ToolMessage) for m in state["messages"])
+        prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
+        messages = [SystemMessage(content=prompt)] + state["messages"]
         return {"messages": [self._llm.invoke(messages)]}
 
     @staticmethod
