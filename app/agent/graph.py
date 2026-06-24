@@ -19,7 +19,7 @@ _AGENT_SYSTEM_PROMPT = """/no_think
 2. 取得所有需要的結果後，立即整理成繁體中文摘要回傳，不再呼叫任何工具。
 3. 回傳格式：列出每個找到的代碼、名稱與相似度分數。"""
 
-_AGENT_SUMMARY_PROMPT = """/think
+_AGENT_SUMMARY_PROMPT = """/no_think
 你是醫療代碼查詢助理。工具已完成搜尋，請整理所有結果。
 
 輸出規則：
