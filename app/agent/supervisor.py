@@ -44,6 +44,16 @@ class MedicalCodingSupervisor:
     # Supervisor node
     # ------------------------------------------------------------------
     def _supervisor_node(self, state: SupervisorState):
+        called = {
+            m.name for m in state["messages"]
+            if isinstance(m, AIMessage) and getattr(m, "name", None) in ("snomed", "icd10", "loinc")
+        }
+
+        # 三個 worker 都已完成，不需要再問 LLM，直接結束
+        if called >= {"snomed", "icd10", "loinc"}:
+            logger.info("Supervisor → FINISH（所有 worker 已完成，跳過 LLM call）")
+            return {"next": "FINISH"}
+
         messages = [SystemMessage(content=_SUPERVISOR_PROMPT)] + state["messages"]
         try:
             decision = self._llm.invoke(messages)
@@ -51,11 +61,6 @@ class MedicalCodingSupervisor:
             logger.warning(f"Supervisor 結構化輸出解析失敗，預設 FINISH：{e}")
             decision = RouteDecision(next="FINISH", reason="LLM 輸出解析失敗")
 
-        # 從 messages 中找出已跑過的 worker
-        called = {
-            m.name for m in state["messages"]
-            if isinstance(m, AIMessage) and getattr(m, "name", None) in ("snomed", "icd10", "loinc")
-        }
         if decision.next != "FINISH" and decision.next in called:
             logger.warning(f"Supervisor 試圖重複呼叫 {decision.next}（已完成），強制 FINISH")
             decision = RouteDecision(next="FINISH", reason=f"{decision.next} 已執行，結束")
