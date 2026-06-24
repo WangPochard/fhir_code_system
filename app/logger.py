@@ -67,12 +67,17 @@ def setup_logger(name: str = "rag", level: int = logging.INFO, console: bool = T
 
     _logger_initialized = True
 
+    # root logger 同步設定，讓 app.* 子 logger 的 log 能向上傳遞並被接收
+    root = logging.getLogger()
+    root.setLevel(level)
+
     # 1. 終端輸出 (有顏色)
     if console:
         console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setLevel(level)
         console_handler.setFormatter(CustomFormatter())
         logger.addHandler(console_handler)
+        root.addHandler(console_handler)
 
     # 2. 檔案輸出 - INFO 級別以上
     if file:
