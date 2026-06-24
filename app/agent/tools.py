@@ -113,7 +113,7 @@ def search_loinc(query: str) -> str:
                             "property": r[3],
                             "matched_term": term,
                         })
-            return json.dumps(output[:6], ensure_ascii=False) if output else f"未找到相關 LOINC 代碼"
+            return json.dumps(output[:6], ensure_ascii=False) if output else "未找到相關 LOINC 代碼"
         finally:
             db.close()
     except Exception as e:
