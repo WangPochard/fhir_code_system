@@ -1,4 +1,5 @@
 .env
+.env.backup.20260622
 __pycache__
 logs
 rag_document/
@@ -6,6 +7,7 @@ rag_document_*
 tmuh
 snomed-venv
 code-venv
+fhir-venv
 test_*.json
 test_results*
 Benjamin.txt

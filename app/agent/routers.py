@@ -24,7 +24,7 @@ router = APIRouter(prefix="/agent", tags=["Medical Coding Agent"])
 )
 async def agent_query(req: AgentQueryRequest):
     try:
-        result = await graph.ainvoke({"messages": [HumanMessage(req.query)]})
+        result = await graph.ainvoke({"messages": [HumanMessage(req.query)]}, {"recursion_limit": 10})
         answer = result["messages"][-1].content
         return ok({"query": req.query, "answer": answer})
     except Exception as e:
