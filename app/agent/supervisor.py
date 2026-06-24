@@ -50,6 +50,16 @@ class MedicalCodingSupervisor:
         except OutputParserException as e:
             logger.warning(f"Supervisor 結構化輸出解析失敗，預設 FINISH：{e}")
             decision = RouteDecision(next="FINISH", reason="LLM 輸出解析失敗")
+
+        # 從 messages 中找出已跑過的 worker
+        called = {
+            m.name for m in state["messages"]
+            if isinstance(m, AIMessage) and getattr(m, "name", None) in ("snomed", "icd10", "loinc")
+        }
+        if decision.next != "FINISH" and decision.next in called:
+            logger.warning(f"Supervisor 試圖重複呼叫 {decision.next}（已完成），強制 FINISH")
+            decision = RouteDecision(next="FINISH", reason=f"{decision.next} 已執行，結束")
+
         logger.info(f"Supervisor → {decision.next}（{decision.reason}）")
         return {"next": decision.next}
 
