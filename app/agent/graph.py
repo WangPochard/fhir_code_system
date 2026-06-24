@@ -1,11 +1,22 @@
 import os
 
+from langchain_core.messages import SystemMessage, ToolMessage
 from langgraph.graph import StateGraph, MessagesState, END
 from langgraph.prebuilt import ToolNode
 
 from app.config import get_settings
 from app.agent.tools import medical_tools
 from app.logger import get_logger
+
+_AGENT_SYSTEM_PROMPT = """你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
+- search_snomed_ct：查詢疾病、症狀、臨床發現
+- search_icd10_pcs：查詢手術、治療處置
+- search_loinc：查詢實驗室檢驗、影像檢查
+
+規則：
+1. 根據臨床描述判斷需要查詢哪些工具，每個工具只呼叫一次。
+2. 取得所有需要的結果後，立即整理成繁體中文摘要回傳，不再呼叫任何工具。
+3. 回傳格式：列出每個找到的代碼、名稱與相似度分數。"""
 
 logger = get_logger(__name__)
 
@@ -49,12 +60,18 @@ class MedicalCodingAgent:
             logger.info(f"LangSmith tracing 啟用，project={s.langchain_project}")
 
     def _agent_node(self, state: MessagesState):
-        return {"messages": [self._llm.invoke(state["messages"])]}
+        messages = [SystemMessage(content=_AGENT_SYSTEM_PROMPT)] + state["messages"]
+        return {"messages": [self._llm.invoke(messages)]}
 
     @staticmethod
     def _route(state: MessagesState):
         last = state["messages"][-1]
-        return "tools" if getattr(last, "tool_calls", None) else END
+        if not getattr(last, "tool_calls", None):
+            return END
+        tool_rounds = sum(1 for m in state["messages"] if isinstance(m, ToolMessage))
+        if tool_rounds >= len(medical_tools):
+            return END
+        return "tools"
 
     def _build_graph(self):
         return (
