@@ -1,6 +1,6 @@
 import os
 
-from langchain_core.messages import SystemMessage, ToolMessage
+from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langgraph.graph import StateGraph, MessagesState, END
 from langgraph.prebuilt import ToolNode
 
@@ -8,8 +8,7 @@ from app.config import get_settings
 from app.agent.tools import medical_tools
 from app.logger import get_logger
 
-_AGENT_SYSTEM_PROMPT = """/no_think
-你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
+_AGENT_SYSTEM_PROMPT = """你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
 - search_snomed_ct：查詢疾病、症狀、臨床發現
 - search_icd10_pcs：查詢手術、治療處置
 - search_loinc：查詢實驗室檢驗、影像檢查
@@ -19,8 +18,7 @@ _AGENT_SYSTEM_PROMPT = """/no_think
 2. 取得所有需要的結果後，立即整理成繁體中文摘要回傳，不再呼叫任何工具。
 3. 回傳格式：列出每個找到的代碼、名稱與相似度分數。"""
 
-_AGENT_SUMMARY_PROMPT = """/no_think
-你是醫療代碼查詢助理。工具已完成搜尋，請整理所有結果。
+_AGENT_SUMMARY_PROMPT = """你是醫療代碼查詢助理。工具已完成搜尋，請整理所有結果。
 
 輸出規則：
 1. 用繁體中文撰寫摘要。
@@ -74,7 +72,15 @@ class MedicalCodingAgent:
         step = "summary" if has_tool_results else "routing"
         prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
         logger.info(f"[agent_node/{step}] LLM call 開始")
-        messages = [SystemMessage(content=prompt)] + state["messages"]
+        history = []
+        no_think_added = False
+        for m in state["messages"]:
+            if isinstance(m, HumanMessage) and not no_think_added:
+                history.append(HumanMessage(content=f"/no_think\n{m.content}"))
+                no_think_added = True
+            else:
+                history.append(m)
+        messages = [SystemMessage(content=prompt)] + history
         response = self._llm.invoke(messages)
         logger.info(f"[agent_node/{step}] LLM call 完成，has_tool_calls={bool(getattr(response, 'tool_calls', None))}")
         return {"messages": [response]}

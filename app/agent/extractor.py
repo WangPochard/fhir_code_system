@@ -26,8 +26,7 @@ logger = get_logger(__name__)
 # 各領域專屬 prompt
 # ------------------------------------------------------------------
 
-_SNOMED_SYSTEM = """/no_think
-你是臨床術語萃取助理，專門識別適合查詢 SNOMED CT 的概念。
+_SNOMED_SYSTEM = """你是臨床術語萃取助理，專門識別適合查詢 SNOMED CT 的概念。
 從臨床描述中抽取「疾病、症狀、臨床發現、身體構造」類術語。
 
 輸出規則：
@@ -35,8 +34,7 @@ _SNOMED_SYSTEM = """/no_think
 - 每個元素為單一術語字串
 - 範例：["急性胸痛", "ST 段上升", "心肌梗塞"]"""
 
-_ICD10_SYSTEM = """/no_think
-你是臨床術語萃取助理，專門識別適合查詢 ICD-10-PCS 的概念。
+_ICD10_SYSTEM = """你是臨床術語萃取助理，專門識別適合查詢 ICD-10-PCS 的概念。
 從臨床描述中抽取「手術、治療處置、醫療介入」類術語。
 
 輸出規則：
@@ -44,8 +42,7 @@ _ICD10_SYSTEM = """/no_think
 - 每個元素為單一術語字串
 - 範例：["緊急心導管手術", "經皮冠狀動脈介入治療"]"""
 
-_LOINC_SYSTEM = """/no_think
-你是臨床術語萃取助理，專門識別適合查詢 LOINC 的概念。
+_LOINC_SYSTEM = """你是臨床術語萃取助理，專門識別適合查詢 LOINC 的概念。
 從臨床描述中抽取「實驗室檢驗、影像檢查、生命徵象量測」類術語。
 
 輸出規則：
@@ -100,7 +97,7 @@ def extract_terms(clinical_text: str, domain: str) -> list[str]:
         logger.info(f"[extractor/{domain}] LLM call 開始")
         response = _get_llm().invoke([
             SystemMessage(content=_DOMAIN_PROMPTS[domain]),
-            HumanMessage(content=clinical_text),
+            HumanMessage(content=f"/no_think\n{clinical_text}"),
         ])
         logger.info(f"[extractor/{domain}] LLM call 完成")
 
