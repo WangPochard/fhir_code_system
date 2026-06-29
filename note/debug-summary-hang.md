@@ -58,20 +58,38 @@ prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
 
 ## 目前遇到的問題
 
+### 問題分類修正
+
+此問題最初被歸類為「agent loop」（branch 名稱 `fix/agent-loop` 即來自此判斷），以為是 LangGraph 路由陷入無限迴圈。
+
+**實際上不是 loop 問題。** 是 `qwen3.5:4b-mlx` 在 thinking mode 下瘋狂 generate token，屬於**資源耗盡型的 hang**：
+- Loop 問題：graph 一直在跑、節點反覆被呼叫
+- 本問題：graph 停在同一個節點、LLM 一直在 generate 但不結束
+
+兩者都會讓請求 hang 住，但根本原因和解法完全不同。
+
 ### 問題現象
 
 送出請求後，工具查詢正常完成，但最後整個 hang 住、永遠不回應，電腦 GPU 很燙。
 
 ### 問題發生在哪個節點
 
-**agent_node 第 2 次（summary 步驟）**。
+**tools_node 內的 extractor LLM call**（後來加 log 才確認，不是 summary 步驟）。
 
-透過 LangSmith trace 確認：
-- `agent` 第 1 次：15.85 秒，正常完成，輸出 3 個 tool_call
-- `tools`：3 個工具都執行完，各有輸出
-- `agent` 第 2 次：LLM call 進去之後不返回，服務被手動砍掉才結束
+透過加入詳細 log 後確認的執行序：
+```
+[agent_node/routing] LLM call 開始
+[agent_node/routing] LLM call 完成，has_tool_calls=True
+[extractor/snomed] LLM call 開始
+[extractor/icd10] LLM call 開始
+[extractor/loinc] LLM call 開始
+HTTP 200 OK ← 其中一個 extractor 開始收到 response stream
+（之後無任何 log）← 該 extractor generate 不停止
+```
 
-LangSmith 顯示整筆 run 為 `incomplete`，第 2 次 agent span 只有被殺前的極短 duration（0.01s），不是完成時間。
+Ollama server log 確認：prompt 處理完（115/116 tokens），進入 generate 階段後不結束。
+
+三個 extractor 同時啟動，Ollama 一次只能跑一個，第一個拿到 response 的 extractor 進入 thinking mode，generate 無限 token。
 
 ---
 
@@ -80,6 +98,13 @@ LangSmith 顯示整筆 run 為 `incomplete`，第 2 次 agent span 只有被殺�
 ### 什麼是 thinking mode
 
 `qwen3.5:4b-mlx` 屬於 Qwen3 系列，預設啟用 thinking mode：回應前會先輸出 `<think>...</think>` 的內部推理過程，才給最終答案。這個推理過程沒有長度限制，context 越複雜可能越長。
+
+**Think 是用來「推導」的，不是用來「判斷」或「認出」的。**
+
+- 需要 think：多步驟邏輯推理、數學演算、鑑別診斷（答案需要一步一步導出）
+- 不需要 think：NER 術語抽取、格式化輸出、分類決策（模型直接從訓練記憶認出，不需要推導過程）
+
+本專案所有 LLM call 都屬於後者：extractor 是辨識醫療術語，agent routing 是分類決策，summary 是格式化整理。全部用 `/no_think`。
 
 ### 如何發現這個問題導致 hang
 
@@ -109,37 +134,71 @@ summary 步驟的 context 比第 1 次大很多（多了 3 份工具 JSON 結果
 
 ---
 
-**目前狀況（2026-06-29）：** 問題重新出現，原因尚待確認。
-- 假說：Qwen3 的 `/no_think` 必須放在 **user message** 前綴才有效，放在 system message 可能被忽略，導致 thinking mode 仍然觸發。
-- 尚未驗證：需在 LangSmith 的第 2 次 agent LLM span output 確認是否出現 `<think>` token。
+---
+
+**`2026-06-29 上午`｜問題重新出現，開始排查**
+
+症狀：請求 hang 住、電腦 GPU 很燙、LangSmith 顯示 `incomplete`。
+
+排查步驟：
+1. LangSmith 看到 `incomplete` 但無法從 UI 判斷卡在哪個節點（服務殺掉後才出現第 2 個 agent node）
+2. 在 `_agent_node` 和 `extract_terms` 加入 log，重跑
+3. Log 顯示卡在 extractor，不是 summary 步驟
+4. Ollama server log 確認：prompt 處理完（115/116 tokens）後進入 generate，generate 不結束
+5. 電腦燙 + hang + GPU 高負載 → token 爆炸（thinking mode 未被關閉）
+
+**結論：** `/no_think` 放在 system message 對 Qwen3 不穩定，模型有機率忽略，進入 thinking mode 無限 generate。
 
 ---
 
-## 處理方向
+**`2026-06-29 下午`｜修正 `/no_think` 位置**
 
-### 短期止血
+**原因：** Qwen3 官方指定 `/no_think` 必須放在 **user message 前綴** 才有效，放在 system message 是錯的。
 
-在 `build_chat_llm()` 對 ChatOllama 加 timeout：
+**做法：**
+- `extractor.py`：`_SNOMED_SYSTEM`、`_ICD10_SYSTEM`、`_LOINC_SYSTEM` 移除 `/no_think`，改在 `extract_terms()` 的 `HumanMessage(content=f"/no_think\n{clinical_text}")` 加入
+- `graph.py`：`_AGENT_SYSTEM_PROMPT`、`_AGENT_SUMMARY_PROMPT` 移除 `/no_think`，改在 `_agent_node` 對第一個 `HumanMessage` 前加 `/no_think\n`
 
-```python
-kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0, "timeout": 60}
+**成效：** 不再無限 hang，但 thinking mode 仍有觸發，整體耗時約 10 分 44 秒（見下方實測記錄）。
+
+**實測 log（pid 27654）：**
+```
+16:54:32 - routing 完成，三個 extractor 同時啟動
+16:57:12 - 第 1 個 extractor 開始收到 stream（等了 2m40s）
+16:58:47 - 第 2 個 extractor 開始收到 stream（再等 1m35s）
+17:02:58 - icd10 extractor 完成（共 8m26s）→ 萃取 2 個術語
+17:03:10 - snomed extractor 完成 → 萃取 3 個術語
+17:03:38 - loinc extractor 完成 → 萃取 3 個術語
+17:03:38 - summary 開始
+17:05:01 - summary 完成（1m23s）
+總耗時：約 10 分 44 秒
 ```
 
-超過 60 秒丟 exception，讓 API 回 500，至少不讓 server 永遠 hang 死。
+**分析：** `/no_think` 在 user message 沒有完全阻止 thinking mode，模型還是進入了 thinking，每個 extractor 花了 2-8 分鐘生成 thinking token，最終還是輸出正確結果，但速度無法接受。
 
-### 根本修法（待驗證後再動）
+---
 
-**假說：** `/no_think` 移到 user message 前綴才對 Qwen3 有效。
+**`2026-06-29 下午`｜加入 `num_predict` 限制最大輸出 token 數**
 
-**驗證方式：**
-1. 重現問題時執行 `ollama ps`，確認 GPU 確實高負載（排除 Ollama 崩潰）
-2. 在 LangSmith incomplete trace 的第 2 次 agent LLM span 查看 output 有無 `<think>` token
+**原因：** `/no_think` 無法可靠阻止 thinking mode；thinking mode 一旦觸發就會生成大量 token，導致回應時間過長甚至無限 hang。需要在 Ollama 層設定硬上限，強制截斷。
 
-確認後再修改並記錄結果。
+**做法：**
+- `graph.py`：`build_chat_llm()` 新增 `num_predict` 參數（預設 1024），Ollama kwargs 加入 `num_predict`
+- `extractor.py`：`_get_llm()` 改用 `build_chat_llm(json_format=True, num_predict=300)`
 
-### 備用方向
+**參數設計理由：**
+- extractor 只需輸出短 JSON 陣列（約 50-100 token），300 已足夠；萬一 thinking 塞滿 300 token 導致 JSON 解析失敗，`extract_terms()` 有 fallback 機制會改用原始文字，不會 crash
+- agent routing / summary 需要更多空間（tool call + 中文摘要），給 1024
 
-若 `/no_think` 修了還是過慢，考慮截斷工具輸出長度，限制每個工具 JSON 最多回傳幾筆結果，降低 summary 步驟的 context 大小。
+**預期成效：** extractor 每次最多生成 300 token（M2 約 6 秒），三個排隊共約 18 秒；summary 最多 1024 token，約 20 秒。總耗時預計從 10 分鐘降至 1 分鐘以內。
+
+**成效：** 待測試
+
+---
+
+## 備用方向（尚未嘗試）
+
+若速度仍不理想，考慮截斷工具輸出長度，限制每個工具 JSON 最多回傳幾筆結果，降低 summary 步驟的 context 大小。
 
 ---
 

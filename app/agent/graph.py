@@ -1,6 +1,6 @@
 import os
 
-from langchain_core.messages import SystemMessage, ToolMessage
+from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langgraph.graph import StateGraph, MessagesState, END
 from langgraph.prebuilt import ToolNode
 
@@ -8,8 +8,7 @@ from app.config import get_settings
 from app.agent.tools import medical_tools
 from app.logger import get_logger
 
-_AGENT_SYSTEM_PROMPT = """/no_think
-你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
+_AGENT_SYSTEM_PROMPT = """你是醫療代碼查詢助理，可使用以下工具查詢標準代碼：
 - search_snomed_ct：查詢疾病、症狀、臨床發現
 - search_icd10_pcs：查詢手術、治療處置
 - search_loinc：查詢實驗室檢驗、影像檢查
@@ -19,23 +18,25 @@ _AGENT_SYSTEM_PROMPT = """/no_think
 2. 取得所有需要的結果後，立即整理成繁體中文摘要回傳，不再呼叫任何工具。
 3. 回傳格式：列出每個找到的代碼、名稱與相似度分數。"""
 
-_AGENT_SUMMARY_PROMPT = """/no_think
-你是醫療代碼查詢助理。工具已完成搜尋，請整理所有結果。
+_AGENT_SUMMARY_PROMPT = """你是醫療代碼查詢助理。工具搜尋已完成，請根據結果撰寫說明。
 
 輸出規則：
-1. 用繁體中文撰寫摘要。
-2. 依系統分組（SNOMED CT / ICD-10-PCS / LOINC），列出代碼、名稱與相似度。
-3. 若某系統無結果，簡短說明即可。
-4. 不再呼叫任何工具。"""
+1. 純文字，不使用 markdown（不用標題、表格、粗體、符號）
+2. 針對每個系統說明結果是否與臨床描述相符
+3. 若相似度偏低或結果可疑，明確說明「目前僅能推測可能為此答案，缺少必要資訊，建議人工確認」
+4. 若某系統無結果，說明可能原因
+5. 簡短扼要，全文不超過 150 字
+6. 不再呼叫任何工具"""
 
 logger = get_logger(__name__)
 
 
-def build_chat_llm(json_format: bool = False):
+def build_chat_llm(json_format: bool = False, num_predict: int = 1024):
     """建立支援 tool calling / structured output 的 Chat LLM。
 
     json_format=True 僅供 Ollama 後端：強制回傳 JSON，用於 supervisor 的結構化輸出。
     ReAct agent（bind_tools）不應開啟此選項。
+    num_predict：Ollama 最大輸出 token 數，防止 thinking mode 無限生成。
     """
     s = get_settings()
     if s.llm_backend == "vllm":
@@ -44,7 +45,8 @@ def build_chat_llm(json_format: bool = False):
         return ChatOpenAI(base_url=base_url, model=s.vllm_model, temperature=0, api_key="none")
     elif s.llm_backend == "ollama":
         from langchain_ollama import ChatOllama
-        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0, "timeout": 60}
+        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0,
+                  "num_predict": num_predict}
         if json_format:
             kwargs["format"] = "json"
         return ChatOllama(**kwargs)
@@ -57,9 +59,10 @@ class MedicalCodingAgent:
     def __init__(self):
         s = get_settings()
         self._setup_langsmith(s)
+        self._is_qwen = "qwen" in s.llm_model.lower()
         self._llm = build_chat_llm().bind_tools(medical_tools)
         self.graph = self._build_graph()
-        logger.info("Medical Coding Agent graph 初始化完成")
+        logger.info(f"Medical Coding Agent graph 初始化完成（model={s.llm_model}, is_qwen={self._is_qwen}）")
 
     def _setup_langsmith(self, s):
         # pydantic-settings 不寫入 os.environ，需手動橋接給 LangChain SDK
@@ -71,9 +74,22 @@ class MedicalCodingAgent:
 
     def _agent_node(self, state: MessagesState):
         has_tool_results = any(isinstance(m, ToolMessage) for m in state["messages"])
+        step = "summary" if has_tool_results else "routing"
         prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
-        messages = [SystemMessage(content=prompt)] + state["messages"]
-        return {"messages": [self._llm.invoke(messages)]}
+        logger.info(f"[agent_node/{step}] LLM call 開始")
+        history = []
+        no_think_added = False
+        for m in state["messages"]:
+            if isinstance(m, HumanMessage) and not no_think_added:
+                content = f"/no_think\n{m.content}" if self._is_qwen else m.content
+                history.append(HumanMessage(content=content))
+                no_think_added = True
+            else:
+                history.append(m)
+        messages = [SystemMessage(content=prompt)] + history
+        response = self._llm.invoke(messages)
+        logger.info(f"[agent_node/{step}] LLM call 完成，has_tool_calls={bool(getattr(response, 'tool_calls', None))}")
+        return {"messages": [response]}
 
     @staticmethod
     def _route(state: MessagesState):

@@ -1,5 +1,7 @@
+import json
+
 from fastapi import APIRouter, HTTPException
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, ToolMessage
 
 from app.agent.graph import MedicalCodingAgent
 from app.agent.supervisor import MedicalCodingSupervisor
@@ -13,6 +15,12 @@ graph = MedicalCodingAgent().graph
 supervisor_graph = MedicalCodingSupervisor().graph
 router = APIRouter(prefix="/agent", tags=["Medical Coding Agent"])
 
+_TOOL_KEY_MAP = {
+    "search_snomed_ct": "snomed",
+    "search_icd10_pcs": "icd10",
+    "search_loinc": "loinc",
+}
+
 
 @router.post(
     "/query",
@@ -25,8 +33,22 @@ router = APIRouter(prefix="/agent", tags=["Medical Coding Agent"])
 async def agent_query(req: AgentQueryRequest):
     try:
         result = await graph.ainvoke({"messages": [HumanMessage(req.query)]}, {"recursion_limit": 10})
-        answer = result["messages"][-1].content
-        return ok({"query": req.query, "answer": answer})
+
+        # 從 ToolMessage 解析結構化代碼結果
+        results: dict[str, list] = {"snomed": [], "icd10": [], "loinc": []}
+        for m in result["messages"]:
+            if isinstance(m, ToolMessage):
+                key = _TOOL_KEY_MAP.get(m.name)
+                if key:
+                    try:
+                        results[key] = json.loads(m.content)
+                    except (json.JSONDecodeError, TypeError):
+                        results[key] = []
+
+        # LLM 生成的純文字說明
+        explain = result["messages"][-1].content
+
+        return ok({"query": req.query, "results": results, "explain": explain})
     except Exception as e:
         logger.error(f"Agent query 失敗 query={req.query!r}: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Agent 查詢失敗: {e}")
