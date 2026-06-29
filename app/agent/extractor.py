@@ -61,12 +61,15 @@ _DOMAIN_PROMPTS: dict[str, str] = {
 # ------------------------------------------------------------------
 
 _llm = None
+_is_qwen: bool = False
 
 
 def _get_llm():
-    global _llm
+    global _llm, _is_qwen
     if _llm is None:
         from app.agent.graph import build_chat_llm  # lazy import 避免 circular
+        from app.config import get_settings
+        _is_qwen = "qwen" in get_settings().llm_model.lower()
         _llm = build_chat_llm(json_format=True, num_predict=300)
     return _llm
 
@@ -95,9 +98,10 @@ def extract_terms(clinical_text: str, domain: str) -> list[str]:
 
     try:
         logger.info(f"[extractor/{domain}] LLM call 開始")
+        user_content = f"/no_think\n{clinical_text}" if _is_qwen else clinical_text
         response = _get_llm().invoke([
             SystemMessage(content=_DOMAIN_PROMPTS[domain]),
-            HumanMessage(content=f"/no_think\n{clinical_text}"),
+            HumanMessage(content=user_content),
         ])
         logger.info(f"[extractor/{domain}] LLM call 完成")
 

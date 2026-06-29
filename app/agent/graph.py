@@ -59,9 +59,10 @@ class MedicalCodingAgent:
     def __init__(self):
         s = get_settings()
         self._setup_langsmith(s)
+        self._is_qwen = "qwen" in s.llm_model.lower()
         self._llm = build_chat_llm().bind_tools(medical_tools)
         self.graph = self._build_graph()
-        logger.info("Medical Coding Agent graph 初始化完成")
+        logger.info(f"Medical Coding Agent graph 初始化完成（model={s.llm_model}, is_qwen={self._is_qwen}）")
 
     def _setup_langsmith(self, s):
         # pydantic-settings 不寫入 os.environ，需手動橋接給 LangChain SDK
@@ -80,7 +81,8 @@ class MedicalCodingAgent:
         no_think_added = False
         for m in state["messages"]:
             if isinstance(m, HumanMessage) and not no_think_added:
-                history.append(HumanMessage(content=f"/no_think\n{m.content}"))
+                content = f"/no_think\n{m.content}" if self._is_qwen else m.content
+                history.append(HumanMessage(content=content))
                 no_think_added = True
             else:
                 history.append(m)
