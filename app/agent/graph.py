@@ -44,7 +44,7 @@ def build_chat_llm(json_format: bool = False):
         return ChatOpenAI(base_url=base_url, model=s.vllm_model, temperature=0, api_key="none")
     elif s.llm_backend == "ollama":
         from langchain_ollama import ChatOllama
-        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0}
+        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0, "timeout": 60}
         if json_format:
             kwargs["format"] = "json"
         return ChatOllama(**kwargs)
