@@ -58,6 +58,16 @@ prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
 
 ## 目前遇到的問題
 
+### 問題分類修正
+
+此問題最初被歸類為「agent loop」（branch 名稱 `fix/agent-loop` 即來自此判斷），以為是 LangGraph 路由陷入無限迴圈。
+
+**實際上不是 loop 問題。** 是 `qwen3.5:4b-mlx` 在 thinking mode 下瘋狂 generate token，屬於**資源耗盡型的 hang**：
+- Loop 問題：graph 一直在跑、節點反覆被呼叫
+- 本問題：graph 停在同一個節點、LLM 一直在 generate 但不結束
+
+兩者都會讓請求 hang 住，但根本原因和解法完全不同。
+
 ### 問題現象
 
 送出請求後，工具查詢正常完成，但最後整個 hang 住、永遠不回應，電腦 GPU 很燙。
