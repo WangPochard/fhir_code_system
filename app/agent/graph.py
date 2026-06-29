@@ -29,11 +29,12 @@ _AGENT_SUMMARY_PROMPT = """你是醫療代碼查詢助理。工具已完成搜�
 logger = get_logger(__name__)
 
 
-def build_chat_llm(json_format: bool = False):
+def build_chat_llm(json_format: bool = False, num_predict: int = 1024):
     """建立支援 tool calling / structured output 的 Chat LLM。
 
     json_format=True 僅供 Ollama 後端：強制回傳 JSON，用於 supervisor 的結構化輸出。
     ReAct agent（bind_tools）不應開啟此選項。
+    num_predict：Ollama 最大輸出 token 數，防止 thinking mode 無限生成。
     """
     s = get_settings()
     if s.llm_backend == "vllm":
@@ -42,7 +43,8 @@ def build_chat_llm(json_format: bool = False):
         return ChatOpenAI(base_url=base_url, model=s.vllm_model, temperature=0, api_key="none")
     elif s.llm_backend == "ollama":
         from langchain_ollama import ChatOllama
-        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0}
+        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0,
+                  "num_predict": num_predict}
         if json_format:
             kwargs["format"] = "json"
         return ChatOllama(**kwargs)

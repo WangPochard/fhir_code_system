@@ -67,7 +67,7 @@ def _get_llm():
     global _llm
     if _llm is None:
         from app.agent.graph import build_chat_llm  # lazy import 避免 circular
-        _llm = build_chat_llm(json_format=True)
+        _llm = build_chat_llm(json_format=True, num_predict=300)
     return _llm
 
 
