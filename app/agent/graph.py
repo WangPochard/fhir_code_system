@@ -44,7 +44,7 @@ def build_chat_llm(json_format: bool = False):
         return ChatOpenAI(base_url=base_url, model=s.vllm_model, temperature=0, api_key="none")
     elif s.llm_backend == "ollama":
         from langchain_ollama import ChatOllama
-        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0, "timeout": 60}
+        kwargs = {"base_url": s.llm_base_url, "model": s.llm_model, "temperature": 0}
         if json_format:
             kwargs["format"] = "json"
         return ChatOllama(**kwargs)
@@ -71,9 +71,13 @@ class MedicalCodingAgent:
 
     def _agent_node(self, state: MessagesState):
         has_tool_results = any(isinstance(m, ToolMessage) for m in state["messages"])
+        step = "summary" if has_tool_results else "routing"
         prompt = _AGENT_SUMMARY_PROMPT if has_tool_results else _AGENT_SYSTEM_PROMPT
+        logger.info(f"[agent_node/{step}] LLM call 開始")
         messages = [SystemMessage(content=prompt)] + state["messages"]
-        return {"messages": [self._llm.invoke(messages)]}
+        response = self._llm.invoke(messages)
+        logger.info(f"[agent_node/{step}] LLM call 完成，has_tool_calls={bool(getattr(response, 'tool_calls', None))}")
+        return {"messages": [response]}
 
     @staticmethod
     def _route(state: MessagesState):

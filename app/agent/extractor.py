@@ -97,10 +97,12 @@ def extract_terms(clinical_text: str, domain: str) -> list[str]:
         raise ValueError(f"不支援的 domain: {domain!r}，可用：{list(_DOMAIN_PROMPTS)}")
 
     try:
+        logger.info(f"[extractor/{domain}] LLM call 開始")
         response = _get_llm().invoke([
             SystemMessage(content=_DOMAIN_PROMPTS[domain]),
             HumanMessage(content=clinical_text),
         ])
+        logger.info(f"[extractor/{domain}] LLM call 完成")
 
         raw = response.content.strip()
         parsed = json.loads(raw)
