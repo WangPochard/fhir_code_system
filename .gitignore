@@ -28,5 +28,5 @@ llm-icd10pcs-reverse-inference.md
 CLAUDE.md
 
 backup
-.DS.store
+.DS_Store
 .vscode
