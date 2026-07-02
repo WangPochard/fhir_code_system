@@ -42,24 +42,38 @@ def search_snomed_ct(query: str) -> str:
 def search_icd10_pcs(query: str) -> str:
     """搜尋 ICD-10-PCS 處置代碼。適用於手術、治療、醫療處置的代碼查詢。"""
     try:
-        terms = extract_terms(query, "icd10")
+        from app.icd10.routers import llm as icd10_llm, _score_pcs_candidate
+
+        facts = icd10_llm.extract_pcs_facts_from_report(report_text=query)
+        section = facts.get("pcs_section", "unknown")
+        _SECTION_VALUESET = {"B": "imaging", "D": "radiotherapy"}
+        valueset = _SECTION_VALUESET.get(section)  # None → 不過濾（手術等其他 section）
+
+        procedure_query = facts.get("procedure_description") or query
+
+        raw = icd10_rag.similarity_search(
+            procedure_query, k=10, threshold=0.3,
+            extra_params={"valueset": valueset},
+        )
+
+        scored = []
+        for rag_rank, c in enumerate(raw, 1):
+            total, _ = _score_pcs_candidate(c["code"], facts, c, rag_rank)
+            scored.append((total, c))
+        scored.sort(key=lambda x: x[0], reverse=True)
+
         seen: set[str] = set()
         output = []
-        for term in terms:
-            results = icd10_rag.similarity_search(
-                term, k=5, threshold=0.3,
-                extra_params={"valueset": None},
-            )
-            for c in results[:2]:
-                code = c["code"]
-                if code not in seen:
-                    seen.add(code)
-                    output.append({
-                        "code": code,
-                        "term_eng": c.get("term_eng"),
-                        "term_cht": c.get("term_cht"),
-                        "matched_term": term,
-                    })
+        for total, c in scored:
+            code = c["code"]
+            if code not in seen:
+                seen.add(code)
+                output.append({
+                    "code": code,
+                    "term_eng": c.get("term_eng"),
+                    "term_cht": c.get("term_cht"),
+                    "confidence_pct": total,
+                })
         return json.dumps(output[:6], ensure_ascii=False) if output else "未找到相關 ICD-10-PCS 代碼"
     except Exception as e:
         logger.error(f"ICD-10 tool 失敗: {e}")
