@@ -17,22 +17,19 @@ logger = get_logger(__name__)
 def search_snomed_ct(query: str) -> str:
     """搜尋 SNOMED CT 臨床術語與概念代碼。適用於疾病、症狀、臨床發現的標準化查詢。"""
     try:
-        terms = extract_terms(query, "snomed")
+        raw = snomed_rag.identify(clinical_text=query, top_k=3, threshold=0.0)
         seen: set[str] = set()
         output = []
-        for term in terms:
-            results = snomed_rag.similarity_search(
-                term, k=10, threshold=0.3,
-                extra_params={"tw_valueset": None},
-            )
-            for c in snomed_rag.group_results(results)[:2]:
-                cid = c["concept_id"]
-                if cid not in seen:
+        for concept in raw.get("identified_concepts", []):
+            term = concept.get("term", "")
+            for cand in concept.get("candidates", []):
+                cid = cand.get("concept_id", "")
+                if cid and cid not in seen:
                     seen.add(cid)
                     output.append({
                         "concept_id": cid,
-                        "fsn": c.get("fsn"),
-                        "semantic_tag": c.get("semantic_tag"),
+                        "fsn": cand.get("fsn"),
+                        "confidence_pct": cand.get("confidence_pct"),
                         "matched_term": term,
                     })
         return json.dumps(output[:6], ensure_ascii=False) if output else "未找到相關 SNOMED CT 概念"
